@@ -1,0 +1,91 @@
+what is javascript
+js is a programming languages we use to give instruction to the computer
+
+input [code] ==> computer ==> output
+javascript is dynamic languages = do not need to define variables types(int, float, double, boolean etc)
+
+variables in js
+variables are containers for data
+
+|--------------------------------------------|
+|     Radius                                 |
+|   |--------|    |--------|    |-------|    |
+|   |   14   |    |        |    |       |    |
+|   |--------|    |--------|    |-------|    |
+|                                            |
+|--------------------------------------------|
+Memory 
+
+variables rules
+1) variables names are case sensitive  "a" & "A" is differenet
+2) only letters, digits, underscore(_)  and $  is allowed. (not even space)
+3) only a letter, underscore (_)  or $ should be 1St character
+4) resereved words connot be variables names
+
+someting about variables
+this called convaction 
+it means this is not rule but it followed
+
+there are four cases 
+
+camel case
+
+fullName
+in this case first letter of first word should be small and the first letter of last word should bi capital
+
+snake case
+
+full_name
+in this case we use underscore that why it called snake case
+
+kabab case 
+
+full-name
+in this case we use hyphen that why it called kabab case
+
+pascal case
+
+FullName 
+in this case we use to write the first letter of both word in caps
+
+*we use camel case in js by convantion*
+
+let const & var
+before 2015
+
+var: variable can  be re-declared & a global scope variable
+
+after 2015 we got es6 (Ecma Script 6) new standard of javascript
+
+let: variable cannot be re-declared but can be updated. A block scope varaillbe
+const: variable canoot be re-declared or updated a block scope variable
+
+date types
+number, string, boolean, symbol, bigint, undefined
+
+primitive data types
+there are seven types of primitive data types
+
+non primitive
+objects
+  arrays , function 
+
+data types
+|
+|---primitive
+|-------number
+|-------boolean 
+|-------string
+|-------undefined
+|-------null
+|-------bigint
+|-------symbol
+|---non-primitive
+|-------objects
+|-----------arrays
+|-----------functions
+
+
+objects = it is a collection of values
+
+
