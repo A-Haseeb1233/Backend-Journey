@@ -1,0 +1,18 @@
+comment in js which is not the part of code
+example
+// this is single line comment (syntax)
+
+/* this is multi line 
+comment */
+
+operators  in  js
+use to perform  some operation on data
+
+arthematic operators
+
++, -, *, /
+
+modulo
+exponentional
+increment (post and pre)
+decrement (post and pre)
