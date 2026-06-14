@@ -14,5 +14,7 @@ arthematic operators
 
 modulo
 exponentional
-increment (post and pre)
-decrement (post and pre)
+
+this are unary operators
+increment (post and pre) ++
+decrement (post and pre) --

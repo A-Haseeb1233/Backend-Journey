@@ -1,42 +1,42 @@
-// console.log("FalconH Backend Developer");
-// console.log("apna college");
-// console.log("FalconH") 
+console.log("FalconH Backend Developer");
+console.log("apna college");
+console.log("FalconH") 
 
-// // vairable 
+// vairable 
 
-// fullname = "Abdul Haseeb aka FalconH aka Falcon";
-// age = 24;
-// price = 99.99;
-// radius = 5;
-// x = null;
-// y = undefined;
+fullname = "Abdul Haseeb aka FalconH aka Falcon";
+age = 24;
+price = 99.99;
+radius = 5;
+x = null;
+y = undefined;
 
-// console.log("fullname: " + fullname);
-// console.log("age: " + age);
-// console.log("price: " + price);
-// console.log("radius: " + radius);
-// console.log(x);
-// console.log(y);
+console.log("fullname: " + fullname);
+console.log("age: " + age);
+console.log("price: " + price);
+console.log("radius: " + radius);
+console.log(x);
+console.log(y);
 
-// const student = {
-//     fullName : "Abdul Haseeb",
-//     age : 22,
-//     color : "Black",
-//     cgpa : 2.5
-// };
+const student = {
+    fullName : "Abdul Haseeb",
+    age : 22,
+    color : "Black",
+    cgpa : 2.5
+};
 
-// student["age"] = student["age"] + 1
-// student["fullName"] = "FalconH"
-// console.log("age: " + student["age"]);
-// console.log("name: " + student.fullName);
+student["age"] = student["age"] + 1
+student["fullName"] = "FalconH"
+console.log("age: " + student["age"]);
+console.log("name: " + student.fullName);
 
 
 
-// const product = {
-//     productName = "Ball pen",
-//     rating = 4,
-//     price = 270,
-// };
+const product = {
+    productName = "Ball pen",
+    rating = 4,
+    price = 270,
+};
 
 
 const profile = {
@@ -49,3 +49,23 @@ const profile = {
 console.log(profile);
 
 console.log(typeof profile["fullName"]);
+
+
+
+
+
+
+
+
+
+
+const FalconH = {
+    college : "bbsul",
+    semester : 6,
+    cpga : 3.9,
+    color : "fair"
+};
+
+FalconH.color = "black"
+
+console.log(typeof FalconH);
