@@ -18,3 +18,9 @@ exponentional
 this are unary operators
 increment (post and pre) ++
 decrement (post and pre) --
+
+assignement operator 
+
++=, -=, *=, /=, %=, **=
+
+

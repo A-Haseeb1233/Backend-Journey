@@ -11,8 +11,8 @@
 // console.log("a ** b = ", a ** b);  // 5^2  exponentiation
 
 // unary operator
-let a = 5;
-let b = 2;
+// let a = 5;
+// let b = 2;
 // increment 
 // post increment
 // post increment mean first print then add 1
@@ -42,3 +42,14 @@ let b = 2;
 // console.log("--a = ", --a);
 
 
+// assignement operators
+
+let a = 5;
+let b = 2;
+
+console.log("a = ", a, " & b =", b);
+console.log("a+= : ", a += 2);
+console.log("a-= : ", a -= 2);
+console.log("a*= : ", a *= 5);
+console.log("a /= : ", a /= 5);
+console.log("a**= : ", a **= 5); // a **= 5 = a = a(5) ** 5
