@@ -23,4 +23,11 @@ assignement operator
 
 +=, -=, *=, /=, %=, **=
 
+comparision operator
 
+equal to ==
+equal to and type ===
+not equal !=
+not equal and type !==
+
+>, >=, <, <= 
