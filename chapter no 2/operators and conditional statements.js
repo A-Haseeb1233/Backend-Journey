@@ -87,12 +87,12 @@
 // console.log(!((5 == 4) || (4 == 4)));
 
 
-let a = 5;
-let b = 2;
+// let a = 5;
+// let b = 2;
 
-let cond1 = a > b;  // true
-let cond2 = a == "5"  // true
+// let cond1 = a > b;  // true
+// let cond2 = a === "5";  // false
 
-let result = cond1 || cond2; // true
+// let result = cond1 && cond2; // false
 
-console.log("cond1 && cond2 = ", result);
+// console.log("cond1 && cond2 = ", result);
