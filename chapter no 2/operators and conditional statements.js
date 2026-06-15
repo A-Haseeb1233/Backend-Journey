@@ -96,3 +96,21 @@
 // let result = cond1 && cond2; // false
 
 // console.log("cond1 && cond2 = ", result);
+
+
+// let age = 3;
+
+// if(age >= 18){
+//     console.log("you can carry gun with license");
+// } else {
+//     console.log("you are not eligible for carry weopon");
+// }
+
+// let mode = "dark";
+// let color = "black";
+
+// if(mode === "dark"){
+//     console.log(color);
+// } else {
+//     console.log("theme is not dark");
+// }
