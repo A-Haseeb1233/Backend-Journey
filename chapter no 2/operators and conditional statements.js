@@ -160,22 +160,45 @@
 //     console.log("one peace of paper can not decide my future :)");
 // }
 
-let score = prompt("Enter your score (0-100): ")
-let Grade;
+// let age = number(prompt("Enter your age : "))
 
-if(score >= 80 && score <= 100){
-    Grade = "A";
-} else if (score >= 70 && score <= 89){
-    Grade = "B";
-} else if (score >= 60 && score <= 69){
-    Grade = "C";
-} else if (score >= 50 && score <= 59){
-    Grade = "D"
-} else if (score >= 0 && score <= 49){
-    Grade = "F";
+// if(age >= 18){
+//     console.log("your can vote");
+// } else if (age >= 1 && age <= 17){
+//     console.log("you cannot vote");
+// } else {
+//     console.log("Enter correct age ");
+// }
+
+// let temp = Number(prompt("Enter temperature : "));
+
+// if (temp >= 35){
+//     console.log("It's too hot");
+// } else if (temp >= 20 && temp >= 35){
+//     console.log("It's pleasant");
+// } else if (temp >= 10 && temp <= 20){
+//     console.log("It's cold");
+// } else if (temp <= 10){
+//     console.log("It's freezing")
+// } else {
+//     console.log("Enter temperator in digit (donot use special character or alphabet)!")
+// }
+
+
+let salary = Number(prompt("Enter your Salary : "));
+let tax = (10/100) * salary;
+
+if (salary >= 0 && salary <= 50000){
+    console.log("your salary is : ", salary);
+    console.log("Tax : ", tax);
+} else if (salary > 50000 && salary >= 100000){
+    console.log("your salary is : ", salary);
+    console.log("Tax : ", tax);
+} else if (salary > 100000){
+    console.log("your salary is : ", salary);
+    console.log("Tax : ", tax);
 } else {
-    console.log("your entered wrong number please enter a number in  given range!")
-    console.log("Thank you");
+    console.log("Please enter your salary in number")
 }
 
-console.log("Grade is = ", Grade);
+console.log("Thank you for using our system! :)");

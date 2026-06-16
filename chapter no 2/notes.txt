@@ -31,3 +31,14 @@ not equal !=
 not equal and type !==
 
 >, >=, <, <= 
+
+
+Question 3 (asli wala):
+Ek salary variable banao. Phir tax calculate karo:
+
+Salary 50,000 se kam → tax 0% → print karo "No tax"
+Salary 50,000 to 1,00,000 → tax 10% → print karo "Tax: [amount]"
+Salary 1,00,000 se zyada → tax 20% → print karo "Tax: [amount]"
+
+Real life cheez hai — aur calculation bhi karni hai sirf print nahi! 😄
+Jao! ✍️
