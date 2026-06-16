@@ -1,0 +1,9 @@
+loops 
+loops are used to execute peace of code again and again
+
+there are five types of loops in js
+for loops
+while loops
+do while loops
+for of
+for in
