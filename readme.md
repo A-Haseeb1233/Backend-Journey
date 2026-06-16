@@ -20,6 +20,7 @@ This is my personal learning log as I go from JavaScript basics all the way to b
 |--------|---------------|
 | chapter no 1 | JavaScript Basics (variable and data types) |
 | chapter no 2 | JavaScript ( operators and conditional statements) |
+| chapter no 3 | JavaScript ( loops and strings ) |
 | *(more coming...)* | Node.js, Express, PostgreSQL |
 
 ## 🎯 Goal
