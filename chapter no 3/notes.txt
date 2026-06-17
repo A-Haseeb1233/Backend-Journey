@@ -7,3 +7,11 @@ while loops
 do while loops
 for of
 for in
+
+
+for of loops
+for of loops are used for string arrays this is commonly used for values this loops return us values
+
+
+for in loops
+this loops use for object this loops return keys and indexes not values
