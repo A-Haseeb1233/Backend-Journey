@@ -83,3 +83,21 @@
 // console.log("Congratulations you entered a right number!");
 
 
+// string 
+
+// let str = "Abdul Haseeb";
+// let str2 = "FalconH";
+
+// console.log(`str = ${str}\nstr2 = ${str2}`);
+// console.log(typeof str, "\n", typeof str2);
+// console.log(`length of first string is = ${str.length}\nlenght of second string is = ${str2.length}`);
+
+// console.log(str[2]);
+
+// for(val of str){
+//     console.log(i);
+// }
+
+let str = "Abdul Haseeb";
+str = str.trim();
+console.log(str);

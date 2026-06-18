@@ -81,3 +81,22 @@ for(let i = 1; i <= 50; i++){
 }
 
 console.log(sum);
+
+// User se start range aur end range lo.
+
+let start = Number(prompt("Enter your starting number: "));
+let end = Number(prompt("Enter your ending number: "))
+
+for(let i = start; i <= end; i++){
+    console.log(i);
+}
+
+// User se ek number lo. Aur 1 se us number tak sirf EVEN numbers print karo.
+
+let no = Number(prompt("Enter your ending range: "));
+
+for(let i = 2; i <= no; i += 2){
+    console.log(i);
+};
+
+// optional if statement
