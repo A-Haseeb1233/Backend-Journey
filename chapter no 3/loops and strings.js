@@ -98,6 +98,127 @@
 //     console.log(i);
 // }
 
-let str = "Abdul Haseeb";
-str = str.trim();
-console.log(str);
+// let str = "Abdul Haseeb";
+// str = str.trim();
+// console.log(str);
+
+
+// let str = "Abdul";
+// let str2 =  " Haseeb"
+// console.log(str.concat(str2));
+
+
+// let userName = promtp("Enter your username: ");
+// let addFirst = "@";
+// let addLast = "12";
+
+// let res = userName.concat(addFirst.concat(addLast));
+
+// console.log(res);
+
+// let browsertype = "firefox";
+
+// if(browsertype.includes("fox")){
+//     console.log("fox found");
+// } else {
+//     console.log("fox not found");
+// }
+
+
+// let browsertype = "firefox";
+
+// if(browsertype === browsertype.startsWith("fox")){
+//     console.log("not start with fox");
+// } else {
+//     console.log("yes start with fox");
+// }
+
+// let browsertype = "mozilla"
+
+// if(browsertype.endsWith("zilla")){
+//     console.log("yes");
+// } else {
+//     console.log("no")
+// }
+
+
+//extra
+// const readline = require('readline');
+
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+
+// rl.question("Enter your name: ", function(name) {
+//     console.log("Hello " + name);
+//     rl.close();
+// });
+
+// let cities = ["Karachi", "Lahore", "Islamabad"];
+
+// for(let val of cities){
+//     console.log(val);
+// }
+
+// let cities = ["Karachi", "Lahore", "Islamabad"];
+
+// for(let city of cities){
+//     let len = city.length;
+//     if(len >= 6){
+//         console.log(`${city}`);
+//     }
+
+// }
+
+
+// let name = "Haseeb";
+
+// for (let val of name){
+//     console.log(val.toUpperCase());
+// }
+
+// let numbers = [10, 20, 30, 40, 50];
+
+// for (let val of numbers){
+//     if(val >= 25){
+//         console.log(val);
+//     }
+// }
+
+
+// let passwords = ["abc123", "securePass", "hello", "myPassword123"];
+
+// for (let val of passwords){
+//     let lenCheck = val.length;
+//     if(lenCheck > 8){
+//         console.log(val);
+//     }
+// }
+
+// let emails = ["user@gmail.com", "admin@yahoo.com", "test@gmail.com", "hello@hotmail.com"];
+// for...of use karo
+// sirf wo emails print karo
+// jo "@gmail.com" se end hoti hon
+
+// for (let val of emails){
+//     if(val.endsWith("@gmail.com")){
+//         console.log(val);
+//     }
+// }
+
+// let cities = ["Karachi", "Lahore", "Islamabad"];
+
+// for (let index in cities){
+//     console.log(index);
+// }
+
+    // const student = {
+    //     fullName : "Abdul Haseeb",
+    //     age : 21,
+    //     eye : "Green"
+    // }
+
+    // for(let index in student){
+    //     console.log(`${index} = ${index[student.eye]}`);
+    // }
