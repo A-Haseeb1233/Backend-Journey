@@ -236,13 +236,58 @@
 //     console.log(`${key} = ${person.key}`);
 // }
 
-const phone = {
-    brand: "Samsung",
-    model: "Galaxy S23",
-    price: 150000,
-    color: "Black"
+// const phone = {
+//     brand: "Samsung",
+//     model: "Galaxy S23",
+//     price: 150000,
+//     color: "Black"
+// };
+
+// for(let key in phone){
+//     if(typeof phone[key] === "string"){
+//         console.log(`${key} = ${phone[key]}`);
+//     }
+// }
+
+
+const user = {
+    username: "falconH",
+    password: "abc123",
+    age: 21,
+    email: "haseeb@gmail.com",
+    loginAttempts: 3
 };
 
-for(let key in phone){
-    console.log(`${key} = ${phone[key]}`)
-}
+// for...in use karo
+// sirf wo keys print karo
+// jinki value number ho
+
+
+// for(let key in user){
+//     if(typeof user[key] === "number"){
+//         console.log(`${key} = ${user[key]}`)
+//     }
+// }
+
+const laptop = {
+    brand: "Dell",
+    ram: 16,
+    storage: 512,
+    os: "Windows 11",
+    price: 120000
+};
+// for...in use karo
+// sirf wo keys print karo
+// jinki value 100 se zyada ho
+
+// for(let key in laptop){
+//     if(typeof laptop[key] === "number"){
+//         if(laptop[key] > 100){
+//             console.log(`${key} = ${laptop[key]}`);
+//         }
+//     }
+// }
+
+
+
+
