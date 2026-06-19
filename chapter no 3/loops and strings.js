@@ -222,3 +222,27 @@
     // for(let index in student){
     //     console.log(`${index} = ${index[student.eye]}`);
     // }
+
+// 6 / 19 / 2026
+
+// const person = {
+//     fullName : "Abdul Haseeb",
+//     nickName : "Falcon",
+//     age : 21,
+//     job : "Studend"
+// };
+
+// for(let key in person){
+//     console.log(`${key} = ${person.key}`);
+// }
+
+const phone = {
+    brand: "Samsung",
+    model: "Galaxy S23",
+    price: 150000,
+    color: "Black"
+};
+
+for(let key in phone){
+    console.log(`${key} = ${phone[key]}`)
+}
