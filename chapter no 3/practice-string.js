@@ -62,3 +62,41 @@
 //     console.log("Invalid pdf report");
 // }
 
+// let str = "Good Morning Pakistan"
+// str = str.indexOf("Pakistan");
+// console.log(str);
+
+// let str = "My phone number is 03001234567"
+// str = str.indexOf("03001234567");
+// console.log(str);
+
+// let str = "banana"
+// str = str.indexOf("an");
+// console.log(str);
+
+// let str = "hello world"
+// "o" kis index pe hai? Aur kitni baar aata hai is string mein?
+
+// let str2 = str.indexOf("o")
+// console.log(str2)
+
+// let sum;
+
+// for(let val  of str){
+//     if(val === "o"){
+//         sum = sum + val;
+//         console.log(val);
+//          console.log(sum);
+//     }
+   
+// }
+
+let str = "hello world";
+let count = 0;
+for(let val of str){
+    if(val === "o"){
+        count = count + 1;
+    }
+}
+
+console.log(count);
