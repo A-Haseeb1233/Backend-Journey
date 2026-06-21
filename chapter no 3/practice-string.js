@@ -91,12 +91,16 @@
    
 // }
 
-let str = "hello world";
-let count = 0;
-for(let val of str){
-    if(val === "o"){
-        count = count + 1;
-    }
-}
+// let str = "hello world";
+// let count = 0;
+// for(let val of str){
+//     if(val === "o"){
+//         count = count + 1;
+//     }
+// }
 
-console.log(count);
+// console.log(count);
+
+let str = "JavaScript is the best language"
+str = str.indexOf("best");
+console.log(str)
