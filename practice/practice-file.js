@@ -105,23 +105,23 @@
 
 // solution
 
-let firstName = "Abdul";
-let lastName = " Haseeb";
+// let firstName = "Abdul";
+// let lastName = " Haseeb";
 
-let fullName = firstName + lastName;
-console.log(`my full name is ${fullName}`);
+// let fullName = firstName + lastName;
+// console.log(`my full name is ${fullName}`);
 
 // second method
 
-console.log(firstName.concat(lastName));
+// console.log(firstName.concat(lastName));
 
 // Q 12. Take a = 255 and b = 8. Print how many times b fits completely into a.
 
 // solution
 
-let a = 255;
-let b = 8;
-console.log(Math.floor(a/b)); 
+// let a = 255;
+// let b = 8;
+// console.log(Math.floor(a/b)); 
 
 // Q13. Take a number from the user. Print the result of dividing it by 6 — but only the whole number part (no decimals).
 
@@ -135,10 +135,10 @@ console.log(Math.floor(a/b));
 
 // solution
 
-let total = 500;
-let people = 3;
-let whole = Math.floor(total/people);
-console.log(whole);
+// let total = 500;
+// let people = 3;
+// let whole = Math.floor(total/people);
+// console.log(whole);
 
 /* Q15. Take a number from the user. If it is divisible by both 3 and 5, print "FizzBuzz". If only by 3, 
 print "Fizz". If only by 5, print "Buzz". Otherwise print the number itself. */
@@ -161,9 +161,9 @@ print "Fizz". If only by 5, print "Buzz". Otherwise print the number itself. */
 
 // solution
 
-for (let i = 50; i <= 60; i++){
-    console.log(i)
-}
+// for (let i = 50; i <= 60; i++){
+//     console.log(i)
+// }
 
 /* Q17. Take the string "falconh studio" and capitalize the first letter of each 
 word. (Hint: split, map... or think creatively!) */
@@ -191,48 +191,177 @@ word. (Hint: split, map... or think creatively!) */
 
 // solution
 
-for (let i = 1; i <= 10; i++){
-    console.log(`7 * ${i} = ${i * 7}`);
-}
+// for (let i = 1; i <= 10; i++){
+//     console.log(`7 * ${i} = ${i * 7}`);
+// }
 
-/* Q19. Take a string from the user and check if it contains the 
-word "backend". Print "Found!" or "Not Found!". */
+// /* Q19. Take a string from the user and check if it contains the 
+// word "backend". Print "Found!" or "Not Found!". */
 
-// solution
+// // solution
 
-let stttr = prompt("Enter your string: ");
+// let stttr = prompt("Enter your string: ");
 
-if (stttr.includes("Backend") || stttr.includes("backend")){
-    console.log("Found!");
-} else {
-    console.log("Not Found!");
-}
+// if (stttr.includes("Backend") || stttr.includes("backend")){
+//     console.log("Found!");
+// } else {
+//     console.log("Not Found!");
+// }
 
 /* Q20. Take price = 1500 and discount = 10. 
 Calculate the final price after applying the discount percentage and print it. */
 
 // solution
 
-let price = 1500;
-let discount = (1500/100)*10;
-console.log(discount);
+// let price = 1500;
+// let discount = (1500/100)*10;
+// console.log(discount);
 
 // Q21. Use a loop to print the sum of all numbers from 1 to 50.
 
 // solution
 
-let sum = 0;
-for(let i = 1; i <= 50; i++){
-    sum = sum + i;
-}
-console.log(sum);
+// let sum = 0;
+// for(let i = 1; i <= 50; i++){
+//     sum = sum + i;
+// }
+// console.log(sum);
 
 // Q22. Take a string "  Hello World  " — trim it, convert to lowercase, and print it.
 
 // solution
 
-let string = "    Hello World   ";
-string = string.trim();
-string = string.toLowerCase();
+// let string = "    Hello World   ";
+// string = string.trim();
+// string = string.toLowerCase();
 
-console.log(string);
+// console.log(string);
+
+// from i will solve questionn date wise per day /date ten  question;
+
+// 23 june 2026
+
+/* Q1. Create a variable temperature = 38. If it is above 37.5, print "Fever". If it is between 36 
+and 37.5, print "Normal". Otherwise print "Low Temperature". */
+
+// solution
+
+// let temperature = 38;
+
+// if (temperature > 37.5) {
+//     console.log("Fever");
+// } else if (temperature >= 36 && temperature <= 37.5) {
+//     console.log("Normal");
+// } else {
+//     console.log("Low temperature");
+// }
+
+/* Q2. Take two strings from the user — first name and 
+last name. Print them together in uppercase like: "ABDUL HASEEB" */
+
+// solution
+
+// let firstName = prompt("Enter your first name: ");
+// let lastName = prompt("Enter your last name: ");
+
+// let fullName = firstName + " " + lastName;
+// fullName = fullName.toUpperCase();
+// console.log(fullName);
+
+// Q3. Print all numbers from 1 to 100 that are divisible by both 2 and 3.
+
+// solution
+
+// for (let i = 1; i <= 100; i++) {
+//     if(i % 2 === 0 && i % 3 === 0) {
+//         console.log(i);
+//     }
+// }
+
+// Q4. Take a string "javascript is awesome" and count how many times the letter "a" appears in it.
+
+// solution
+
+// let str = "javascript is awesome";
+// let count = 0;
+// for (let val of str) {
+//     if(val === "a") {
+//         count = count + 1;
+//     }
+// }
+
+// console.log(count);
+
+
+// Q5. Take principal = 5000, rate = 8, time = 3. Calculate and print the simple interest.
+
+// (Formula: SI = principal * rate * time / 100)
+
+// solution
+
+// let principal = 5000;
+// let rate = 8;
+// let time = 3;
+// let si = (principal * rate * time / 100);
+// console.log(Math.floor(si));
+
+// Q6. Take a number from the user. Print its multiplication table from 1 to 10.
+
+// solution
+
+// let num = Number(prompt("Enter your number (1-100): "));
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`${num} * ${i} = ${num * i}`);
+// }
+
+// Q7. Take a string from the user and print it reversed.
+
+// (Hint: loop from last character to first)
+
+// solution
+
+let struser = prompt("Enter your string: ");
+
+for (let i = struser.length - 1; i >= 0; i--){
+    console.log(struser[i])
+}
+ 
+
+// Q8. Take num = 9. Print its square and cube.
+
+// solution
+
+// let num = 9;
+// let square = 9 ** 2;
+// let cube = 9 ** 3;
+
+// console.log(`square of ${num} is = ${square}\ncube of ${num} is = ${cube}`);
+
+// Q9. Use a loop to print only numbers from 1 to 50 that end with digit 3.
+
+// (like 3, 13, 23, 33, 43)
+
+// solution
+
+// for (let i = 1; i <= 50; i++) {
+//     if (i % 10 === 3) {
+//         console.log(i)
+//     }
+// }
+
+
+
+/* Q10. Take a string from the user. Print "Long string" if it has 
+more than 10 characters, otherwise print "Short string". */
+
+// solution
+
+// let string = prompt("Enter your string: ");
+// let strlen = string.length;
+
+// if (strlen > 10) {
+//     console.log("Long String");
+// } else {
+//     console.log("Short string")
+// }
