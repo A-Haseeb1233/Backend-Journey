@@ -321,11 +321,11 @@ last name. Print them together in uppercase like: "ABDUL HASEEB" */
 
 // solution
 
-let struser = prompt("Enter your string: ");
+// let struser = prompt("Enter your string: ");
 
-for (let i = struser.length - 1; i >= 0; i--){
-    console.log(struser[i])
-}
+// for (let i = struser.length - 1; i >= 0; i--){
+//     console.log(struser[i])
+// }
  
 
 // Q8. Take num = 9. Print its square and cube.
