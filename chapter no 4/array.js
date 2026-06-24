@@ -139,3 +139,33 @@
 // let staLang = ["c", "c++", "java"];
 // staLang.push("typescript");
 // console.log(dyLang.concat(staLang));
+
+// let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"]
+
+// remove the first company from the array
+// method 1
+
+// companies.shift("Bloomberg");
+// console.log(companies);
+
+// method 2
+// companies.splice(0,1);
+// console.log(companies);
+
+// remove uber and ola in its place
+
+// companies.splice(2,1,"Ola");
+// console.log(companies);
+
+// add amazon at the end
+
+// method 1
+
+// companies.push("amazon");
+// console.log(companies);
+
+// method 2
+
+// companies.splice(6,0,"Amazon");
+// console.log(companies);
+
