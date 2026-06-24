@@ -53,12 +53,20 @@ let hero = ["Ironman", "Spiderman", "Superman", "Hulk", "Dr Strange"];
 // console.log(sum);
 
 
-let prices = [250, 645, 300, 900, 50];
-let dis;
-for(let price of prices){
-    dis = (price * 10) /100;
-    let final_price = Math.floor(price - dis);
-    console.log(final_price);
+// let prices = [250, 645, 300, 900, 50];
+// let dis;
+// for(let price of prices){
+//     dis = (price * 10) /100;
+//     let final_price = Math.floor(price - dis);
+//     console.log(final_price);
+// }
+
+let items = [250, 645, 300, 900, 50]
+let i = 0;
+for(let val of items) {
+    console.log(`value of at index ${i} = ${val}`);
+    i++;
+    let offer = (val * 10) / 100;
+    items[i] = items[i] - offer;
+    console.log(`after applying offer = ${items[i]}`)
 }
-
-

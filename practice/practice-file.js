@@ -365,3 +365,135 @@ more than 10 characters, otherwise print "Short string". */
 // } else {
 //     console.log("Short string")
 // }
+
+// 24 june 2026
+
+// Q1. Take num = 144. Check if it is a perfect square. Print "Perfect Square" or "Not a Perfect Square".
+
+// (Hint: Math.sqrt)
+
+// solution
+
+// let num = Number(prompt("Enter your number: "));
+// let check = Math.sqrt(num);
+// if(check % 1 === 0) {
+//     console.log("Perfect Square");
+// } else {
+//     console.log("Not a perfect square");
+// }
+
+// Q2. Take a string from the user. Count how many vowels are in it. (vowels: a, e, i, o, u)
+
+// solution
+
+// let str = prompt("Enter your string: ");
+// let count = 0;
+// for (let val of str) {
+//     if("aeiou".includes(val.toLowerCase())){
+//         count += 1;
+//     }
+// }
+
+// console.log(count);
+
+// Q3. Take a = 56 and b = 98. Print the larger number without using Math.max.
+
+// solution
+
+// let a = 56;
+// let b = 98;
+
+// if(a > b){
+//     console.log(a);
+// } else {
+//     console.log(b);
+// }
+
+// Q4. Use a loop to print all numbers from 1 to 50 that are odd and divisible by 7.
+
+// solution
+
+// for (let i = 1; i <= 50; i++) {
+//     if(i % 7 !== 0){
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+// new apprach
+
+// Q5. Take a string from the user. Print it without any spaces.
+
+// (Hint: loop through each character)
+
+// solution
+
+// let user = prompt("Enter your string: ");
+
+// for (let val  of user) {
+//     val = val.toLowerCase();
+//     if(val === " "){
+//         continue;
+//     }
+//     console.log(val);
+// }
+
+// Q6. Take salary = 85000. If salary is above 100000, print "High". If between 
+// 50000 and 100000, print "Medium". Otherwise print "Low".
+
+// solution
+
+// let salary = Number(prompt("Enter your Salary: "));
+// if (salary > 100000) {
+//     console.log("High");
+// } else if (salary >= 50000 && salary <= 100000) {
+//     console.log("Between");
+// } else {
+//     console.log("Low");
+// }
+
+// Q8. Take a string "Hello World". Replace every "o" with "0" and print it.
+
+// (Hint: loop through each character)
+
+// solution
+
+// let str = "Hello World";
+// str = str.replaceAll("o", 0);
+// console.log(str);
+
+// for question request we use loop
+
+// let str = "Hello World";
+ 
+// for (let val of str) {
+//     if(val === "o"){
+//         console.log(val.replace("o", 0));
+//     }
+// }
+
+// we dont need to use replaceall because loop check each character on every iteration
+
+// Q9. Take num = 25. Print "Perfect Square" if it is, otherwise "Not".
+
+// (Bonus: can you solve both Q1 and Q9 with the same logic?)
+
+// solution
+
+// let num = 25;
+// num = Math.sqrt(num);
+// if(num % 1 === 0){
+//     console.log("Perfect square");
+// } else {
+//     console.log("Not")
+// }
+
+// Q10. Take two numbers from the user. Print their sum, difference, product, and quotient — all in one go.
+
+// solution
+
+// let num1 = Number(prompt("Enter your first number: "));
+// let num2 = Number(prompt("Enter your second number: "));
+
+// console.log(`sum of two number ${num1 + num2}\ndifference of two number ${num1 - num2}\n
+// product of two numbers ${num1 * num2} quotient of two number is ${num1 / num2}`);
