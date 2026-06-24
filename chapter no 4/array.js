@@ -21,7 +21,7 @@
 
 // let marks = [34,45,56,87,90];
 
-let hero = ["Ironman", "Spiderman", "Superman", "Hulk", "Dr Strange"];
+// let hero = ["Ironman", "Spiderman", "Superman", "Hulk", "Dr Strange"];
 
 // for (let val of heroes) {
 //     console.log(val);
@@ -61,12 +61,40 @@ let hero = ["Ironman", "Spiderman", "Superman", "Hulk", "Dr Strange"];
 //     console.log(final_price);
 // }
 
-let items = [250, 645, 300, 900, 50]
+// let items = [250, 645, 300, 900, 50]
+// let i = 0;
+// for(let val of items) {
+//     console.log(`value of at index ${i} = ${val}`);
+//     i++;
+//     let offer = (val * 10) / 100;
+//     items[i] = items[i] - offer;
+//     console.log(`after applying offer = ${items[i]}`)
+// }
+
+// for a given array with prices of 5 items -> [250, 645, 300, 900, 50]
+// all items hava an offer of 10% off on them change the array to store 
+// final price after applying offer.
+
+let items = [250, 645, 300, 900, 50];
 let i = 0;
 for(let val of items) {
-    console.log(`value of at index ${i} = ${val}`);
-    i++;
+    console.log(`value at index ${i}  = ${val}`);
     let offer = (val * 10) / 100;
     items[i] = items[i] - offer;
-    console.log(`after applying offer = ${items[i]}`)
+    console.log(`value after offer ${items[i]}`);
+    i++;
 }
+
+console.log(items)
+
+
+// let items = [250, 645, 300, 900, 50];
+// let i = 0;
+
+// for (let val of items) {
+//     let offer = (val * 10) / 100;
+//     items[i] = Math.floor(items[i] - offer); // ✅ array update bhi sahi
+//     i++;
+// }
+
+// console.log(items); // [225, 580, 270, 810, 45]
