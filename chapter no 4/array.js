@@ -106,11 +106,36 @@
 
 // another method to write the solution of the same question
 
-let items = [250, 645, 300, 900, 50];
+// let items = [250, 645, 300, 900, 50];
 
-for (let i = 0; i < items.length; i++) {
-    let offer = (items[i] * 10) / 100;
-    items[i] -= offer;
-}
+// for (let i = 0; i < items.length; i++) {
+//     let offer = (items[i] * 10) / 100;
+//     items[i] -= offer;
+// }
 
-console.log(items);
+// console.log(items);
+
+// push
+// pop
+// tostring
+
+// let schoolItems = ["bag", "pencil box", "uniform", "shoes"];
+// let caps = schoolItems.toString().toUpperCase();
+// console.log(schoolItems);
+// schoolItems.push("Water bottle", "wrist watch", "belt", "books", "copies");
+// console.log(schoolItems); 
+
+// let marks = [87, 98, 90, 79];
+
+// console.log(marks.toString());
+
+// let deleted = marks.pop();
+// console.log(`deleted ${deleted}`);
+// console.log(marks); 
+
+
+// // concat
+// let dyLang = ["Js", "py", "ruby", "php"];
+// let staLang = ["c", "c++", "java"];
+// staLang.push("typescript");
+// console.log(dyLang.concat(staLang));
