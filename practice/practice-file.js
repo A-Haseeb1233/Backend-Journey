@@ -497,3 +497,175 @@ more than 10 characters, otherwise print "Short string". */
 
 // console.log(`sum of two number ${num1 + num2}\ndifference of two number ${num1 - num2}\n
 // product of two numbers ${num1 * num2} quotient of two number is ${num1 / num2}`);
+
+// 25 june 2026
+
+// Q1. Take a string from the user. Print "Palindrome" if it reads the same forwards and 
+// backwards, otherwise "Not Palindrome".
+
+// (Example: "madam" → Palindrome)
+
+// solution
+
+// let str = prompt("Enter your string: ");
+// let reversed = "";
+// for(let i = str.length - 1; i >= 0; i--){
+//     reversed += str[i]
+//     if(str === reversed) {
+//         console.log("Palindrome")
+//     } else {
+//         console.log("Not Palindrome");
+//     }
+
+// }
+
+// correct solution
+
+// let str = prompt("Enter your string: ");
+// let reversed = "";
+
+// for(let i = str.length - 1; i >= 0; i--) {
+//     reversed += str[i];
+// }
+
+// if (str === reversed) {
+//     console.log("Palindrome");
+// } else {
+//     console.log("Not Palindrome");
+// }
+
+// Q2 ready hai:
+// Take num = 1234. Extract and print the last two digits.
+
+// (Hint: % 100)
+
+// solution
+
+// let num = 1234;
+// console.log(num % 100);
+
+// Q3 Take a string from the user. Count how many uppercase letters are in it.
+
+// solution
+
+// let str = prompt("Enter your string: ");
+// let uppercase = "";
+// let count = 0;
+// for(let val of str){
+//     if("ABCDEFGHIJKLMNOPQRSTUVWXYZ".includes(val)){
+//         uppercase += val;
+//         count++;
+//     }
+// }
+
+// console.log(`this string contain ${count} uppercase this letters are ${uppercase}`);
+
+// new method
+
+// let str = prompt("Enter your string: ");
+
+// for(let i = 0; i <= str.length - 1; i++){
+//     if("ABCDEFGHIJKLMNOPQRSTUVWXYZ".includes(str[i])){
+//         let uppercase = "";
+//         uppercase += str[i];
+//         console.log(`uppercase at index ${i} ${uppercase}`);
+//     }    
+// }
+
+// Q6 karo:
+// Take a string "Hello World 123". Count how many digits are in it.
+
+// solution
+
+// let str = "Hello World 123";
+// let count = 0;
+
+// for(val of str) {
+//     if("0123456789".includes(val)){
+//         count++;
+//     }
+// }
+
+// console.log(count);
+
+// new method
+
+// for(let i = 0; i <= str.length - 1; i++){
+//     if("0123456789".includes(str[i])){
+//         console.log(`val at index ${i} = ${str[i]}`);
+//     }
+// }
+
+// Q7 Take year = 2024. Check if it is a leap year.
+// (Divisible by 4, but not 100, unless also divisible by 400)
+
+// let user = Number(prompt("Enter year (e.g: 1999 2000, 2009): "));
+
+// if(user % 400 === 0) {
+//     console.log("Leap Year");
+// } else if (user % 100 === 0) {
+//     console.log("Not a leap year");
+// } else if (user % 4 === 0) {
+//     console.log("Leap year");
+// } else {
+//     console.log("Not a leap year");
+// }
+
+// console.log("Thank you :)");
+
+// Q8 Take two numbers from the user. Print the larger one — but if they are equal, print "Equal".
+
+// solution
+
+// let num1 = Number(prompt("Enter your num1: "));
+// let num2 = Number(prompt("Enter your num2: "));
+
+// if(num1 === num2){
+//     console.log("Both are Equal");
+// } else if(num1 > num2) {
+//     console.log("num1 is greater than num2");
+// } else {
+//     console.log("num2 is greater than num1");
+// }
+
+
+// Q9 Take a string from the user. Print it with all spaces removed and in uppercase.
+
+// let str = prompt("Enter your string: ");
+// str = str.toUpperCase();
+// let str2 = "";
+// for(let val of str) {
+//     if(" ".includes(val)) {
+//         continue;
+//     }
+//     str2 += val;
+// }
+// console.log(str2);
+
+// Q11 ready (Arrays):
+// Create an array of 5 numbers. Print each element using a loop.
+
+// solution
+
+// let num = [1, 2, 3, 4, 5];
+
+// for(let val of num){
+//     console.log(val);
+// }
+
+// Q12 ready:
+// Create an array of 5 numbers. Print the first and last element.
+
+// solution
+
+// let num = [1, 2, 3, 4, 5];
+
+// console.log(`first element ${num[0]} and the last element is ${num[4]}`);
+
+// Q13 ready:
+// Create an array [10, 20, 30, 40, 50]. Print its length.
+
+// solution
+
+// let array = [10, 20, 30, 40, 50];
+// console.log(array.length);
