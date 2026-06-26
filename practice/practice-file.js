@@ -669,3 +669,162 @@ more than 10 characters, otherwise print "Short string". */
 
 // let array = [10, 20, 30, 40, 50];
 // console.log(array.length);
+
+// 26 june 2026
+
+// Q1. Take a string from the user. Check if it starts with "Hello". Print "Greeting!" or "Not a Greeting".
+
+// (Hint: startsWith)
+
+// solution
+
+// let str = prompt("Enter your string: ");
+// str = str.toLowerCase();
+// if(str.startsWith("hello")) {
+//     console.log("Greeting!");
+// } else {
+//     console.log("Not a Greeting");
+// }
+
+// Q2. Take num = 87654. Print the first two digits only.
+
+// (Hint: think opposite of % trick)
+
+// solution
+
+// let num = 87654;
+// console.log(Math.floor(num / 1000));
+
+// Q3. Take a number from the user. Print "Even" if even, "Odd" if odd. But if it is 0, print "Zero".
+
+// let num = Number(prompt("Enter your number: "));
+
+// if (num === 0) {
+//     console.log("Zero");
+// } else if (num % 2 === 0){
+//     console.log("even");
+// } else {
+//     console.log("odd");
+// }
+
+// Q4. Take a string from the user. Replace all vowels with "*" and print it.
+
+// solution
+
+// let str = prompt("Enter your string: ");
+// str = str.toLowerCase();
+// let vowelsreturn = "";
+
+// for (let val of str) {
+//     if("aeiou".includes(val)) {
+//         vowelsreturn += "*";
+//     } else {
+//         vowelsreturn += val;
+//     }
+// }
+
+// Q6 Take a string from the user. Print how many words are in it.
+
+// (Hint: count spaces + 1);
+
+// let str = prompt("Enter a string: ");
+// let str1 = str.trim();
+// let count = 1;
+
+// for (let val of str1) {
+//     if(val === " "){
+//         count++;
+//     }
+// }
+
+// console.log(count);
+
+// Q7. Take a number from the user. Print "Positive Even", "Positive Odd", "Negative Even", "Negative Odd", or "Zero".
+
+// let num = Number(prompt("Enter number: "));
+
+// if (num === 0) {
+//     console.log("zero");
+// } else if (num % 2 === 0 && num > 0) {
+//     console.log("Positive even");
+// } else if (num % 2 !== 0 && num > 0) {
+//     console.log("Postive odd");
+// } else if (num % 2 === 0 && num < 0) {
+//     console.log("Negative even");
+// } else {
+//     console.log("Negative odd");
+// }
+
+// Q8. Use a loop to print the sum of all odd numbers from 1 to 100.
+
+// solution
+
+// let sum = 0;
+// for(let i = 1; i <= 100; i++) {
+//     if(i % 2 !== 0) {
+//         sum += i;
+//     }
+// }
+
+// console.log(sum);
+
+
+// Q9. Take a string from the user. Print the middle character.
+
+// (Hint: Math.floor(str.length / 2))
+
+// let str = prompt("Enter your string: ");
+// let middlechar = (Math.floor(str.length/2));
+// console.log(str[middlechar])
+
+// Q10 ready:
+// Take num = 56789. Print each digit separately using a loop.
+
+// let num = 56789;
+// let num2  = num.toString();
+// for(let val of num2) {
+//     console.log(val);
+// }
+
+// Q11 ready (Arrays):
+// Create an array of 5 names. Print each name using a loop with its index number.
+
+// (like: 0: Abdul, 1: Haseeb)
+
+// solutions
+
+// let array1 = ["Abdul", "Haseeb", "FalconH", "Taha", "Osman"];
+
+// for (let i = 0; i <= array1.length - 1; i++) {
+//     console.log(`${i}: ${array1[i]}`);
+// }
+
+// Q12 ready:
+// Create an array [5, 10, 15, 20, 25]. Print the sum of all elements using a loop.
+
+// solution
+
+// let num = [5, 10, 15, 20, 25];
+// let sum = 0;
+
+// for(let val of num) {
+//     sum += val;
+// }
+
+// console.log(sum);
+
+// Q13 ready (last question!):
+// Create an array of 5 numbers. Find and print the largest number without using Math.max.
+
+// solution
+
+// let num = [89, 98, 78, 67, 37];
+// let largest = num[0];
+
+// for (let val of num) {
+//     if(val > largest) {
+//         largest = val;
+//     }
+// }
+
+// console.log(largest);
