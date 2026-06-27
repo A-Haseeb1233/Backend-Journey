@@ -41,7 +41,7 @@
 
 //     for(let i = 0; i >= lowercase.length - 1; i++){
 
-//         if("a,e,i,o,u".inclcudes(lowercase[i])){
+//         if("aeiou".inclcudes(lowercase[i])){
 //             return i;
 //         }
 //     }
@@ -49,16 +49,29 @@
 
 // myfunction("Abdul Haseeb");
 
-const myfunction = (str) => {
-  let lowercase = str.toLowerCase();
-  let count = 0;
-  for (let val of lowercase) {
-    if ("a,e,i,o,u".includes(val)) {
-      count++;
-    }
-  }
-  return count;
-};
+// const myfunction = (str) => {
+//   let lowercase = str.toLowerCase();
+//   let count = 0;
+//   for (let val of lowercase) {
+//     if ("aeiou".includes(val)) {
+//       count++;
+//     }
+//   }
+//   return count;
+// };
 
-let val = myfunction("Abdul Haseeb");
-console.log(`In this string ${val} vowels are present`);
+// let val = myfunction("Abdul Haseeb");
+// console.log(`In this string ${val} vowels are present`);
+
+// const  printHello = (msg) => {
+//   return msg;
+// }
+
+// console.log(printHello("Hello World"));
+
+// const squareNum = (a, b) => a ** b;
+
+// console.log(squareNum(4,2));
+
+// const strcontcat = (str1,str2) => str1.concat(str2);
+// console.log(strcontcat("Hello ","FalconH"));

@@ -828,3 +828,178 @@ more than 10 characters, otherwise print "Short string". */
 // }
 
 // console.log(largest);
+
+// 27 june 2026
+
+// Q1. Create an array of 5 numbers. Print only the even numbers from it using a loop.
+
+// let num = [76, 89, 34, 90, 23];
+
+// for(let val of num) {
+//     if (val % 2 === 0){
+//         console.log(val);
+//     }
+// }
+
+// second method 
+
+// let num = [89, 67, 56, 34, 90];
+
+// for (let i = 0; i < num.length; i++) {
+//     if (num[i] % 2 === 0) {
+//         console.log(num[i]);
+//     }
+// }
+
+
+// Q2. Take a string from the user. Count how many consonants are in it.
+
+// (consonants = letters that are NOT vowels)
+
+// solution
+
+// let str = prompt("Enter your string: ");
+// str = str.toLowerCase();
+// let str2 = "";
+// for(let val of str) {
+//     if ("aeiou".includes(val)){
+//         continue;
+//     } else {
+//         str2 += val;
+//     }
+// }
+
+// console.log(str2);
+
+// let str = prompt("Enter your string: ");
+// str = str.toLowerCase();
+// let str2 = "";
+// for (let i = 0; i < str.length; i++) {
+//     if ("aeiou ".includes(str[i])) {
+//         continue;
+//     } else {
+//         str2 += str[i];
+//     }
+// }
+
+// console.log(str2);
+
+// Q3. Create an array of 5 numbers. Find and print the smallest number without using Math.min.
+
+// solution
+
+// let num = [34, 78, 98, 76, 86];
+// let smallest = num[0];
+
+// for (let val of num) {
+//     if (val < smallest) {
+//         smallest = val;
+//     }
+// }
+
+// console.log(smallest);
+
+// second method
+
+// let num = [34, 78, 98, 76, 86];
+// let smallest = num[0];
+
+// for (let i = 0; i < num.length; i++) {
+//     if (num[i] < smallest) {
+//         smallest = num[i];
+//     }
+// }
+
+// console.log(smallest);
+
+
+// Take num = 1234567. Print the middle digit.
+
+// solution
+
+// let num = 1234567;
+// num = num.toString().length;
+
+// console.log(`${(num + 1)/2}`);
+
+// correct method
+
+// let num = 1234567;
+// let str = num.toString();
+// let middleIdex = str.length/2;
+// console.log(str[middleIndex])
+
+// Q5. Create an array ["apple", "banana", "mango", "grape", "kiwi"]. Print only fruits that 
+// have more than 5 letters.
+
+// solution
+
+// let fruits = ["apple", "banana", "mango", "grape", "kiwi"];
+
+// for (let val of fruits) {
+//     if (val.length > 5) {
+//         console.log(val);
+//     }
+// }
+
+// Q7. Take a string from the user. Print each word on a separate line.
+
+// solutionn
+
+// let str = prompt("Enter your string: ");
+// let word = "";
+// for (let val of str) {
+//    if(val === " ") {
+//     console.log(word); // word print karo
+//     word = "";         // reset karo
+// } else {
+//     word += val;
+// }
+// }
+
+// Q8 ready:
+// Create an array of 5 numbers. Print sum and average.
+
+// solution
+
+// let num = [23, 79, 90, 76, 46];
+
+// let sum = 0;
+// let average;
+// for (let i = 0; i < num.length; i++) {
+//     // calculate sum
+//     sum += num[i];
+// }
+// console.log(sum);
+
+// average = sum / num.length ;
+// console.log(average);
+
+// Q9 ready:
+// Take two strings from the user. Print the longer one. If equal length, print "Same Length".
+
+// solution
+
+    // let str1 = prompt ("Enter first string: ");
+    // let str2 = prompt ("Enter second string: ");
+
+    // if (str1.length === str2.length) {
+    //     console.log("Same lenght");
+    // } else if (str1.length > str2.length) {
+    //     console.log("first string is longer one");
+    // } else {
+    //     console.log("Second string is longer one");
+    // }
+
+//     Q10 ready:
+// Take a string from the user. Print "Starts and Ends Same" if first 
+// and last character are same, otherwise "Different".
+
+// solution
+
+let str = prompt("Enter string: ");
+for(let val of str) {
+    if("abcdefghijklmnopqrstvwxyz".includes(val)){
+        // pending solve later
+    }
+}
