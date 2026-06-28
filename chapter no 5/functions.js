@@ -91,4 +91,90 @@
 // console.log(print);
 
 
+// let numbers = [2, 3, 4, 5];
 
+// numbers.forEach(function(number){
+//     console.log(`${number*number}`)
+// })
+
+// let numbers = [1, 2, 3, 4, 5, 6];
+
+// numbers.forEach(function(number){
+//     if(number % 2 === 0){
+//         console.log(number);
+//     }
+// })
+
+// let names = ["Ali", "Haseeb", "Zara", "Muhammad", "Sara"];
+
+// names.forEach(function(name, index){
+//     if(index % 2 !== 0) {
+//         console.log(name)
+//     }
+// })
+
+
+// let names = ["Ali", "Haseeb", "Zara", "Muhammad", "Sara", "Abdullah"];
+
+// names.forEach(function(name){
+//     if(name.length > 5){
+//         console.log(name)
+//     }
+// })
+
+// let numbers = [1, 2, 3, 4, 5];
+// let sum = 0;
+// numbers.forEach(function(number){
+//     sum += number;
+// })
+
+// console.log(sum);
+
+// const student = {
+//     name: "Student",
+//     // more 
+// }
+
+// let students = [
+//     {name: "Ali", marks: 45},
+//     {name: "Haseeb", marks: 80},
+//     {name: "Zara", marks: 55},
+//     {name: "Sara", marks: 30},
+//     {name: "Muhammad", marks: 90}
+// ];
+
+
+// students.forEach(function(student){
+//     if(student.marks >= 80){
+//         console.log(`${student.name} - A`);
+//     } else if (student.marks >= 60 && student.marks <= 79) {
+//         console.log(`${student.name} - B`);
+//     } else if (student.marks >= 50 && student.marks <= 59){
+//         console.log(`${student.name} - C`);
+//     } else {
+//         console.log(`${student.name} - Fail`)
+//     }
+// })
+
+
+
+
+
+
+// students.forEach(function(student){
+//     if(student.marks > 50) {
+//         console.log(student.name)
+//     }
+// })
+
+
+
+let students = [
+    {name: "Ali", marks1: 45, marks2: 60, marks3: 70},
+    {name: "Haseeb", marks1: 80, marks2: 90, marks3: 85},
+    {name: "Zara", marks1: 55, marks2: 40, marks3: 60},
+];
+
+students.forEach(function(student){
+    console.log(`${student.name} - ${student.marks1 + student.marks2 + student.marks3}`);
+})
