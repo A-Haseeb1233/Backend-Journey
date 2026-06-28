@@ -75,3 +75,20 @@
 
 // const strcontcat = (str1,str2) => str1.concat(str2);
 // console.log(strcontcat("Hello ","FalconH"));
+
+// function abc () {
+//     console.log("Abdul Haseeb");
+// }
+
+// const abcd = () => {
+//     // do some work 
+//     // return or console.log
+// }
+
+// // same 
+// const abd = (a , b) => a * b;
+// let print = abd(3, 4);
+// console.log(print);
+
+
+

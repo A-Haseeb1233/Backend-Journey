@@ -1,4 +1,4 @@
-// my practice file 
+// my practice file
 // 21 june 2026
 
 // Q1 Ek variable banao jisme tumhara naam ho, aur console mein print karo:
@@ -58,7 +58,7 @@
 4
 5*/
 
-// solution 
+// solution
 
 // for(let i = 1; i <= 5; i++){
 //     console.log(i);
@@ -121,7 +121,7 @@
 
 // let a = 255;
 // let b = 8;
-// console.log(Math.floor(a/b)); 
+// console.log(Math.floor(a/b));
 
 // Q13. Take a number from the user. Print the result of dividing it by 6 — but only the whole number part (no decimals).
 
@@ -195,7 +195,7 @@ word. (Hint: split, map... or think creatively!) */
 //     console.log(`7 * ${i} = ${i * 7}`);
 // }
 
-// /* Q19. Take a string from the user and check if it contains the 
+// /* Q19. Take a string from the user and check if it contains the
 // word "backend". Print "Found!" or "Not Found!". */
 
 // // solution
@@ -292,7 +292,6 @@ last name. Print them together in uppercase like: "ABDUL HASEEB" */
 
 // console.log(count);
 
-
 // Q5. Take principal = 5000, rate = 8, time = 3. Calculate and print the simple interest.
 
 // (Formula: SI = principal * rate * time / 100)
@@ -326,7 +325,6 @@ last name. Print them together in uppercase like: "ABDUL HASEEB" */
 // for (let i = struser.length - 1; i >= 0; i--){
 //     console.log(struser[i])
 // }
- 
 
 // Q8. Take num = 9. Print its square and cube.
 
@@ -349,8 +347,6 @@ last name. Print them together in uppercase like: "ABDUL HASEEB" */
 //         console.log(i)
 //     }
 // }
-
-
 
 /* Q10. Take a string from the user. Print "Long string" if it has 
 more than 10 characters, otherwise print "Short string". */
@@ -438,7 +434,7 @@ more than 10 characters, otherwise print "Short string". */
 //     console.log(val);
 // }
 
-// Q6. Take salary = 85000. If salary is above 100000, print "High". If between 
+// Q6. Take salary = 85000. If salary is above 100000, print "High". If between
 // 50000 and 100000, print "Medium". Otherwise print "Low".
 
 // solution
@@ -465,7 +461,7 @@ more than 10 characters, otherwise print "Short string". */
 // for question request we use loop
 
 // let str = "Hello World";
- 
+
 // for (let val of str) {
 //     if(val === "o"){
 //         console.log(val.replace("o", 0));
@@ -500,7 +496,7 @@ more than 10 characters, otherwise print "Short string". */
 
 // 25 june 2026
 
-// Q1. Take a string from the user. Print "Palindrome" if it reads the same forwards and 
+// Q1. Take a string from the user. Print "Palindrome" if it reads the same forwards and
 // backwards, otherwise "Not Palindrome".
 
 // (Example: "madam" → Palindrome)
@@ -569,7 +565,7 @@ more than 10 characters, otherwise print "Short string". */
 //         let uppercase = "";
 //         uppercase += str[i];
 //         console.log(`uppercase at index ${i} ${uppercase}`);
-//     }    
+//     }
 // }
 
 // Q6 karo:
@@ -627,7 +623,6 @@ more than 10 characters, otherwise print "Short string". */
 // } else {
 //     console.log("num2 is greater than num1");
 // }
-
 
 // Q9 Take a string from the user. Print it with all spaces removed and in uppercase.
 
@@ -768,7 +763,6 @@ more than 10 characters, otherwise print "Short string". */
 
 // console.log(sum);
 
-
 // Q9. Take a string from the user. Print the middle character.
 
 // (Hint: Math.floor(str.length / 2))
@@ -841,7 +835,7 @@ more than 10 characters, otherwise print "Short string". */
 //     }
 // }
 
-// second method 
+// second method
 
 // let num = [89, 67, 56, 34, 90];
 
@@ -850,7 +844,6 @@ more than 10 characters, otherwise print "Short string". */
 //         console.log(num[i]);
 //     }
 // }
-
 
 // Q2. Take a string from the user. Count how many consonants are in it.
 
@@ -912,7 +905,6 @@ more than 10 characters, otherwise print "Short string". */
 
 // console.log(smallest);
 
-
 // Take num = 1234567. Print the middle digit.
 
 // solution
@@ -929,7 +921,7 @@ more than 10 characters, otherwise print "Short string". */
 // let middleIdex = str.length/2;
 // console.log(str[middleIndex])
 
-// Q5. Create an array ["apple", "banana", "mango", "grape", "kiwi"]. Print only fruits that 
+// Q5. Create an array ["apple", "banana", "mango", "grape", "kiwi"]. Print only fruits that
 // have more than 5 letters.
 
 // solution
@@ -980,26 +972,189 @@ more than 10 characters, otherwise print "Short string". */
 
 // solution
 
-    // let str1 = prompt ("Enter first string: ");
-    // let str2 = prompt ("Enter second string: ");
+// let str1 = prompt ("Enter first string: ");
+// let str2 = prompt ("Enter second string: ");
 
-    // if (str1.length === str2.length) {
-    //     console.log("Same lenght");
-    // } else if (str1.length > str2.length) {
-    //     console.log("first string is longer one");
-    // } else {
-    //     console.log("Second string is longer one");
-    // }
+// if (str1.length === str2.length) {
+//     console.log("Same lenght");
+// } else if (str1.length > str2.length) {
+//     console.log("first string is longer one");
+// } else {
+//     console.log("Second string is longer one");
+// }
 
 //     Q10 ready:
-// Take a string from the user. Print "Starts and Ends Same" if first 
+// Take a string from the user. Print "Starts and Ends Same" if first
 // and last character are same, otherwise "Different".
 
 // solution
 
-let str = prompt("Enter string: ");
-for(let val of str) {
-    if("abcdefghijklmnopqrstvwxyz".includes(val)){
-        // pending solve later
-    }
-}
+// let str = prompt("Enter string: ");
+// for(let val of str) {
+//     if("abcdefghijklmnopqrstvwxyz".includes(val)){
+//         // pending solve later
+//     }
+// }
+
+// 28 june 2026
+
+// Q1. Create an array of 5 numbers. Print them in reverse order using a loop.
+
+// solution
+
+// let num = [1, 2, 3, 4, 5];
+
+// for (let i = num.length; i >= 0; i--) {
+//     console.log(num[i]);
+// }
+
+// Q2. Take a string from the user. Print "All Uppercase" if every
+// letter is uppercase, otherwise "Not All Uppercase".
+
+// solution
+
+// let str = prompt("Enter your string: ");
+// let allUper = true;
+// for (let val of str) {
+//   if ("abcdefghijklmnopqrstvwxyz".includes(val)) {
+//     alluper = false;
+//   }
+// }
+
+// if(alluper) {
+//     console.log("All Uppercase");
+// } else {
+//     console.log("Not All uppercase");
+// }
+
+// yesterday pending one
+
+// Take a string from the user. Print "Starts and Ends Same" if
+//  first and last character are same, otherwise "Different".
+
+// solution
+
+// let str = prompt("Enter your string");
+// let strInLower = str.toLowerCase();
+
+// if (strInLower[0] === strInLower[strInLower.length -1]){
+//     console.log(`Starts and Ends Same`)
+// } else {
+//     console.log(`Different`);
+// }
+
+// Q3 ready:
+// Create an array [10, 20, 30, 40, 50]. Multiply every element by 2 and print each result.
+
+// solution
+
+// let num = [10, 20, 30, 40, 50];
+
+// for(let i = 0; i < num.length; i++) {
+//     let multiRes = num[i] * 2;
+//     console.log(multiRes);
+// }
+
+// Q5 ready:
+// Take a string from the user. Print only the unique characters (no repeats).
+
+// solution
+
+// let str = prompt("Enter your string: ");
+// str = str.toLowerCase();
+// let result = "";
+
+// for (let val of str) {
+//     if(result.includes(val)){
+//         continue;
+//     } else {
+//         result += val;
+//     }
+// }
+
+// console.log(result);
+
+// Q6 ready:
+// Create an array of 5 numbers. Print how many numbers are greater than 50.
+
+// solution
+
+// let num = [98, 34, 78, 56, 23];
+// let count = 0;
+// for(let val of num) {
+//     if (val > 50) {
+//         count++;
+//     }
+// }
+
+// console.log(count);
+
+// let num = [98, 34, 78, 56, 23];
+
+// for(let i = 0; i < num.length; i++) {
+//     if (num[0] > 50) {
+//         i++
+//     }
+// }
+
+// Q7 ready:
+// Take a string from the user. Count how many words start with a vowel.
+
+// solution
+
+// let str = prompt("Enter string: "); // user enter string here
+// str = str.toLowerCase();
+// let count = 0; // trace vowels words
+// let word = ""; // add letter and make word complete
+
+// for(let val of str) {
+//     if(val === " ") {
+//         if("aeiou".includes(word[0])){
+//             count++;
+//         }
+//         word ="";
+//     } else {
+//         word += val;
+//     }
+// }
+
+// if("aeiou".includes(word[0])){
+//     count++;
+// }
+
+// console.log(count);
+
+
+// Q8 ready:
+// Create an array ["JS", "Python", "Java", "C++", "Rust"]. Print only languages that start with "J".
+
+// solution
+
+// let lang = ["JS", "Python", "Java", "C++", "Rust"];
+// for(let val of lang) {
+//     if(val[0] === "J") {
+//         console.log(val);
+//     }
+// }
+
+// Q10 ready:
+// Create an array of 5 numbers. Print the second largest number.
+
+// let arr = [34, 56, 90, 98, 40];
+// let largest = arr[0];
+// for(let val of arr) {
+//     if(val > largest) {
+//         largest = val;
+//     }
+// }
+
+// console.log(largest);
+
+// let = second_largest = -Infinity;
+// for(let val of arr) {
+//     if(val > second_largest && val < largest) {
+//         second_largest = val
+//     }
+// }
+
+// console.log(second_largest)
