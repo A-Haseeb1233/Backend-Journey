@@ -332,7 +332,7 @@ const products = [
 ];
 
 let totalPrice = products.reduce((pre, curr) => {
-    return pre + curr.price
+    return it + curr.price
 },0)
 
 console.log(totalPrice)
