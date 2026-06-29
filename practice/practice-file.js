@@ -1158,3 +1158,200 @@ more than 10 characters, otherwise print "Short string". */
 // }
 
 // console.log(second_largest)
+
+// 29 june 2026
+
+// Q1. Create an array of 5 numbers. Print only numbers that are between 20 and 80.
+
+// solution
+
+// let arr = [23, 12, 87, 10, 45];
+// arr.forEach(function(array){
+// 	if(array > 20 && array < 80){
+// 	console.log(array);
+// 	}
+// })
+
+// second method
+
+// let arr = [23, 12, 87, 10, 45];
+// for(let val of arr) {
+// 	if(val > 20 && val < 80) {
+// 	console.log(val);
+// 	}
+// }
+
+// third method
+
+// let arr = [23, 12, 87, 10, 45];
+// for(let i = 0; i < arr.length; i++) {
+// 	if(arr[i] > 20 && arr[i] < 80) {
+// 	console.log(arr[i]);
+// 	}
+// }
+
+// this question also solve using filter method but i dont comfortable in that method right now
+
+// Q2. Take a string from the user. Print "Contains Number" if it has any digit, otherwise "No Number".
+
+// solution
+
+// let str = prompt("Enter string: ");
+// let found = false;
+// for(let val of str) {
+// 	if("0123456789".includes(val)){
+// 	 found = true
+// 	}
+// }
+
+// console.log(found ? "Contain number" : "not contain number")
+
+// Q3. Create an array ["cat", "dog", "elephant", "ant", "tiger"]. Print only animals whose name has odd number of letters.
+
+// solution
+
+// let animals = ["cat", "dog", "elephant", "ant", "tiger"];
+// for(let val of animals) {
+// 	if(val.length % 2 !== 0){
+// 	console.log(val);
+// 	}
+// }
+
+// second method 
+
+// let animals = ["cat", "dog", "elephant", "ant", "tiger"];
+// // this line is issue 
+// for(let i = 0; i < animals.length; i++) {
+// 	if(animals[i].lenght % 2 !== 0){
+// 	console.log(animals[i])
+// 	}
+// }
+
+// Q4. Take a string from the user. Print how many times the letter "e" appears in it.
+
+// solution
+
+// let str = prompt("Enter string");
+// str = str.toLowerCase();
+// let count = 0;
+// for(let val of str) {
+// 	if(val === "e"){
+// 	count ++;
+// 	}
+// }
+
+// console.log(count);
+
+//second method
+
+// let str = prompt("Enter string: ");
+// str = str.toLowerCase();
+// let count = 0;
+// for(let i = 0; i < str.length; i++){
+// 	if(str[i] === "e"){
+// 	count ++;
+// 	}
+// }
+
+// console.log(count);
+
+// Q5. Create an array of 5 numbers. Print all numbers that are divisible by both 2 and 4.
+
+// solution
+
+// let arr = [23, 89, 56, 40, 36];
+// for(let val of arr) {
+// 	if(val % 4 === 0 && val % 2 === 0){
+// 	console.log(val);
+// 	}
+// }
+
+// second mehtod
+
+// let arr = [23, 89, 56, 40, 36];
+// for(let i = 0; i < arr.length; i++) {
+// 	if(arr[i] % 4 === 0 && arr[i] % 2 === 0){
+// 	console.log(arr[i]);
+// 	}
+// }
+
+// third mehtod
+
+// let arr = [23, 89, 56, 40, 36];
+// arr.forEach(function(arrs){
+// 	if(arrs % 2 === 0 && arrs % 4 === 0){
+// 	console.log(arrs)
+// 	}
+// })
+
+
+// Q6. Take a string from the user. Print "All Vowels" if every character is a vowel, otherwise "Not All Vowels".
+
+// solution
+
+// let str = prompt("Enter string: ");
+// str = str.toLowerCase();
+// let allvowel = true;
+// for(let val of str) {
+// 	if("aeiou".includes(val)){
+// 	allvowel = false;
+// 	}
+// }
+
+// console.log(allvowel ? "all vowels" : "not all vowels");
+// Q7. Create an array [5, 10, 15, 20, 25]. Print the product of all elements.
+
+// solution
+
+// let arr = [5, 10,  15, 20, 25];
+// let product = 1;
+// for(let val of arr){
+// 	product = product * val;
+// }
+
+// console.log(product);
+
+// Q8. Take a number from the user. Print all numbers from 1 to that number that are not divisible by 3.
+
+// solution
+
+// let num = Number(prompt("Enter number: "));
+
+// for(let i = 0; i <= num; i++){
+// 	if(i % 3 === 0) {
+// 	continue;
+// 	} else{
+// 	console.log(i);
+// 	}
+// }
+
+// Q9. Create an array of 5 strings. Print the longest string.
+
+// solution
+
+// let strarr = ["cat", "honey badger", "tiger", "wolf", "Falcon"];
+// let longest = "";
+// for(let val of strarr) {
+// 	if(val.length > longest.length){
+// 	longest = val;
+// 	}
+// }
+
+// console.log(longest);
+// Q10. Take a string from the user. Print "Pangram" if it contains every letter of 
+// the alphabet at least once, otherwise "Not Pangram".
+
+// solution
+
+// let str = prompt("Enter string: ");
+// str = str.toLowerCase();
+// let allLetterContain = true;
+// for(let val of "abcdefghijklmnopqrstuvwxyz") {
+//    
+//         if(!str.inlcudes(val)){
+//      allLetterContain = true;
+//
+//     }
+// }
+
+// console.log(allLetterContain ? "All letter contain" : "not contain");

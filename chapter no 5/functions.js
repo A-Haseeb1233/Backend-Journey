@@ -169,12 +169,46 @@
 
 
 
-let students = [
-    {name: "Ali", marks1: 45, marks2: 60, marks3: 70},
-    {name: "Haseeb", marks1: 80, marks2: 90, marks3: 85},
-    {name: "Zara", marks1: 55, marks2: 40, marks3: 60},
-];
+// let students = [
+//     {name: "Ali", marks1: 45, marks2: 60, marks3: 70},
+//     {name: "Haseeb", marks1: 80, marks2: 90, marks3: 85},
+//     {name: "Zara", marks1: 55, marks2: 40, marks3: 60},
+// ];
 
-students.forEach(function(student){
-    console.log(`${student.name} - ${student.marks1 + student.marks2 + student.marks3}`);
-})
+// students.forEach(function(student){
+//     console.log(`${student.name} - ${student.marks1 + student.marks2 + student.marks3}`);
+// })
+
+
+// Level 1: Basic Arrow Functions
+
+// Q1. Ek arrow function banao jo do numbers ko add kare.
+
+// const add = (a, b) => a + b; 
+
+
+// const numberChecker = (num) => {
+//   let val = true;
+//   if(num % 2 === 0){
+//   console.log(val)
+//   } else {
+//   val = false
+//   console.log(val)
+//   }
+// }
+
+// console.log(numberChecker(78));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
