@@ -1355,3 +1355,134 @@ more than 10 characters, otherwise print "Short string". */
 // }
 
 // console.log(allLetterContain ? "All letter contain" : "not contain");
+
+
+// 30 june 2026
+
+// Q1. Write a function square(num) that returns the square of a number. Call it with 5.
+
+// solution
+
+// function square(num) {
+// 	return num * num
+// }
+
+// let result = square(5);
+// console.log(result)
+
+// second method
+
+// const square = (num) => console.log(num*num);
+// square(5);
+
+
+
+// Q2. Write an arrow function isEven(num) that returns true/false. Test with 7.
+
+// solution
+
+// const isEven = (num) => num % 2 === 0 ? true : false
+
+// console.log(isEven(7))
+
+
+// Q3. Create an array [10, 20, 30, 40, 50]. Use map() to create a new array with each number multiplied by 3.
+
+// solution
+
+// let arr = [10, 20, 30, 40, 50];
+
+// let newArr = arr.map((val) => {
+// 	return val * 3
+// })
+
+// console.log(newArr)
+
+
+
+// Q4. Create an array [5, 12, 8, 19, 3]. Use filter() to get only numbers greater than 10.
+
+// solution
+
+// let arr = [5, 12, 8, 19, 3]
+
+// let newArr = arr.filter((val) => {
+// 	return val > 10
+// })
+
+// console.log(newArr);
+
+
+// Q5. Create an array [1, 2, 3, 4, 5]. Use reduce() to find the sum of all elements.
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let sum = arr.reduce((pre , curr) => {
+// 	return pre + curr
+// })
+
+// console.log(sum);
+
+// Q6. Write a function greet(name) that returns "Hello, [name]!". Call it with your name.
+
+// solution
+
+// function greet(name) {
+// 	return `Hello, ${name}!`;
+// }
+
+// console.log(greet("Haseeb"))
+
+// Q7. Create an array of 5 strings. Use filter() to get only strings with more than 4 characters.
+
+// solution
+
+// let arr = ["cat", "tiger", "Falcon", "Lion", "Dog"];
+
+// let newArr = arr.filter((val) => {
+// 	return val.length > 4
+// })
+
+// console.log(newArr);
+
+// Q8. Write an arrow function cube(num) that returns the cube of a number. Test with 4.
+
+// solution
+
+// const cube = (num) => {
+// 	return num ** 3;
+// }
+
+// console.log(cube(4));
+
+// Q9. Create an array [2, 4, 6, 8, 10]. Use map() to create a new array where each number is divided by 2.
+
+// solution
+
+// let arr = [2, 4, 6, 8, 10];
+
+// let newArr = arr.map((val) => {
+// 	return val / 2
+// })
+
+// console.log(newArr)
+
+// Q10. Create an array [10, 20, 30, 40, 50]. Use reduce() to find the largest number (without Math.max).
+
+// solution
+
+// let arr = [10, 20, 30, 40, 50];
+
+// let newArr = arr.reduce((pre, curr) => {
+// 	if(pre < curr) {
+// 	return curr
+// 	} else {
+// 	return pre
+// 	}
+// }, 0)
+
+
+// console.log(newArr);
+
