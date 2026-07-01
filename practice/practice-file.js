@@ -1124,7 +1124,6 @@ more than 10 characters, otherwise print "Short string". */
 
 // console.log(count);
 
-
 // Q8 ready:
 // Create an array ["JS", "Python", "Java", "C++", "Rust"]. Print only languages that start with "J".
 
@@ -1217,10 +1216,10 @@ more than 10 characters, otherwise print "Short string". */
 // 	}
 // }
 
-// second method 
+// second method
 
 // let animals = ["cat", "dog", "elephant", "ant", "tiger"];
-// // this line is issue 
+// // this line is issue
 // for(let i = 0; i < animals.length; i++) {
 // 	if(animals[i].lenght % 2 !== 0){
 // 	console.log(animals[i])
@@ -1284,7 +1283,6 @@ more than 10 characters, otherwise print "Short string". */
 // 	}
 // })
 
-
 // Q6. Take a string from the user. Print "All Vowels" if every character is a vowel, otherwise "Not All Vowels".
 
 // solution
@@ -1338,7 +1336,7 @@ more than 10 characters, otherwise print "Short string". */
 // }
 
 // console.log(longest);
-// Q10. Take a string from the user. Print "Pangram" if it contains every letter of 
+// Q10. Take a string from the user. Print "Pangram" if it contains every letter of
 // the alphabet at least once, otherwise "Not Pangram".
 
 // solution
@@ -1347,7 +1345,7 @@ more than 10 characters, otherwise print "Short string". */
 // str = str.toLowerCase();
 // let allLetterContain = true;
 // for(let val of "abcdefghijklmnopqrstuvwxyz") {
-//    
+//
 //         if(!str.inlcudes(val)){
 //      allLetterContain = true;
 //
@@ -1355,7 +1353,6 @@ more than 10 characters, otherwise print "Short string". */
 // }
 
 // console.log(allLetterContain ? "All letter contain" : "not contain");
-
 
 // 30 june 2026
 
@@ -1375,8 +1372,6 @@ more than 10 characters, otherwise print "Short string". */
 // const square = (num) => console.log(num*num);
 // square(5);
 
-
-
 // Q2. Write an arrow function isEven(num) that returns true/false. Test with 7.
 
 // solution
@@ -1384,7 +1379,6 @@ more than 10 characters, otherwise print "Short string". */
 // const isEven = (num) => num % 2 === 0 ? true : false
 
 // console.log(isEven(7))
-
 
 // Q3. Create an array [10, 20, 30, 40, 50]. Use map() to create a new array with each number multiplied by 3.
 
@@ -1398,8 +1392,6 @@ more than 10 characters, otherwise print "Short string". */
 
 // console.log(newArr)
 
-
-
 // Q4. Create an array [5, 12, 8, 19, 3]. Use filter() to get only numbers greater than 10.
 
 // solution
@@ -1411,7 +1403,6 @@ more than 10 characters, otherwise print "Short string". */
 // })
 
 // console.log(newArr);
-
 
 // Q5. Create an array [1, 2, 3, 4, 5]. Use reduce() to find the sum of all elements.
 
@@ -1484,5 +1475,152 @@ more than 10 characters, otherwise print "Short string". */
 // }, 0)
 
 
+// 1 july 2026
+
+// Q1. Write a function isOdd(num) that returns true if number is odd. Use it to filter odd numbers from [1, 2, 3, 4, 5, 6, 7, 8, // 9, 10].
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// function isOdd (num) {
+// 	if(num % 2 !== 0){
+// 	return true;
+// 	} else {
+// 	return false;
+// 	}
+// }
+
+// let finalArr = arr.filter((val) => isOdd(val));
+// console.log(finalArr);
+
+
+
+// Q2. Take a string from the user. Write an arrow function countVowels(str) that returns the count of vowels in it.
+
+// solution
+
+// let str = prompt("Enter string: ");
+// str = str.toLowerCase();
+// const vowelCount = (str) => {
+//   let count = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if ("aeiou".includes(str[i])) {
+//       count++;
+//     }
+//   }
+//   return count
+// };
+
+
+// console.log(vowelCount(str))
+
+
+
+
+// Q3. Create an array [15, 22, 8, 41, 36, 73, 19]. Use filter() to get numbers greater than 20, then use map() to multiply 
+ // each by 2.
+
+// solution
+
+// let arr = [15, 22, 8, 41, 36, 73, 19]
+
+// let filterArr = arr.filter((val) => val > 20)
+
+// let mulNum = filterArr.map((val) => val * 2)
+// console.log(mulNum);
+
+
+// Q4. Write a function celsiusToFahrenheit(c) that converts Celsius to Fahrenheit.
+
+// solution
+
+// function celsiusToFahrenheit (c) {
+// 	let fahrenheit = (c * 9/5) + 32;
+// 	return fahrenheit
+// }
+
+// console.log(celsiusToFahrenheit(100));
+
+// (Formula: F = C * 9/5 + 32). Call it with 100.
+// Q5. Create an array [3, 7, 2, 9, 1, 5]. Use reduce() to find the product of all elements.
+
+// solution
+
+// let arr = [3, 7, 2, 9, 1, 5];
+
+// let newArr = arr.reduce((pre, curr) => {
+// 	return pre * curr
+// }, 1)
+
 // console.log(newArr);
 
+// Q6. Write an arrow function isPalindrome(str) that returns true if string is palindrome. Test with "madam".
+
+// let str = prompt("Enter string: ");
+// str = str.toLowerCase();
+// const isPalindrome = (str) => {
+// 	let reversed = "";
+// 	for(let i = str.length - 1; i >= 0; i--) {
+// 	reversed += str[i];
+// 	}
+//     if(str === reversed) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(isPalindrome(str));
+// Q7. Create an array ["apple", "banana", "kiwi", "mango", "strawberry"]. Use map() to create a new array with each fruit namein // upper case.
+
+// solution
+// let arr = ["apple", "banana", "kiwi", "mango", "strawberry"];
+
+// let newArr = arr.map((val) => {
+// 	return val.toUpperCase();
+// });
+
+// console.log(newArr);
+
+// Q8. Write a function sumOfDigits(num) that returns the sum of all digits of a number.
+
+// solution
+
+// function sumOfDigits(num) {
+// 	let sum = 0;
+// 	num = num.toString();
+// 	for(let val of num) {
+// 	let nums = Number(val)
+// 	sum += nums
+// 	}
+// return sum
+// }
+
+// console.log(sumOfDigits(1234))
+
+// (Example: 123 → 1+2+3 = 6)
+// Q9. Create an array [10, 25, 33, 48, 52, 67]. Use filter() to get only odd numbers, then use reduce() to find their sum.
+
+// solution
+
+// let arr = [10, 25, 33, 48, 52, 67];
+
+// let oddArr = arr.filter((val) => val % 2 !== 0)
+// let sumOfOdd = oddArr.reduce((pre, curr) => {
+// 	return pre + curr
+// }, 0)
+
+// console.log(sumOfOdd);
+
+// Q10. Write an arrow function repeatString(str, n) that returns the string repeated n times.
+// (Example: repeatString("ha", 3) → "hahaha")
+
+// const repeatString = (str, n) => {
+// let result = "";
+// for(let i = 1; i <= n; i++) {
+// 	result += str
+// }
+// return result;
+// }
+
+// console.log(repeatString("ha", 3));

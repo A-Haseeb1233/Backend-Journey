@@ -1,1 +1,3 @@
-alert("Hello, Falcon!")
+// alert("Hello, Falcon!")
+
+console.log(window);
