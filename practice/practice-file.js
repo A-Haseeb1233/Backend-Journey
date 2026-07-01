@@ -1624,3 +1624,60 @@ more than 10 characters, otherwise print "Short string". */
 // }
 
 // console.log(repeatString("ha", 3));
+
+
+// Q1. Write an arrow function multiply(a, b) that returns the product of two numbers. Call it with 6 and 7.
+
+// solution
+
+// const multiply = (a, b) => a * b;
+// let result = multiply(6 , 7);
+// console.log(result);
+
+// console.log(multiply(6, 7);)
+
+// Q2. Create an array [1, 2, 3, 4, 5]. Use map() to create a new array where each number is squared.
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5];
+// let squared = arr.map((val) => val * val);
+// console.log(squared);
+
+// Q3. Write a function isPositive(num) that returns true if number is positive. Use it with 
+// filter() on [-3, 5, -1, 8, -2, 4].
+
+// solution
+
+
+// let arr = [-3, 5, -1, 8, -2, 4];
+
+// function isPositive(num) {
+//     return num >= 0;
+// }
+
+// let newArr = arr.filter(isPositive) 
+// console.log(newArr);
+
+// Q4. Create an array ["hello", "world", "js", "code"]. Use filter() to get words with more 
+// than 3 characters, then map() to uppercase them.
+
+// solution
+
+// let arr = ["hello", "world", "js", "code"];
+// let more3Char = arr.filter((val) => val.length > 3);
+// let finalArr = more3Char.map((val) => val.toUpperCase())
+// console.log(finalArr);
+
+// Q5. Create an array [10, 20, 30, 40, 50]. Use reduce() to find the average.
+
+// solution
+
+// let arr = [10, 20, 30, 40, 50];
+
+// let sum = arr.reduce((pre, curr) => {
+//     return pre + curr;
+// })
+
+// let average = sum / arr.length;
+// console.log(average);
