@@ -1474,7 +1474,6 @@ more than 10 characters, otherwise print "Short string". */
 // 	}
 // }, 0)
 
-
 // 1 july 2026
 
 // Q1. Write a function isOdd(num) that returns true if number is odd. Use it to filter odd numbers from [1, 2, 3, 4, 5, 6, 7, 8, // 9, 10].
@@ -1494,8 +1493,6 @@ more than 10 characters, otherwise print "Short string". */
 // let finalArr = arr.filter((val) => isOdd(val));
 // console.log(finalArr);
 
-
-
 // Q2. Take a string from the user. Write an arrow function countVowels(str) that returns the count of vowels in it.
 
 // solution
@@ -1512,14 +1509,10 @@ more than 10 characters, otherwise print "Short string". */
 //   return count
 // };
 
-
 // console.log(vowelCount(str))
 
-
-
-
-// Q3. Create an array [15, 22, 8, 41, 36, 73, 19]. Use filter() to get numbers greater than 20, then use map() to multiply 
- // each by 2.
+// Q3. Create an array [15, 22, 8, 41, 36, 73, 19]. Use filter() to get numbers greater than 20, then use map() to multiply
+// each by 2.
 
 // solution
 
@@ -1529,7 +1522,6 @@ more than 10 characters, otherwise print "Short string". */
 
 // let mulNum = filterArr.map((val) => val * 2)
 // console.log(mulNum);
-
 
 // Q4. Write a function celsiusToFahrenheit(c) that converts Celsius to Fahrenheit.
 
@@ -1625,7 +1617,6 @@ more than 10 characters, otherwise print "Short string". */
 
 // console.log(repeatString("ha", 3));
 
-
 // Q1. Write an arrow function multiply(a, b) that returns the product of two numbers. Call it with 6 and 7.
 
 // solution
@@ -1644,11 +1635,10 @@ more than 10 characters, otherwise print "Short string". */
 // let squared = arr.map((val) => val * val);
 // console.log(squared);
 
-// Q3. Write a function isPositive(num) that returns true if number is positive. Use it with 
+// Q3. Write a function isPositive(num) that returns true if number is positive. Use it with
 // filter() on [-3, 5, -1, 8, -2, 4].
 
 // solution
-
 
 // let arr = [-3, 5, -1, 8, -2, 4];
 
@@ -1656,10 +1646,10 @@ more than 10 characters, otherwise print "Short string". */
 //     return num >= 0;
 // }
 
-// let newArr = arr.filter(isPositive) 
+// let newArr = arr.filter(isPositive)
 // console.log(newArr);
 
-// Q4. Create an array ["hello", "world", "js", "code"]. Use filter() to get words with more 
+// Q4. Create an array ["hello", "world", "js", "code"]. Use filter() to get words with more
 // than 3 characters, then map() to uppercase them.
 
 // solution
@@ -1681,3 +1671,151 @@ more than 10 characters, otherwise print "Short string". */
 
 // let average = sum / arr.length;
 // console.log(average);
+
+// 2 july 2026
+
+// Q1. Write an arrow function isVowel(char) that returns true if character is a vowel.
+// Use it with filter() on ["a", "b", "e", "k", "i", "o", "z"].
+
+// solution
+
+// let arr = ["a", "b", "e", "k", "i", "o", "z"];
+
+// const isVowel = (char) => {
+//     return "aeiou".includes(char);
+// }
+
+// let vowelArr = arr.filter((val) => isVowel(val));
+// console.log(vowelArr);
+
+// Q2. Create an array [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]. Use filter() to get even numbers,
+// then reduce() to find their sum.
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let evenArr = arr.filter((val) => val % 2 === 0);
+
+// let sumOfEven = evenArr.reduce((prev, curr) => prev + curr)
+
+// console.log(sumOfEven);
+
+// Q3. Write a function reverseString(str) that returns a string reversed. Call it with "FalconH".
+
+// solution
+
+// let str = "FalconH";
+
+// function reverseString (str) {
+//     let reverseStr = "";
+//     for(let i = str.length - 1; i >= 0; i--) {
+//         reverseStr += str[i];
+//     }
+//     return reverseStr;
+// }
+
+// console.log(reverseString(str));
+
+// Q4. Create an array [5, 10, 15, 20, 25]. Use map() to create a new array where each
+// number is converted to a string like "Value: 5", "Value: 10" etc.
+
+// solution
+
+// let arr = [5, 10, 15, 20, 25];
+
+// let arrToStr = arr.map((val) => {
+//     let convert = val.toString();
+//     return "value: " + val;
+// });
+
+// console.log(arrToStr);
+
+// Q5. Write an arrow function findMax(arr) that takes an array and returns the largest number.
+
+// solution
+// const findMax = (arr) => {
+//   let maxNum = arr[0];
+//   for (let val of arr) {
+//     if (val > maxNum) {
+//       maxNum = val;
+//     }
+//   }
+//   return maxNum;
+// };
+
+// let arr = [24, 78, 93, 34, 21];
+// console.log(findMax(arr));
+// Q6. Take a string from the user. Write a function countWords(str) that returns the number of words in it.
+
+// solution
+
+// let str = prompt("Enter string: ");
+
+// function countWords(str) {
+//   let count = 0;
+//   let word = "";
+//   for (let val of str) {
+//     if (" ".includes(val)) {
+//       count++;
+//     }
+//   }
+//   return count+1;
+// }
+
+// console.log(countWords(str));
+
+// Q7. Create an array [1, 2, 3, 4, 5]. Use reduce() to create a single string "1-2-3-4-5".
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5];
+// let str = arr.reduce((pre, curr) => {
+//     return pre + "-" + curr
+// });
+
+// console.log(str);
+
+
+// Q8. Write a function isLeapYear(year) that returns true if leap year. Test with 2024.
+
+// solution
+
+// function isLeapYear(year) {
+//     if(year % 400 === 0) {
+//         return true;
+//     } else if (year % 100 === 0) {
+//         return false;
+//     } else if (year % 4 === 0){
+//         return true;
+//     } else {
+//           return false;
+//     }
+// }
+
+// console.log(isLeapYear(2024));
+
+// Q9. Create an array of 5 numbers. Use map() to return a new array where each
+// number is "even" or "odd" as a string.
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let evenOddStr = arr.map((val) => {
+//     if(val % 2 === 0) {
+//         return "even"
+//     } else {
+//         return "odd"
+//     }
+// });
+
+// console.log(evenOddStr);
+
+// Q10. Write an arrow function calculateArea(length, width) that returns area of a
+// rectangle. Call it with 8 and 5.
+
+// solution
+
+// const calculateArea = (len, width) => len * width;
+
+// console.log(calculateArea(8, 5));
