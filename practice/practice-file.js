@@ -1775,7 +1775,6 @@ more than 10 characters, otherwise print "Short string". */
 
 // console.log(str);
 
-
 // Q8. Write a function isLeapYear(year) that returns true if leap year. Test with 2024.
 
 // solution
@@ -1819,3 +1818,104 @@ more than 10 characters, otherwise print "Short string". */
 // const calculateArea = (len, width) => len * width;
 
 // console.log(calculateArea(8, 5));
+
+// 3 july 2026
+
+// Q1. Write an arrow function double(num) that returns a number doubled. Use map() on [1, 2, 3, 4, 5].
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5];
+
+// const double = (num) => num * 2;
+// let result = arr.map((val) => double(val));
+// console.log(result);
+
+// Q2. Create an array ["cat", "dog", "elephant", "ant", "tiger"]. Use filter() to get animals with more
+// than 3 letters, then map() to reverse each name.
+
+// let animals = ["cat", "dog", "elephant", "ant", "tiger"];
+
+// let filter = animals.filter((animal) => animal.length > 3);
+// let finalArr = filter.map((val) => {
+//     let reversed = "";
+//     for(let i=val.length-1; i>=0; i--){
+//         reversed += val[i];
+//     }
+//     return reversed;
+// });
+
+// console.log(finalArr);
+
+// Q3. Write a function sumArray(arr) that takes an array and returns the sum using reduce().
+
+// function sumArray (arr) {
+//    return arr.reduce((pre, curr) => {
+//         return pre + curr
+//     }, 0);
+// }
+// let arr = [1, 2, 3, 4, 5]
+// console.log(sumArray(arr));
+
+// Q4. Take a string from the user. Write an arrow function removeSpaces(str) that
+// returns the string without spaces.
+
+// let str = prompt("Enter string: ");
+
+// function removeSpace(str) {
+//   let word = "";
+//   for (let val of str) {
+//     if (" ".includes(val)) {
+//       continue;
+//     } else {
+//       word += val;
+//     }
+//   }
+//   return word;
+// }
+
+// console.log(removeSpace(str));
+
+// Q5. Create an array [10, 20, 30, 40, 50]. Use reduce() to find the second largest number.
+
+
+
+
+
+
+
+
+
+// Q6. Write a function isPrime(num) that returns true if number is prime. Use it
+// with filter() on [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].
+
+// pending
+
+// Q7. Create an array [1, 2, 3, 4, 5]. Use map() to create a new array where each number is num * num - 1.
+
+let arr = [1, 2, 3, 4, 5];
+
+let finalArr = arr.map((val) => val*val-1);
+console.log(finalArr);
+
+
+// Q8. Write an arrow function longestWord(str) that returns the longest word in a string.
+// Test with "I love backend development".
+
+let str = "I love backend development";
+let longest = "";
+let word = "";
+
+for(let val of str) {
+    if(" ".includes(val)){
+        
+    } else {
+        word += val
+    }
+}
+
+console.log(word)
+
+// Q9. Create an array [5, 3, 8, 1, 9, 2]. Use reduce() to find the minimum number.
+// Q10. Write a function titleCase(str) that capitalizes first letter of every word.
+// Test with "hello world from falconh".
