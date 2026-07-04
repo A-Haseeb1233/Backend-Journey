@@ -1930,3 +1930,163 @@ more than 10 characters, otherwise print "Short string". */
 
 // Q10. Write a function titleCase(str) that capitalizes first letter of every word.
 // Test with "hello world from falconh".
+
+// 4 july 2026
+
+// Q1. Take a number from the user. Write a function isArmstrong(num) that returns true if it is an Armstrong number.
+// (Example: 153 → 1³ + 5³ + 3³ = 153 ✅)
+
+// pending
+
+// Q2. Create an array [1, 2, 3, 4, 5]. Use map() to square each number, then
+// filter() to get only squares greater than 5.
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let square = arr.map((sq) => sq * sq);
+// let filterGreater5 = square.filter((val) => val > 5);
+// console.log(filterGreater5);
+
+// Q3. Take a string from the user. Count how many words have more than 4 characters.
+
+// solution
+
+// let str = prompt("Enter your String: ");
+
+// let count = 0;
+// let word = "";
+
+// for (let val of str) {
+//   if (val === " ") {
+//     if (word.length > 4) {
+//       count++;
+//     }
+//     word = "";
+//   } else {
+//     word += val;
+//   }
+// }
+
+// if (word.length > 4) {
+//   count++;
+// }
+
+// console.log(count);
+
+// Q4. Write an arrow function factorial(n) that returns the factorial of a number using a loop.
+// (Example: 5! = 120)
+
+// pending
+
+// Q5. Create an array of 5 numbers. Print the sum of even numbers using filter() and reduce().
+
+// solution
+
+// let arr = [5, 10, 15, 20, 25];
+// let evenArr = arr.filter((even) => even % 2 === 0);
+// let sumOfEvenArr = evenArr.reduce((pre, curr) => {
+//   return pre + curr;
+// });
+// console.log(sumOfEvenArr);
+
+// Q6. Take a string from the user. Print "Strong Password" if it has: more than 8
+// characters, at least one number, at least one uppercase letter. Otherwise "Weak Password".
+
+// // solution
+// let passwordStrengthChecker = prompt("Enter your string: ");
+// let hesUpper = false;
+// let hesNumber = false;
+// let hesSpecialChar = false;
+// for (let val of passwordStrengthChecker) {
+//   if ("0123456789".includes(val)) {
+//     hesNumber = true;
+//   }
+//   if ("ABCDEFGHIJKLMNOPQRSTUVWXYZ".includes(val)) {
+//     hesUpper = true;
+//   }
+//   if("!@#$%^&*()/|+=_-:;".includes(val)){
+//     hesSpecialChar = true;
+//   }
+// }
+
+// if (passwordStrengthChecker.length > 8 && hesNumber && hesUpper && hesSpecialChar) {
+//   console.log("Strong Password");
+// } else {
+//   console.log("Weak Password");
+// }
+
+// Q7. Create an array ["JS", "Python", "Java", "C++", "Rust"]. Use map() to
+// add " language" to each, then filter() to get only those longer than 10 characters.
+
+// solution
+
+// let techLangArr = ["JS", "Python", "Java", "C++", "Rust"];
+// let addWordLang = techLangArr.map((val) => {
+//     return val + " Language";
+// });
+
+// let filter = addWordLang.filter((val) => {
+//     return val.length > 10
+// });
+// console.log(filter);
+
+// Q8. Write a function findMin(arr) that returns the minimum number from an array without using Math.min.
+
+// solution
+
+// let arr = [11, 56, 21, 10, 44];
+// let minArr = Infinity;
+// for (let val of arr) {
+//     if(val < minArr) {
+//         minArr = val;
+//     }
+// }
+// console.log(minArr)
+
+// function findMin (arr) {
+//     let minArr = Infinity;
+//     for(let val of arr){
+//         if(val < minArr){
+//             minArr = val;
+//         }
+//     }
+//     return minArr;
+// }
+
+// let arr = [23, 10, 45, 7, 98];
+// console.log(findMin(arr));
+
+// Q9. Take a number from the user. Use a loop to print all its prime factors.
+// (Example: 12 → 2, 2, 3)
+
+// pending
+
+// Q10. Create an array of 5 strings. Use reduce() to find the longest string.
+
+// solution
+
+
+// let str = ["mouse", "keyboard", "laptop", "monitor", "cpu"];
+// let valLeng = " ";
+// for(let val of str) {
+//     if(val.length > valLeng.length){
+//         valLeng = val;
+//     } 
+// }
+
+// console.log(valLeng)
+
+
+// let str2 = ["mouse", "keyboard", "laptop", "monitor", "cpu"];
+
+// let longStr = str2.reduce ((pre, curr) => {
+//     if(pre.length > curr.length){
+//         return pre;
+//     } else {
+//         return curr;
+//     }
+// });
+
+// console.log(longStr)
