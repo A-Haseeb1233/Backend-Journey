@@ -1862,7 +1862,7 @@ more than 10 characters, otherwise print "Short string". */
 
 // let str = prompt("Enter string: ");
 
-// function removeSpace(str) {
+// const removeSpace = (str) => {
 //   let word = "";
 //   for (let val of str) {
 //     if (" ".includes(val)) {
@@ -1878,14 +1878,6 @@ more than 10 characters, otherwise print "Short string". */
 
 // Q5. Create an array [10, 20, 30, 40, 50]. Use reduce() to find the second largest number.
 
-
-
-
-
-
-
-
-
 // Q6. Write a function isPrime(num) that returns true if number is prime. Use it
 // with filter() on [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].
 
@@ -1893,29 +1885,48 @@ more than 10 characters, otherwise print "Short string". */
 
 // Q7. Create an array [1, 2, 3, 4, 5]. Use map() to create a new array where each number is num * num - 1.
 
-let arr = [1, 2, 3, 4, 5];
+// let arr = [1, 2, 3, 4, 5];
 
-let finalArr = arr.map((val) => val*val-1);
-console.log(finalArr);
-
+// let finalArr = arr.map((val) => val*val-1);
+// console.log(finalArr);
 
 // Q8. Write an arrow function longestWord(str) that returns the longest word in a string.
-// Test with "I love backend development".
+// // Test with "I love backend development".
+// let str = "I love backend development";
+// let word = "";
+// let longest = "";
 
-let str = "I love backend development";
-let longest = "";
-let word = "";
+// for (let val of str) {
+//   if (val === " ") {
+//     if (word.length > longest.length) {
+//       longest = word;
+//     }
+//     word = "";
+//   } else {
+//     word += val; // letter add karo
+//   }
+// }
 
-for(let val of str) {
-    if(" ".includes(val)){
-        
-    } else {
-        word += val
-    }
-}
+// if (word.length > longest.length) {
+//   longest = word;
+// }
 
-console.log(word)
-
+// console.log(longest);
+// last word bhi check karo!
 // Q9. Create an array [5, 3, 8, 1, 9, 2]. Use reduce() to find the minimum number.
+
+// solution
+
+// let arr = [5, 3, 8, 1, 9, 2];
+
+// let minimum = arr.reduce((pre, curr) => {
+//     if(curr < pre){
+//          return curr
+//     }
+//     return pre
+// }, Infinity)
+
+// console.log(minimum)
+
 // Q10. Write a function titleCase(str) that capitalizes first letter of every word.
 // Test with "hello world from falconh".
