@@ -21,21 +21,32 @@
 
 // solution design
 
-let password = prompt("Enter your string: ");
-let hesNumber = false;
+let password = prompt("Enter your string: "); // take string(password) from user
+let hasUpper = false; // check uppercase letter
+let hasNumber = false; // check number
+let hasSpecialChar = false; // check special character
+let message = []; // store msg
 
-const passwordlengthCheck = (passwordLeng) => {
-  return password.length > 8;
-}
-
-const passwordNumberCheck = (passwordNum) => {
-  for (let val of passwordNum) {
-    if ("0123456789".includes(val)) {
-      hesNumber = true;
-    }
+for (let val of password) {
+  if ("ABCDEFGHIJKLMNOPQRSTUVWXYZ".includes(val)) {
+    hasUpper = true;
+  }
+  if ("0123456789".includes(val)) {
+    hasNumber = true;
+  }
+  if ("!@#$%^&*".includes(val)) {
+    hasSpecialChar = true;
   }
 }
 
-// console.log(passwordlengthCheck(password));
-let result = passwordNumberCheck(password);
-console.log(result)
+if(password.length <= 8) message.push("Too Short!");
+if(!hasUpper) message.push("Need Upper Case!");
+if(!hasNumber) message.push("Need Number!");
+if(!hasSpecialChar) message.push("Need Special Character!");
+
+if(message.length === 0) {
+    console.log("Strong Password");
+} else {
+    console.log("Weak Password");
+    message.forEach((msg) => console.log(msg));
+}
