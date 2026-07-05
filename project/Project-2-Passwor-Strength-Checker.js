@@ -39,14 +39,14 @@ for (let val of password) {
   }
 }
 
-if(password.length <= 8) message.push("Too Short!");
-if(!hasUpper) message.push("Need Upper Case!");
-if(!hasNumber) message.push("Need Number!");
-if(!hasSpecialChar) message.push("Need Special Character!");
+if (password.length <= 8) message.push("Too Short!");
+if (!hasUpper) message.push("Need Upper Case!");
+if (!hasNumber) message.push("Need Number!");
+if (!hasSpecialChar) message.push("Need Special Character!");
 
-if(message.length === 0) {
-    console.log("Strong Password");
+if (message.length === 0) {
+  console.log("Strong Password");
 } else {
-    console.log("Weak Password");
-    message.forEach((msg) => console.log(msg));
+  console.log("Weak Password");
+  message.forEach((msg) => console.log(msg));
 }

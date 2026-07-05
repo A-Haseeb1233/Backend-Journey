@@ -2089,4 +2089,8 @@ more than 10 characters, otherwise print "Short string". */
 //     }
 // });
 
-// console.log(longStr)
+// console.log(longStr)f
+
+// 5 july 2026
+
+// i took a break for some personal reasons
