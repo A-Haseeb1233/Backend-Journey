@@ -2067,17 +2067,15 @@ more than 10 characters, otherwise print "Short string". */
 
 // solution
 
-
 // let str = ["mouse", "keyboard", "laptop", "monitor", "cpu"];
 // let valLeng = " ";
 // for(let val of str) {
 //     if(val.length > valLeng.length){
 //         valLeng = val;
-//     } 
+//     }
 // }
 
 // console.log(valLeng)
-
 
 // let str2 = ["mouse", "keyboard", "laptop", "monitor", "cpu"];
 
@@ -2094,3 +2092,170 @@ more than 10 characters, otherwise print "Short string". */
 // 5 july 2026
 
 // i took a break for some personal reasons
+
+// 6 july 2026
+
+// Q1. Write a function countOccurrences(str, char) that returns how many times
+// a character appears in a string.
+// (Example: "hello", "l" → 2)
+
+// solution
+
+// function countOccurrences(str, char) {
+//   let count = 0;
+//   for (let val of str) {
+//     if (val === char) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// console.log(countOccurrences("Hello", "l"));
+
+// Q2. Create an array [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]. Use filter() to get numbers divisible
+// by 3, then map() to multiply each by 10.
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let filterArr = arr.filter((val) => val % 3 === 0);
+// let finalArr = filterArr.map((val) => val * 10);
+// console.log(finalArr);
+
+// Q3. Take a string from the user. Print each character and its index.
+// (Example: "hi" → "0: h", "1: i")
+
+// solution
+
+// let str = prompt("Enter String: ");
+// let idx = 0;
+// for(let val of str) {
+//     console.log(`${idx+1}: ${val}`);
+//     idx++;
+// }
+
+// for (let i = 0; i < str.length; i++) {
+//   console.log(`${i}: ${str[i]}`);
+// }
+
+// Q4. Write an arrow function isValidAge(age) that returns "Minor" if age < 18, "Adult" if
+// 18-60, "Senior" if above 60.
+
+// solution
+
+// const isValidAge = (age) => {
+//     let status = "";
+//   if (age < 18) {
+//     status = "Minor";
+//   } else if (age >= 18 && age <= 60) {
+//     status = "Adult";
+//   } else {
+//     status = "Senior";
+//   }
+//   return status;
+// };
+
+// console.log(isValidAge(18));
+
+// Q5. Create an array of 5 numbers. Use reduce() to find the difference of all elements left to right.
+// (Example: [10, 3, 2, 1] → 10-3-2-1 = 4)
+
+// solution
+
+// let arr = [30, 5, 4, 3, 1];
+
+// let finalArr = arr.reduce((pre, curr) => {
+//   return pre - curr;
+// });
+
+// console.log(finalArr);
+
+// Q6. Take a string from the user. Print "Valid Name" if it contains only letters and spaces,
+// otherwise "Invalid Name".
+
+// solution
+
+// let str = prompt("Enter string: ");
+// let specialChar = false;
+// for (let val of str) {
+//   if ("!@#$%^&*1234567890".includes(val)) {
+//     specialChar = true;
+//   }
+// }
+
+// if (specialChar === false) {
+//   console.log("Valid Name");
+// } else {
+//   console.log("Invalid Name");
+// }
+
+// Q7. Create an array ["apple", "banana", "cherry"]. Use map() to return each
+// fruit with its index like "1. apple", "2. banana".
+
+// solution
+
+// let arr = ["apple", "banana", "cherry"];
+
+// let idxArr = arr.map((val, idx) => `${idx + 1}. ${val}`);
+
+// console.log(idxArr);
+
+// Q8. Write a function flattenString(arr) that takes an array of strings and returns them
+// all joined with " | ".
+// (Example: ["JS", "Python"] → "JS | Python")
+
+// solution
+
+// function flattenString(arr) {
+//   let finalArr = arr.reduce((pre, curr) => {
+//     return pre + " | " + curr;
+//   });
+//   return finalArr;
+// }
+
+// let arr = ["JS", "Python", "C++", "Java", "Go"];
+
+// console.log(flattenString(arr));
+
+// Q9. Create an array of 5 numbers. Use map() to return "positive", "negative", or "zero" for each.
+
+// solution
+
+let arr = [0, 2, 3, 4, 5];
+
+let finalArr = arr.map((val) => {
+  let result = "";
+  if (val === 0) {
+    result = "Zero";
+  } else if (val > 0) {
+    result = "Positive";
+  } else {
+    result = "Negative";
+  }
+  return result;
+});
+
+console.log(finalArr);
+
+// Q10. Write an arrow function clamp(num, min, max) that returns min if num is too small, max if too big, otherwise num itself.
+// (Example: clamp(5, 1, 10) → 5, clamp(15, 1, 10) → 10)
+
+// solution
+
+// const clamp =(num, min, max) => {
+//     if(num < min) {
+//         return min;
+//     } else if (num > max) {
+//         return max;
+//     } else {
+//         return num;
+//     }
+// }
+
+// console.log(clamp(10, 11, 90));
+
+
+
+
+
