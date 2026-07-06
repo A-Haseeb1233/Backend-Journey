@@ -2222,21 +2222,21 @@ more than 10 characters, otherwise print "Short string". */
 
 // solution
 
-let arr = [0, 2, 3, 4, 5];
+// let arr = [0, 2, 3, 4, 5];
 
-let finalArr = arr.map((val) => {
-  let result = "";
-  if (val === 0) {
-    result = "Zero";
-  } else if (val > 0) {
-    result = "Positive";
-  } else {
-    result = "Negative";
-  }
-  return result;
-});
+// let finalArr = arr.map((val) => {
+//   let result = "";
+//   if (val === 0) {
+//     result = "Zero";
+//   } else if (val > 0) {
+//     result = "Positive";
+//   } else {
+//     result = "Negative";
+//   }
+//   return result;
+// });
 
-console.log(finalArr);
+// console.log(finalArr);
 
 // Q10. Write an arrow function clamp(num, min, max) that returns min if num is too small, max if too big, otherwise num itself.
 // (Example: clamp(5, 1, 10) → 5, clamp(15, 1, 10) → 10)
