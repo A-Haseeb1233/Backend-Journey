@@ -2308,35 +2308,35 @@ more than 10 characters, otherwise print "Short string". */
 
 // solution
 
-const BMI = (w, h) => {
-    let BMIs = w / (h * h);
-    result = "";
-    if(BMIs < 18.5){
-        result = "UnderWeight";
-    } else if (BMIs >= 18.5 && BMIs < 25){
-        result = "Normal";
-    } else if (BMIs >= 25 && BMIs < 30) {
-        result = "OverWieght";
-    } else {
-        result = "Obese"
-    }
-    return result;
-}
+// const BMI = (w, h) => {
+//     let BMIs = w / (h * h);
+//     result = "";
+//     if(BMIs < 18.5){
+//         result = "UnderWeight";
+//     } else if (BMIs >= 18.5 && BMIs < 25){
+//         result = "Normal";
+//     } else if (BMIs >= 25 && BMIs < 30) {
+//         result = "OverWieght";
+//     } else {
+//         result = "Obese"
+//     }
+//     return result;
+// }
 
-console.log(BMI(25, 5.9));
+// console.log(BMI(25, 5.9));
 
 // Q5. Create an array ["apple", "banana", "cherry", "date", "elderberry"]. Use filter() to get
 // fruits starting with a vowel, then map() to uppercase them.
 
 // solution
 
-let arr = ["apple", "banana", "cherry", "date", "elderberry"];
-let filterArr = arr.filter((val) => {
-    return "aeiou".includes(val[0]);
-});
+// let arr = ["apple", "banana", "cherry", "date", "elderberry"];
+// let filterArr = arr.filter((val) => {
+//     return "aeiou".includes(val[0]);
+// });
 
-let finalArr = filterArr.map((val) => val.toUpperCase());
-console.log(finalArr);
+// let finalArr = filterArr.map((val) => val.toUpperCase());
+// console.log(finalArr);
 
 
 // Q6. Write a function truncate(str, maxLength) that returns the string cut to maxLength characters,
