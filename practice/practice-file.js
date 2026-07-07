@@ -2255,7 +2255,111 @@ more than 10 characters, otherwise print "Short string". */
 
 // console.log(clamp(10, 11, 90));
 
+// 7 july 2026
+
+// Q2. Create an array [1, 2, 3, 4, 5]. Use map() to return each number as "odd" or "even", then
+// filter() to get only "even" ones.
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let retOddEven = arr.map((val) => {
+//   if (val % 2 === 0) {
+//     return "Even";
+//   } else {
+//     return "Odd";
+//   }
+// });
+
+// let onlyEven = retOddEven.filter((val) => {
+//   if (val === "Even") {
+//     return val;
+//   }
+// });
+
+// console.log(onlyEven);
+
+// Q3. Take a string from the user. Print "Pangram" if it contains every letter of the alphabet,
+// otherwise "Not Pangram".
+
+// solution
+
+// let str = prompt("Ënter your string: ");
+// str = str.toLowerCase();
+// let allContains = true;
+
+// for(let val of "abcdefghijklmnopqrstuvwxyz") {
+//     if(!str.includes(val)){
+//         allContains = false;
+//     }
+// }
+
+// if(allContains === true) {
+//     console.log("Pangram");
+// } else {
+//     console.log("Not Pangram");
+// }
 
 
+// Q4. Write an arrow function BMI(weight, height) that calculates BMI and returns "Underweight",
+// "Normal", "Overweight", or "Obese".
+// (Formula: BMI = weight / height²)
+
+// solution
+
+const BMI = (w, h) => {
+    let BMIs = w / (h * h);
+    result = "";
+    if(BMIs < 18.5){
+        result = "UnderWeight";
+    } else if (BMIs >= 18.5 && BMIs < 25){
+        result = "Normal";
+    } else if (BMIs >= 25 && BMIs < 30) {
+        result = "OverWieght";
+    } else {
+        result = "Obese"
+    }
+    return result;
+}
+
+console.log(BMI(25, 5.9));
+
+// Q5. Create an array ["apple", "banana", "cherry", "date", "elderberry"]. Use filter() to get
+// fruits starting with a vowel, then map() to uppercase them.
+
+// solution
+
+let arr = ["apple", "banana", "cherry", "date", "elderberry"];
+let filterArr = arr.filter((val) => {
+    return "aeiou".includes(val[0]);
+});
+
+let finalArr = filterArr.map((val) => val.toUpperCase());
+console.log(finalArr);
 
 
+// Q6. Write a function truncate(str, maxLength) that returns the string cut to maxLength characters,
+// with "..." added at the end if it was cut.
+// (Example: truncate("Hello World", 5) → "Hello...")
+
+// solution
+
+// Q7. Create an array of 5 numbers. Use map() to return each number's absolute value.
+// (Hint: Math.abs)
+
+// solution
+
+// Q8. Take two numbers from the user. Write a function power(base, exp) that returns base to
+// the power of exp without using ** operator — use a loop!
+
+// solution
+// Q9. Create an array [5, 3, 8, 1, 9, 2, 7]. Use filter() to get numbers greater than 4,
+// then reduce() to find their product.
+
+// solution
+
+// Q10. Write an arrow function initials(fullName) that returns the initials of a full name.
+// (Example: "Abdul Haseeb Khan" → "A.H.K")
+
+// solution
