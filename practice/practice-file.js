@@ -2301,7 +2301,6 @@ more than 10 characters, otherwise print "Short string". */
 //     console.log("Not Pangram");
 // }
 
-
 // Q4. Write an arrow function BMI(weight, height) that calculates BMI and returns "Underweight",
 // "Normal", "Overweight", or "Obese".
 // (Formula: BMI = weight / height²)
@@ -2338,7 +2337,6 @@ more than 10 characters, otherwise print "Short string". */
 // let finalArr = filterArr.map((val) => val.toUpperCase());
 // console.log(finalArr);
 
-
 // Q6. Write a function truncate(str, maxLength) that returns the string cut to maxLength characters,
 // with "..." added at the end if it was cut.
 // (Example: truncate("Hello World", 5) → "Hello...")
@@ -2350,16 +2348,71 @@ more than 10 characters, otherwise print "Short string". */
 
 // solution
 
+// let arr = [1, 2, -3, 4, -5];
+
+// let finalArr = arr.map((val) => {
+//   return Math.abs(val);
+// });
+
+// console.log(finalArr);
+
 // Q8. Take two numbers from the user. Write a function power(base, exp) that returns base to
 // the power of exp without using ** operator — use a loop!
 
 // solution
+
+// let base = Number(prompt("Enter base: "));
+// let exp = Number(prompt("Enter exp: "));
+
+// function power(base, exp) {
+//   let result = 1;
+//   for (let i = 1; i < exp; i++) {
+//     result *= base;
+//   }
+//   return result;
+// }
+
+// console.log(power(base, exp));
+
 // Q9. Create an array [5, 3, 8, 1, 9, 2, 7]. Use filter() to get numbers greater than 4,
 // then reduce() to find their product.
 
 // solution
 
+// let arr = [5, 3, 8, 1, 9, 2, 7];
+// let filterArr = arr.filter((val) => val > 4);
+// let final = filterArr.reduce((pre, curr) => {
+//     return pre * curr
+// }, 1);
+
+// console.log(final)
+
+
+
+
+
 // Q10. Write an arrow function initials(fullName) that returns the initials of a full name.
 // (Example: "Abdul Haseeb Khan" → "A.H.K")
 
 // solution
+
+// let fullName = prompt("Enter you name: ")
+
+// const initials = (fullName) => {
+//     let word = "";
+//     let firstLetter = "";
+//     for(let val of fullName){
+//         if(val === " "){
+//             firstLetter += word[0] + "."
+//             word = "";
+//         } else {
+//             word += val;
+//         }
+//     }
+//     if(word){
+//         firstLetter += word[0]
+//     }
+//     return firstLetter;
+// }
+
+// console.log(initials(fullName));
