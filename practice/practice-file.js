@@ -2387,10 +2387,6 @@ more than 10 characters, otherwise print "Short string". */
 
 // console.log(final)
 
-
-
-
-
 // Q10. Write an arrow function initials(fullName) that returns the initials of a full name.
 // (Example: "Abdul Haseeb Khan" → "A.H.K")
 
@@ -2416,3 +2412,206 @@ more than 10 characters, otherwise print "Short string". */
 // }
 
 // console.log(initials(fullName));
+
+// 9 july 2026
+
+// Q1. Write a function reverseWords(str) that reverses the order of words in a string.
+// (Example: "Hello World" → "World Hello")
+
+// solution
+
+// let str = prompt("Enter string: ");
+// let words = [];
+// let word = "";
+
+// for (let val of str) {
+//   if (val === " ") {
+//     words.push(word);
+//     word = "";
+//   } else {
+//     word += val;
+//   }
+// }
+// words.push(word);
+// let final = [];
+
+// for (let i = words.length - 1; i >= 0; i--) {
+//   final.push(words[i]);
+// }
+
+// let str2 = final.reduce((pre, curr) => {
+//   return pre + ", " + curr;
+// });
+
+// console.log(str2);
+
+// by using fuction as per question;
+
+// let str = prompt("Enter string: ");
+// function reverseword(str) {
+//   let words = [];
+//   let word = "";
+
+//   for (let val of str) {
+//     if (val === " ") {
+//       words.push(word);
+//       word = "";
+//     } else {
+//       word += val;
+//     }
+//   }
+//   words.push(word);
+//   let final = [];
+
+//   for (let i = words.length - 1; i >= 0; i--) {
+//     final.push(words[i]);
+//   }
+
+//   let str2 = final.reduce((pre, curr) => {
+//     return pre + ", " + curr;
+//   });
+
+//   return str2;
+// }
+
+// console.log(reverseword(str));
+
+// Q2. Create an array [1, 2, 3, 4, 5]. Use map() to cube each number, then filter() to get
+// only cubes greater than 50.
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let finalArr = arr.map((val) => val ** 3).filter((val) => val > 50);
+// console.log(finalArr);
+
+// Q3. Take a string from the user. Print how many unique characters it has.
+
+// solution
+
+// let str = prompt("Enter string: ");
+// str = str.toLowerCase()
+// let result = "";
+// for(let val of str) {
+//     if(!result.includes(val)){
+//         result += val;
+//     }
+// }
+
+// console.log(`this are unique char ${result}\n the count of unique char is ${result.length}`)
+
+
+
+// Q4. Write an arrow function isAnagram(str1, str2) that returns true if two strings are anagrams.
+// (Example: "listen" and "silent" → true)
+
+// solution
+
+
+// Q5. Create an array ["js", "python", "java", "rust", "go"]. Use filter() to get languages with more
+// than 2 characters, then reduce() to join them with " | ".
+
+// solution
+
+// let arr = ["js", "python", "java", "rust", "go"];
+// let filArr = arr.filter(function (val) {
+//     return val.length > 2;
+// }).join(" | ")
+
+// console.log(filArr)
+
+// Q6. Take a number from the user. Write a function digitSum(num) that returns the sum of its digits.
+// (Example: 1234 → 10)
+
+// solution
+
+// let num = Number(prompt("Enter numbers: "));
+// num = num.toString();
+// let sum = 0;
+// for(let val of num){
+//     let finalNum = Number(val);
+//     sum+=finalNum;
+
+// }
+
+// console.log(sum)
+
+
+
+// Q7. Create an array of 5 numbers. Use map() to return each number rounded to nearest 10.
+// (Example: 14 → 10, 17 → 20 — Hint: Math.round)
+
+// solution
+
+// let arr = [3, 89, 45, 98, 9];
+
+// let round = arr.map((val) => Math.round(val / 10) * 10);
+// console.log(round)
+
+
+// Q8. Write a function removeVowels(str) that returns a string with all vowels removed.
+// (Example: "Hello World" → "Hll Wrld")
+
+// solution
+
+// let str = "Hello World";
+// let word = "";
+// for(let val of str) {
+//     if("aeiou".includes(val)){
+//         continue;
+//     } else{
+//         word += val;
+//     }
+// }
+// console.log(word);
+
+// using function
+
+// function removevowels(str) {
+//     let word = "";
+// for(let val of str) {
+//     if("aeiou".includes(val)){
+//         continue;
+//     } else{
+//         word += val;
+//     }
+// }
+// return word;
+// }
+
+// console.log(removevowels("Hello world"))
+
+// Q9. Create an array [10, 20, 30, 40, 50]. Use reduce() to find the average.
+
+// solution
+
+// let arr = [10, 20, 30, 40, 50];
+
+// let sum = arr.reduce((pre, curr) => pre + curr, 0);
+
+// let average = sum / arr.length;
+// console.log(average)
+
+
+
+
+
+// Q10. Write an arrow function isPerfectSquare(num) that returns true if number is a perfect square.
+// (Example: 16 → true, 15 → false)
+
+// solution
+
+// let num = Number(prompt("Enter Number: "));
+
+// let result = Math.sqrt(num);
+// console.log(result % 1 === 0)
+
+let num = Number(prompt("Enter numbrer: "));
+
+const isPerfectSquare = (num) => {
+    let result = Math.sqrt(num);
+    return result % 1 === 0;
+}
+
+console.log(isPerfectSquare(num))
