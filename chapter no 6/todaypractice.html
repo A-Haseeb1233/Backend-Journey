@@ -4,15 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Today practice file</title>
-    <style></style>
+    <style>
+        .para {
+            background-color: antiquewhite;
+            color: blueviolet;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .para2 {
+            color: red;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 500;
+        }
+    </style>
 </head>
 <body>
+    <p class="para">This is para</p>
     <script>
         let newbtn = document.createElement("button");
         newbtn.innerText = "click me";
+
         newbtn.style.backgroundColor = "red";
         newbtn.style.color = "white";
-        document.body.append(newbtn);
+        
+        document.querySelector("body").prepend(newbtn);
+
+        let para = document.querySelector("p");
+        para.classList.add("para2");
     </script>
 </body>
 </html>
