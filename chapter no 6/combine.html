@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>combine</title>
+    <style></style>
+  </head>
+  <body>
+    <div id="box">this is div</div>
+
+    <script>
+      let div = document.querySelector("#box");
+      div.innerHTML = "<p>This is first div</p>";
+      div.style.backgroundColor = "purple";
+      div.style.height = "250px";
+      div.style.width = "500px";
+      div.style.padding = "20px"
+
+      let newbtn = document.createElement("button");
+      newbtn.innerText = "Click here!";
+
+      div = document.querySelector("div");
+      div.prepend(newbtn);
+
+      let heading = document.createElement("h1");
+      heading.innerText = "FalconH";
+      document.body.prepend(heading);
+    </script>
+  </body>
+</html>

@@ -2607,11 +2607,11 @@ more than 10 characters, otherwise print "Short string". */
 // let result = Math.sqrt(num);
 // console.log(result % 1 === 0)
 
-let num = Number(prompt("Enter numbrer: "));
+// let num = Number(prompt("Enter numbrer: "));
 
-const isPerfectSquare = (num) => {
-    let result = Math.sqrt(num);
-    return result % 1 === 0;
-}
+// const isPerfectSquare = (num) => {
+//     let result = Math.sqrt(num);
+//     return result % 1 === 0;
+// }
 
-console.log(isPerfectSquare(num))
+// console.log(isPerfectSquare(num))
