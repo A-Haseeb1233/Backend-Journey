@@ -25,6 +25,7 @@ This is my personal learning log as I go from JavaScript basics all the way to b
 | chapter no 5 | JavaScript ( Function ) |
 | chapter no 6 | JavaScript ( DOM( Part 1 ) |
 | chapter no 6 | JavaScript ( DOM( Part 2 ) |
+| chapter no 7 | JavaScript ( Events ) |
 | Practice | JavaScript ( All Previous Topics (solved Daily ten Question ) |
 | Project | JavaScript ( Now I am building Project Using Previous learned topics ) |
 | *(more coming...)* | Node.js, Express, PostgreSQL |
