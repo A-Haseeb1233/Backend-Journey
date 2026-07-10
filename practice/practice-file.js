@@ -2501,13 +2501,10 @@ more than 10 characters, otherwise print "Short string". */
 
 // console.log(`this are unique char ${result}\n the count of unique char is ${result.length}`)
 
-
-
 // Q4. Write an arrow function isAnagram(str1, str2) that returns true if two strings are anagrams.
 // (Example: "listen" and "silent" → true)
 
 // solution
-
 
 // Q5. Create an array ["js", "python", "java", "rust", "go"]. Use filter() to get languages with more
 // than 2 characters, then reduce() to join them with " | ".
@@ -2537,8 +2534,6 @@ more than 10 characters, otherwise print "Short string". */
 
 // console.log(sum)
 
-
-
 // Q7. Create an array of 5 numbers. Use map() to return each number rounded to nearest 10.
 // (Example: 14 → 10, 17 → 20 — Hint: Math.round)
 
@@ -2548,7 +2543,6 @@ more than 10 characters, otherwise print "Short string". */
 
 // let round = arr.map((val) => Math.round(val / 10) * 10);
 // console.log(round)
-
 
 // Q8. Write a function removeVowels(str) that returns a string with all vowels removed.
 // (Example: "Hello World" → "Hll Wrld")
@@ -2593,10 +2587,6 @@ more than 10 characters, otherwise print "Short string". */
 // let average = sum / arr.length;
 // console.log(average)
 
-
-
-
-
 // Q10. Write an arrow function isPerfectSquare(num) that returns true if number is a perfect square.
 // (Example: 16 → true, 15 → false)
 
@@ -2615,3 +2605,163 @@ more than 10 characters, otherwise print "Short string". */
 // }
 
 // console.log(isPerfectSquare(num))
+
+// 7 july 2026
+
+// solution
+
+// let num = Number(prompt("Enter Number: "));
+
+// let result = Math.sqrt(num);
+// console.log(result % 1 === 0)
+
+// let num = Number(prompt("Enter numbrer: "));
+
+// const isPerfectSquare = (num) => {
+//     let result = Math.sqrt(num);
+//     return result % 1 === 0;
+// }
+
+// console.log(isPerfectSquare(num))
+
+// 10 july 2026
+
+// Q1. Write a function isPalindrome(str) that returns true if string is palindrome.
+// Use it with filter() on ["madam", "hello", "racecar", "world", "level"].
+
+// solution
+
+// let str = prompt("Enter String: ");
+// str = str.toLowerCase();
+
+// let reverse = "";
+
+// for(let i = str.length - 1; i >= 0; i--){
+//     reverse += str[i];
+// }
+
+// console.log(reverse)
+
+// second by making function
+
+// function isPalidrone(str) {
+//   str = str.toLowerCase();
+//   let reverse = "";
+//   let result = false;
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reverse += str[i];
+//   }
+//   if (str === reverse) {
+//     result = true;
+//   }
+//   return result;
+// }
+
+// let arr = ["madam", "hello", "racecar", "world", "level"];
+
+// let filArr = arr.filter(isPalidrone);
+// console.log(filArr);
+
+// Q2. Create an array [1, 2, 3, 4, 5]. Use map() to return each number as num² + num , then
+// filter() to get only results greater than 10.
+
+// let arr = [1, 2, 3, 4, 5];
+// let finalArr = arr.map((val) => (val ** 2) + val)
+// .filter((val) => val > 10);
+// console.log(finalArr);
+
+// Q3. Take a string from the user. Print the most repeated character.
+
+// pending
+
+// Q4. Write an arrow function average(arr) that takes an array and returns the average.
+
+// solution
+
+// const average = (arr) => {
+//     let sum = arr.reduce((pre, curr) => pre + curr , 0);
+//     let average = sum / arr.length;
+//     return average;
+// }
+
+// let arr = [1, 2, 3, 4, 5];
+// console.log(average(arr));
+
+// Q5. Create an array ["hello", "WORLD", "javaScript", "NODE"]. Use map() to convert each to title case
+//  (first letter upper, rest lower).
+
+// solution
+
+// let arr = ["hello", "WORLD", "javaScript", "NODE"];
+
+// let arrLower = arr.map((val) => val.toLowerCase());
+// let finalArr = arrLower.map((val) => {
+//     return val = val[0].toUpperCase() + val.slice(1)
+// });
+
+// Q6. Take a number from the user. Print "Buzz" for multiples of 5, "Fizz" for multiples of 3, "FizzBuzz"
+// for both — for all numbers from 1 to that number.
+
+// solution
+
+// let num = Number(prompt("Enter Numbers: "));
+
+// for(let i = 1; i <= num; i++) {
+//     if(i % 5 === 0 && i % 3 === 0) {
+//  console.log("FizzBuzz");
+//     } else if (i % 3 === 0) {
+//         console.log("Fizz");
+//     } else if (i % 5 === 0) {
+//         console.log("Buzz");
+//     } else {
+//         console.log(i);
+//     }
+// }
+
+// Q7. Write a function countVowelsAndConsonants(str) that returns both vowel count and consonant count.
+
+// solution
+
+// let str = prompt("Enter String: ");
+
+// function countVowelsAndConsonants(str) {
+//   str = str.toLowerCase();
+//   let vowelCount = 0;
+//   let consonantCount = 0;
+
+//   for (let val of str) {
+//     if ("aeiou".includes(val)) {
+//       vowelCount++;
+//     } else {
+//       consonantCount++;
+//     }
+//   }
+//   return { vowelCount, consonantCount };
+// }
+
+// let result = countVowelsAndConsonants(str);
+
+// console.log(
+//   `vowel count is: ${result.vowelCount}\nConsonnat count is: ${result.consonantCount}`,
+// );
+
+// Q8. Create an array [10, 20, 30, 40, 50]. Use reduce() to build an object {sum: 150, count: 5, average: 30}.
+
+// pending
+
+// Q9. Take a string from the user. Print all duplicate characters.
+
+// Q10. Write an arrow function range(start, end, step) that returns an array of numbers from start to end with given step.
+// (Example: range(1, 10, 2) → [1, 3, 5, 7, 9])
+
+// solution
+
+// const range = (start, end, step) => {
+//     let arr = [];
+//     for(let i = start; i <= end; i += step){
+//         arr.push(i)
+//     }
+//     return arr;
+// }
+
+// console.log(range(1, 10, 2));
