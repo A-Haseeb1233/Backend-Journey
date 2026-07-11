@@ -2765,3 +2765,114 @@ more than 10 characters, otherwise print "Short string". */
 // }
 
 // console.log(range(1, 10, 2));
+
+// 11 july 2026
+
+// Q1. Write a function flatten(arr) that takes a nested array and returns a flat array.
+// (Example: [1, [2, 3], [4, 5]] → [1, 2, 3, 4, 5])
+
+// solution
+
+// let arr = [1, [2, 3], [4, 5]];
+// let finalarr = [];
+
+// for (let val of arr) {
+//   if (Array.isArray(val)) {
+//     for (let item of val) {
+//       finalarr.push(item);
+//     }
+//   } else {
+//     finalarr.push(val);
+//   }
+// }
+
+// console.log(finalarr)
+
+// second method
+
+// let arr = [1, [2, 3], [4, 5]];
+// let finalArr = [];
+
+// for(let i = 0; i < arr.length; i++) {
+//     if(Array.isArray(arr[i])){
+//         for(let j = 0; j < arr[i].length; j++){
+//             finalArr.push(arr[i][j])
+//         }
+//     } else {
+//         finalArr.push(arr[i]);
+//     }
+// }
+
+
+// Q2. Create an array [1, 2, 3, 4, 5]. Use map() to return each number as {value: num, square: num²}.
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let final = arr.map((val) =>{
+//     return {value: val, square: val**2}
+// });
+
+// // console.log(final)
+// final.forEach((val) => console.log(val.square))
+
+
+
+
+
+// Q3. Take a string from the user. Print "Valid Email" if it contains @ and . , otherwise "Invalid Email".
+
+// solution
+
+// let str = prompt("Enter string: ");
+
+// str = str.toLowerCase();
+
+// if(str.includes("@" && str.includes("."))){
+//     console.log("Valid Email");
+// } else {
+//     console.log("Invalid Email")
+// }
+
+
+// Q4. Write an arrow function sumEven(arr) that returns sum of even numbers using filter() and reduce().
+
+// solution
+
+const sumEven = (arr) => {
+    let 
+}
+
+
+
+// Q5. Create an array of objects:
+// javascriptlet students = [{name: "Ali", marks: 80}, {name: "Sara", marks: 55}, {name: "Haseeb", marks: 90}]
+// Use filter() to get students with marks above 60, then map() to return only their names.
+
+// solution
+
+// Q6. Take a string from the user. Count how many times each vowel appears.
+// (Example: "hello" → a:0, e:1, i:0, o:1, u:0)
+
+// solution
+
+// Q7. Write a function zip(arr1, arr2) that combines two arrays into pairs.
+// (Example: [1,2,3] and ["a","b","c"] → [[1,"a"],[2,"b"],[3,"c"]])
+
+// solution
+
+// Q8. Create an array [3, 1, 4, 1, 5, 9, 2, 6]. Use filter() to remove duplicates.
+
+// solution
+
+// Q9. Take a string from the user. Write a function caesarCipher(str, shift) that shifts each letter
+// by given number.
+// (Example: caesarCipher("abc", 1) → "bcd")
+
+// solution
+
+// Q10. Write an arrow function chunk(arr, size) that splits array into chunks of given size.
+// (Example: chunk([1,2,3,4,5], 2) → [[1,2],[3,4],[5]])
+
+// solution

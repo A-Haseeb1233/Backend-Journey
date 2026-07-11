@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combine Events</title>
+</head>
+<body>
+    <!-- <button onclick="console.log('clicked button')">Click me!</button> -->
+     <!-- <script>
+        let btn = document.createElement("button");
+        btn.innerText = "DARK MODE!";
+
+        document.querySelector("body").prepend(btn);
+        
+        let para = document.createElement("p");
+        para.innerText = "This is paragraph";
+        
+        document.body.append(para);
+
+        function clicked () {
+            document.body.style.backgroundColor = "black";
+            para.style.color = "white";
+        }
+        
+        btn.onclick = clicked;
+     </script> -->
+     <script>
+    let btn = document.createElement("button");
+    btn.innerText = "🌙 DARK MODE";
+    btn.style.padding = "10px 20px";
+    btn.style.margin = "20px";
+    btn.style.cursor = "pointer";
+    btn.style.fontSize = "16px";
+
+    document.querySelector("body").prepend(btn);
+    
+    let para = document.createElement("p");
+    para.innerText = "This is a paragraph that will change color in dark mode.";
+    para.style.transition = "color 0.3s";
+    
+    document.body.append(para);
+
+    let isDark = false;
+
+    function toggleMode() {
+        if (!isDark) {
+            document.body.style.backgroundColor = "black";
+            para.style.color = "white";
+            btn.innerText = "☀️ LIGHT MODE";
+            isDark = true;
+        } else {
+            document.body.style.backgroundColor = "white";
+            para.style.color = "black";
+            btn.innerText = "🌙 DARK MODE";
+            isDark = false;
+        }
+    }
+    
+    btn.onclick = toggleMode;
+</script>
+</body>
+</html>
