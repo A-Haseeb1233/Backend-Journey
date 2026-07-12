@@ -2803,7 +2803,6 @@ more than 10 characters, otherwise print "Short string". */
 //     }
 // }
 
-
 // Q2. Create an array [1, 2, 3, 4, 5]. Use map() to return each number as {value: num, square: num²}.
 
 // solution
@@ -2816,10 +2815,6 @@ more than 10 characters, otherwise print "Short string". */
 
 // // console.log(final)
 // final.forEach((val) => console.log(val.square))
-
-
-
-
 
 // Q3. Take a string from the user. Print "Valid Email" if it contains @ and . , otherwise "Invalid Email".
 
@@ -2835,16 +2830,21 @@ more than 10 characters, otherwise print "Short string". */
 //     console.log("Invalid Email")
 // }
 
-
 // Q4. Write an arrow function sumEven(arr) that returns sum of even numbers using filter() and reduce().
 
 // solution
 
-const sumEven = (arr) => {
-    let 
-}
+// const sumEven = (arr) => {
+//    let filterArr = arr.filter((val) => {
+//         return val % 2 === 0;
+//     });
+//     let finalArr = filterArr.reduce((pre, curr) => pre + curr);
+//     return finalArr;
+// }
 
-
+// let arr = [23, 45, 66, 78, 90];
+// let result = sumEven(arr);
+// console.log(result);
 
 // Q5. Create an array of objects:
 // javascriptlet students = [{name: "Ali", marks: 80}, {name: "Sara", marks: 55}, {name: "Haseeb", marks: 90}]
@@ -2852,19 +2852,48 @@ const sumEven = (arr) => {
 
 // solution
 
+// const students = [
+//   { name: "Ali", marks: 80 },
+//   { name: "Sara", marks: 55 },
+//   { name: "Haseeb", marks: 90 },
+// ];
+
+// let studentMarkArr = students.filter((val) => val.marks > 60);
+// let studentNameArr = studentMarkArr.map((name) => name.name)
+// console.log(studentNameArr);
+
 // Q6. Take a string from the user. Count how many times each vowel appears.
 // (Example: "hello" → a:0, e:1, i:0, o:1, u:0)
 
 // solution
+
+// let str = prompt("Enter string: ");
+
+// pending
 
 // Q7. Write a function zip(arr1, arr2) that combines two arrays into pairs.
 // (Example: [1,2,3] and ["a","b","c"] → [[1,"a"],[2,"b"],[3,"c"]])
 
 // solution
 
+// let arr1 = [1, 2, 3];
+// let arr2 = ["a", "b", "c"];
+// let resultantArr = [];
+
+// for(let i = 0; i < arr1.length; i++) {
+//     let pair = [arr1[i] , arr2[i]];
+//    resultantArr.push(pair)
+// }
+
 // Q8. Create an array [3, 1, 4, 1, 5, 9, 2, 6]. Use filter() to remove duplicates.
 
 // solution
+
+// let arr = [3, 1, 4, 1, 5, 9, 2, 6];
+
+// let finalArr = arr.filter((val, index) => arr.indexOf(val) === index);
+
+// finalArr.forEach((val) => console.log(val))
 
 // Q9. Take a string from the user. Write a function caesarCipher(str, shift) that shifts each letter
 // by given number.
@@ -2876,3 +2905,167 @@ const sumEven = (arr) => {
 // (Example: chunk([1,2,3,4,5], 2) → [[1,2],[3,4],[5]])
 
 // solution
+
+// pending question
+
+// Take the string "falconh studio" and capitalize the first letter of each word! 💪
+
+// solution
+
+// let str = "falconh studio";
+// let result = "";
+// let word = "";
+
+// for (let val of str) {
+//   if (val === " ") {
+//     result = word[0].toUpperCase() + word.slice(1) + " ";
+//     word = "";
+//   } else {
+//     word += val;
+//   }
+// }
+
+// result += word[0].toUpperCase() + word.slice(1);
+
+// 12 july 2026
+
+// Q1. Take a string "Hello World". Use slice() to extract "World" from it.
+
+// let str = "Hello World";
+// console.log(str.slice(6));
+
+// Q2. Create an array ["a", "b", "c", "d"]. Use join() to convert it to string "a-b-c-d".
+
+// let arr = ["a", "b", "c", "d"];
+// console.log(arr.join("-"));
+
+// Q3. Take a string from the user. Use indexOf() to find the position of first "a". If not found
+// print "Not Found".
+
+// let str = prompt("Enter string: ");
+// let index = str.indexOf("a")
+// if(index === -1){
+//     console.log("not found")
+// } else {
+//     console.log(index)
+// }
+
+// Q4. Take a string "JavaScript is awesome". Use slice() to get first 10 characters.
+
+// let str = "JavaScript is awesome";
+// console.log(str.slice(0, 10))
+
+// Q5. Create an array [10, 20, 30, 40, 50]. Use indexOf() to find position of 30. Print
+// "Found at index [n]" or "Not Found".
+
+// let arr = [10, 20, 30, 40, 50];
+// if (arr.indexOf(30) !== -1) {
+//   console.log(`found at index[${arr.indexOf(30)}]`);
+// } else {
+//   console.log("not found");
+// }
+
+
+// Q6. Take a string from the user. Use split() to split it into words, then join() to rejoin with " | ".
+
+// let str = prompt("Enter string: ");
+// let arr = str.split(" ");
+// let finalArr = arr.join("|");
+// console.log(finalArr)
+
+
+// Q7. Take a string "Hello World". Use slice() to get last 5 characters.
+
+// let str = "Hello World";
+// console.log(str.slice(6))
+
+// Q8. Create an array ["JS", "Python", "Java"]. Use join() to convert to "JS | Python | Java", then
+// check if "Python" exists using indexOf().
+
+// let arr = ["JS", "Python", "Java"];
+// let arr2 = arr.join(" | ");
+
+// let haspy = arr2.indexOf("Python") !== -1;
+
+// if(haspy){
+//     console.log("found")
+// } else {
+//     console.log("not found")
+// }
+
+
+
+
+
+
+// Q9. Take a string from the user. Use split() to split into characters,
+// reverse the array, then join() back — print reversed string.
+
+// let str = prompt("Enter string: ");
+// let strSplit = str.split(""); 
+// let reverseArr = [];
+// for(let i = strSplit.length - 1; i >= 0; i--){
+//     reverseArr.push(strSplit[i]);
+// }
+
+// let reverseStr = reverseArr.join("");
+// console.log(reverseStr)
+
+
+
+
+// Q10. Take a string "banana". Use indexOf() to find all positions where "a" appears.
+// let str = "banana";
+// let index = 0;
+
+// while(index !== -1) {
+//     index = str.indexOf("a", index);
+//     if(index !== -1) {
+//         console.log(`"a" found at index: ${index}`);
+//         index++; // agla position se dhundo
+//     }
+// }
+
+
+
+// "Karachi" me "a" ka pehla index find karo.
+
+// let str = "Karachi";
+// console.log(str.indexOf("a"));
+
+// ["red", "blue", "green"] me "blue" ka index nikalo.
+
+// let arr = ["red", "blue", "green"];
+// let vaari = arr.indexOf("blue");
+// console.log(vaari);
+
+// ["a", "b", "c", "b", "d"] me "b" ko index 2 se search karo.
+
+// let arr = ["a", "b", "c", "b", "d"];
+// console.log(arr.indexOf("b", 2))
+
+// "hello world" me "world" ka index find karo.
+
+// let str = "hello world";
+// console.log(str.indexOf("world"));
+
+// ["apple", "banana", "mango"] me check karo "orange" hai ya nahi (indexOf() use karke).
+
+// let arr = ["apple", "banana", "mango"];
+// let result = arr.indexOf("orange");
+
+// if(result === -1){
+//     console.log("not found");
+// } else {
+//     console.log("found")
+// }
+
+// let email = "falconh@gmail.com";
+// let hesAt = email.indexOf("@") !== -1;
+// let hesDot = email.indexOf(".") !== -1;
+
+// if (hesAt && hesDot) {
+//   console.log("Valid  Email");
+// } else {
+//   console.log("Invalid Email");
+// }
