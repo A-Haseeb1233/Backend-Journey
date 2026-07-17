@@ -4,7 +4,7 @@ Learning JavaScript and backend development from scratch — documenting every s
 
 ## 👨‍💻 About This Repo
 
-This is my personal learning log as I go from JavaScript basics all the way to building real backend systems with Node.js, Express, and PostgreSQL.
+This is my personal learning log as I go from JavaScript basics all the way to building real backend systems with Node.js, Express, and PostgreSQL
 
 **Stack I'm learning:**
 - JavaScript (core fundamentals)
