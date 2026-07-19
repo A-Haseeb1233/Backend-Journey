@@ -6,12 +6,12 @@
     <title>Combine Events</title>
   </head>
   <body>
-   <button>
-    <div onmouseover="console.log('hovered over the div')">this is my box</div>
-   </button>
+   <button> hello  </button>
     <script>
-      let div = document.querySelector("div");
-      div.style.backgroundColor = "pink" 
+      let btn = document.querySelector("button");
+      btn.onclick = () => {
+        console.log("button clicked");
+      }
     </script>
   </body>
 </html>
