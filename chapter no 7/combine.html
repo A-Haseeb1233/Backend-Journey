@@ -6,12 +6,28 @@
     <title>Combine Events</title>
   </head>
   <body>
-   <button> hello  </button>
+    <button>hello</button>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo excepturi
+      sint alias, velit non architecto quae doloribus maiores, modi nesciunt
+      eaque repellendus natus dicta soluta recusandae tenetur vel eligendi?
+      Veniam?
+    </p>
     <script>
       let btn = document.querySelector("button");
       btn.onclick = () => {
         console.log("button clicked");
-      }
+      };
+      let para = document.querySelector("p");
+      para.addEventListener("click", (evt) => {
+        console.log("button click");
+        console.log(evt)
+      });
+      para.addEventListener("click", () => {
+        console.log("Hello")
+      })
+
+
     </script>
   </body>
 </html>
