@@ -22,5 +22,5 @@ btn.addEventListener("click", () => {
 });
 
 btn.addEventListener("click", () => {
-  console.log("button clicked - Handler4");
+  console.log("button clicked - Handler4");gut
 });
