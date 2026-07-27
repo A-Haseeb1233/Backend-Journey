@@ -32,6 +32,3 @@
 
 // employee1.__proto__ = tax;
 // Object.setPrototypeOf(employee2, tax);
-
-
-// object and classes on the way updates will share soon
