@@ -3107,7 +3107,21 @@ more than 10 characters, otherwise print "Short string". */
 
 // solution
 
-// function grade(grade) {}
+// function grade(marks) {
+//     if(marks >= 90) {
+//         return "A";
+//     } else if (marks >= 80) {
+//         return "B";
+//     } else if (marks >= 70) {
+//         return "C";
+//     } else if (marks >= 60) {
+//         return "D";
+//     } else {
+//         return "Fails";
+//     }
+// }
+// let marks = Number(prompt("Enter your marks:"));
+// console.log(grade(marks));
 
 // Q5. (Strings — slice, indexOf, split, join)
 // Take a string "JavaScript is the best language". Extract the word "best" using indexOf() and slice().
@@ -3135,27 +3149,21 @@ more than 10 characters, otherwise print "Short string". */
 
 // btn.addEventListener("click");
 
-
-
-
 // Q8. (Arrow Functions + reduce)
 // Write an arrow function multiply(arr) that returns the product of all elements using reduce().
 
 // solution
 
-const multiply = (arr) => {
-    let array = arr.reduce((curr, pre) => {
-        return curr * pre;
-    }, 1);
+// const multiply = (arr) => {
+//   let array = arr.reduce((curr, pre) => {
+//     return curr * pre;
+//   }, 1);
 
-    return array
-}
+//   return array;
+// };
 
-let arr1 = [1, 2, 3, 4, 5];
-console.log(multiply(arr1));
-
-
-
+// let arr1 = [1, 2, 3, 4, 5];
+// console.log(multiply(arr1));
 
 // Q9. (Strings + Loops)
 // Take a string from the user. Print it in zigzag case.
@@ -3166,4 +3174,81 @@ console.log(multiply(arr1));
 // Q10. (Arrays + Objects)
 // Create an array of 3 objects — each with name and age. Print only those whose age is above 18.
 
+// // solution
+
+// pending
+
+// Q1. Create variables of all data types — string, number, boolean, null, undefined. Print each with its
+// type using typeof.
+
 // solution
+
+// let num = 23;
+// let str = "FalconH";
+// let boolean = true;
+// let x;
+// let y = null;
+
+// console.log(`${num}: ${typeof num}`);
+// console.log(`${str}: ${typeof str}`);
+// console.log(`${boolean}: ${typeof boolean}`);
+// console.log(`${x}: ${typeof x}`);
+// console.log(`${y}: ${typeof y}`);
+
+// Q2. Take two numbers from the user. Print which one is NaN if user enters text instead of
+// number. (Hint: isNaN())
+
+// let num1 = Number(prompt("Enter number 1: "));
+// let num2 = Number(prompt("Enter number 2: "));
+
+// console.log(`${num1}, ${num2}`);
+
+// Q3. Create a variable let x = "5". Convert it to number and add 10 to it. Print result.
+
+// let x = "5";
+// x = Number(x);
+// let y = 10;
+// console.log(x + y)
+
+// Q4. Take a number from the user. Print "Integer" if it has no decimal, "Float" if it does.
+// (Hint: % 1)
+
+// let num = Number(prompt("Enter your Number: "));
+
+// if (num % 1) {
+//   console.log("float");
+// } else {
+//   console.log("integers");
+// }
+
+// Q5. Create variables a = null and b = undefined. Print typeof both — notice the difference!
+
+// let a = null;
+// let b = undefined;
+
+// console.log(typeof a);
+// console.log(typeof b);
+
+// note if we print typeof we got object and b is undefined
+
+// Q6. Take a string from the user. Try converting it to number using Number(). If result is NaN print "Not a Number", otherwise print the number.
+
+let str = prompt("Enter String: ");
+str = Number(str)
+if(Nan) {
+    console.log("Not a number!");
+} else {
+    console.log("Numbers")
+}
+
+
+
+
+// Q7. Create a variable let str = "123abc". Try converting to number — what happens? Print the result.
+
+// Q8. Create let a = "10" and let b = 20. Print their sum — first without conversion, then with conversion. Notice the difference!
+
+// Q9. Take any value from the user. Print "Truthy" if it is truthy, "Falsy" if it is falsy.
+// (Hint: falsy values are: 0, "", null, undefined, NaN, false)
+
+// Q10. Create let a = 5. Print its value, type, and whether it is integer or float — all in one console.log.
