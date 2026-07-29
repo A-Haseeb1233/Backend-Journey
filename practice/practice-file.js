@@ -3233,22 +3233,60 @@ more than 10 characters, otherwise print "Short string". */
 
 // Q6. Take a string from the user. Try converting it to number using Number(). If result is NaN print "Not a Number", otherwise print the number.
 
-let str = prompt("Enter String: ");
-str = Number(str)
-if(Nan) {
-    console.log("Not a number!");
-} else {
-    console.log("Numbers")
-}
-
-
-
+// let str = prompt("Enter String: ");
+// str = Number(str);
+// if (isNaN(str)) {
+//   console.log("Not a number!");
+// } else {
+//   console.log("Numbers");
+// }
 
 // Q7. Create a variable let str = "123abc". Try converting to number — what happens? Print the result.
 
-// Q8. Create let a = "10" and let b = 20. Print their sum — first without conversion, then with conversion. Notice the difference!
+// let str = "123abc";
+// str = Number(str);
+// console.log(str)
+
+// Nan
+
+
+
+// Q8. Create let a = "10" and let b = 20. Print their sum — first without conversion, then with conversion. 
+// Notice the difference!
+
+// let a = "10";
+// let b = 20;
+
+// console.log(a + b);
+// console.log(Number(a) + b);
+
+
 
 // Q9. Take any value from the user. Print "Truthy" if it is truthy, "Falsy" if it is falsy.
 // (Hint: falsy values are: 0, "", null, undefined, NaN, false)
 
+// let str = prompt("Enter your inputs: ");
+// let result = "";
+// if(str === 0) {
+//     result = "falsy";
+// } else if (str === "") {
+//     result = "falsy";
+// } else if (str === null) {
+//     result = "falsy";
+// } else if (str === undefined) {
+//     result = "falsy";
+// } else if (str === false) {
+//     result = "falsy";
+// } else {
+//     result = "truthy";
+// }
+
+// console.log(result);
+
+
+
+
 // Q10. Create let a = 5. Print its value, type, and whether it is integer or float — all in one console.log.
+
+// let a = 5;
+// console.log(`value of a is: ${a}\ntype of a is: ${typeof a}\nthis is values is ${a % 1 ? console.log("float"):console.log("Integers")} `);
