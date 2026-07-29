@@ -2965,14 +2965,12 @@ more than 10 characters, otherwise print "Short string". */
 //   console.log("not found");
 // }
 
-
 // Q6. Take a string from the user. Use split() to split it into words, then join() to rejoin with " | ".
 
 // let str = prompt("Enter string: ");
 // let arr = str.split(" ");
 // let finalArr = arr.join("|");
 // console.log(finalArr)
-
 
 // Q7. Take a string "Hello World". Use slice() to get last 5 characters.
 
@@ -2993,16 +2991,11 @@ more than 10 characters, otherwise print "Short string". */
 //     console.log("not found")
 // }
 
-
-
-
-
-
 // Q9. Take a string from the user. Use split() to split into characters,
 // reverse the array, then join() back — print reversed string.
 
 // let str = prompt("Enter string: ");
-// let strSplit = str.split(""); 
+// let strSplit = str.split("");
 // let reverseArr = [];
 // for(let i = strSplit.length - 1; i >= 0; i--){
 //     reverseArr.push(strSplit[i]);
@@ -3010,9 +3003,6 @@ more than 10 characters, otherwise print "Short string". */
 
 // let reverseStr = reverseArr.join("");
 // console.log(reverseStr)
-
-
-
 
 // Q10. Take a string "banana". Use indexOf() to find all positions where "a" appears.
 // let str = "banana";
@@ -3025,8 +3015,6 @@ more than 10 characters, otherwise print "Short string". */
 //         index++; // agla position se dhundo
 //     }
 // }
-
-
 
 // "Karachi" me "a" ka pehla index find karo.
 
@@ -3069,3 +3057,113 @@ more than 10 characters, otherwise print "Short string". */
 // } else {
 //   console.log("Invalid Email");
 // }
+
+// Q1. (Variables + Conditions)
+// Take temperature = 36.5. Print "Fever" if above 37.5, "Normal" if between 36 and 37.5, otherwise "Low".
+
+// solution
+
+// let temperature = Number(prompt("Enter your Temperature: "))
+
+// if (temperature > 37.5) {
+//   console.log("Fever");
+// } else if (temperature >= 36 && temperature <= 37.5) {
+//   console.log("Normal");
+// } else {
+//   console.log("Lower");
+// }
+
+// Q2. (Loops + Strings)
+// Take a string from the user. Print each character and its index — but only consonants!
+
+// solution
+
+// let str = prompt("Enter your string: ");
+// str = str.toLowerCase();
+// let word = "";
+// for (let val of str) {
+//   if ("aeiou ".includes(val)) {
+//     continue;
+//   } else {
+//     word += val;
+//   }
+// }
+
+// for (let i = 0; i <= word.length - 1; i++) {
+//   console.log(`${i}: ${word[i]}\n`);
+// }
+
+// Q3. (Arrays + forEach)
+// Create an array of 5 numbers. Use forEach() to print each number and its square.
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5];
+
+// arr.forEach((element) => console.log(element ** 2));
+
+// Q4. (Functions + Conditions)
+// Write a function grade(marks) that returns "A", "B", "C", "D", or "Fail" based on marks.
+
+// solution
+
+// function grade(grade) {}
+
+// Q5. (Strings — slice, indexOf, split, join)
+// Take a string "JavaScript is the best language". Extract the word "best" using indexOf() and slice().
+
+// solution
+
+// Q6. (Arrays + map + filter)
+// Create an array [1,2,3,4,5,6,7,8,9,10]. Use map() to square each, then filter() to get squares greater
+//  than 25.
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let mapsqrarr = arr.map((val) => val ** 2);
+// let filterarr = mapsqrarr.filter((val) => val > 25);
+
+// Q7. (DOM)
+// Write JS code that changes the background color of body to "lightblue" when a button is clicked.
+
+// solution
+
+// let btn = document.createElement("button")
+// btn.innerText = "Clicked"
+// document.querySelector("body").prepend(btn);
+
+// btn.addEventListener("click");
+
+
+
+
+// Q8. (Arrow Functions + reduce)
+// Write an arrow function multiply(arr) that returns the product of all elements using reduce().
+
+// solution
+
+const multiply = (arr) => {
+    let array = arr.reduce((curr, pre) => {
+        return curr * pre;
+    }, 1);
+
+    return array
+}
+
+let arr1 = [1, 2, 3, 4, 5];
+console.log(multiply(arr1));
+
+
+
+
+// Q9. (Strings + Loops)
+// Take a string from the user. Print it in zigzag case.
+// (Example: "hello" → "hElLo")
+
+// solution
+
+// Q10. (Arrays + Objects)
+// Create an array of 3 objects — each with name and age. Print only those whose age is above 18.
+
+// solution
