@@ -3441,3 +3441,119 @@ more than 10 characters, otherwise print "Short string". */
 // }
 
 // console.log(word);
+
+// Q. String "JavaScript" se slice() use karke sirf "Script" nikalo.
+
+// solution
+
+// let str = "JavaScript"
+
+// console.log(str.slice(4));
+
+
+// Q. String "Hello World" mein indexOf() use karke batao "World" kis position (index) pe
+// start hota hai.
+
+// solution
+
+// let str = "Hello World";
+// let searchItem = "World";
+
+// console.log(`the index of ${searchItem} is ${str.indexOf(searchItem)}`);
+
+
+
+// Q. Sentence "I love JavaScript programming" ko split() se words ke array mein todo.
+
+// solution
+
+// let str = "I love JavaScript programming";
+// let word = str.split("");
+// console.log(word);
+
+
+
+
+// Q. Array ["Node", "Express", "PostgreSQL"] ko join() use karke ek string bana do, jisme
+// har word ke beech " - " ho (result: "Node - Express - PostgreSQL").
+
+// solution
+
+// first method
+
+// let arr = ["Node", "Express", "PostgreSQL"];
+// let joinOfArr = arr.join("-");
+// console.log(joinOfArr);
+
+// second method
+
+// console.log(`${arr.join("-")}`)
+
+
+// Q. String "I am learning JavaScript" mein includes() use karke check karo ke usme 
+// "learning" word hai ya nahi.
+
+// solution
+
+// first method
+
+// let str = "I am learning JavaScript";
+// let check = str.includes("learning");
+// console.log(check);
+
+// second method
+
+// console.log(`${str.includes("learning")}`);
+
+// Q. String "   Hello World   " (aage peeche spaces ke sath) ko trim() se clean karo.
+
+// solution
+
+// let str = "   Hello World   "
+// console.log(`${str.trim()}`);
+
+
+
+// Q. String "hello" ko toUpperCase() se poora capital mein convert karo, aur "WORLD" ko 
+// toLowerCase() se poora chota.
+
+// solution
+
+// let str1 = "hello";
+// let str2 = "WORLD";
+
+// console.log(str1.toUpperCase());
+// console.log(str2.toLowerCase());
+
+// Q. String "JavaScript is fun" mein startsWith() use karke check karo ke ye "Java" se 
+// start hoti hai ya nahi.
+
+// solution
+
+// let str = "JavaScript is fun";
+// console.log(str.startsWith("Java"));
+
+
+
+// Q. String "I like cats. Cats are cute." mein replaceAll() use karke sab "Cats"/"cats" ko 
+// "Dogs"/"dogs" se replace karo (case ka khayal rakhna).
+
+// solution
+
+// i dont know how to use regular expression
+// so add to this in pending list
+
+
+
+
+// Q. Ek email "  Ali@Example.com  " diya hai — trim(), toLowerCase() aur koi aur method 
+// combine karke check karo ke ye "ali@example.com" ban raha hai ya nahi (isko print karke 
+// verify karo).
+
+// solution
+
+// let email = "  Ali@Example.com  "
+// let finalEmail = email.toLowerCase().trim();
+// console.log(finalEmail);
+
+
