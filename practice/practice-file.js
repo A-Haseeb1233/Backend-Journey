@@ -3290,3 +3290,154 @@ more than 10 characters, otherwise print "Short string". */
 
 // let a = 5;
 // console.log(`value of a is: ${a}\ntype of a is: ${typeof a}\nthis is values is ${a % 1 ? console.log("float"):console.log("Integers")} `);
+
+// Q.1 1 se 10 tak numbers print karo for loop se.
+
+// solution
+
+// for(let i = 1; i <= 10; i++) {
+// 	console.log(i);
+// }
+
+// Q.2 Ek array [10, 20, 30, 40] diya hai — for...of use karke sab elements print karo.
+
+// solution
+
+// let arr = [10, 20, 30, 40, 50];
+
+// for(let val of arr) {
+// 	console.log(val);
+// }
+
+
+// Q.3 while loop use karke 5 se countdown karo 1 tak (5,4,3,2,1).
+
+// solution
+
+
+// let i = 5;
+
+// while(i >= 1) {
+// 	console.log(i);
+// 	i--;
+// }
+
+
+
+
+
+// Q.4 1 se 50 tak sirf even numbers print karo.
+
+// solution
+
+// first method
+
+// for(let i = 1; i <= 50; i++){
+// 	if(i % 2 === 0){
+// 	console.log(i);
+// 	}
+// }
+
+// second method
+
+// for(let i = 1; i <= 50; i++){
+// 	if(i % 2 !== 0){
+// 	continue;
+// 	}
+// 	console.log(i)
+// }
+
+// Q.5 Ek number ka factorial nikalo loop se (e.g. 5! = 120).
+
+// solution
+
+
+// pending 
+
+
+// note : tum ek list create karo jisma sara pending question add karta raho ookay!
+
+
+
+
+// Q.6 Ek string "hello" diya hai — for...of use karke har character ko naye line pe print karo.
+
+// solution
+
+// let str = "Hello";
+
+// first method
+
+// for(let val of str) {
+// 	console.log(val);
+// }
+
+// second method
+
+// for(let i = 0; i <= str.length - 1; i++) {
+// 	console.log(str[i]);
+// }
+
+// Q.7 1 se 100 tak sab numbers ka sum nikalo loop se.
+
+// solution
+
+// let sum = 0;
+
+// for(let i = 1; i <= 100; i++) {
+// 	sum = sum + i;
+// }
+
+// console.log(`sum of 1 - 100 is: ${sum}`);
+
+
+
+// Q.8  Ek array [5, 12, 8, 3, 19, 7] diya hai — loop use karke sabse bada (maximum) number dhundo.
+
+// solution
+
+// let arr = [5, 12, 8, 3, 19, 7];
+
+// let max = -Infinity;
+
+// for(let i = 0; i <= arr.length - 1; i++) {
+// 	if(arr[i] > max){
+// 	max = arr[i];
+// 	}
+// }
+
+// console.log(max);
+
+// Q.9 Multiplication table print karo kisi bhi number ki (e.g. 7 ki table, 1 se 10 tak).
+
+// solution
+
+// let numOfTable = Number(prompt("Enter your number: "));
+
+// for(let i = 1; i <= 10; i++){
+// 	console.log(`${numOfTable} * ${i} = ${numOfTable * i}`);
+// }
+
+// Q.10  while loop use karke reverse mein string print karo (e.g. "claude" → "edualc").
+
+// solution
+
+// first method
+
+// let str = "claude";
+// let i = str.length - 1;
+// let word = "";
+// while(i >= 0) {
+// 	word += str[i];
+// 	i--;
+// }
+
+// console.log(word)
+
+// second method
+
+// for(let i = str.length - 1; i >= 0; i--){
+// 	word += str[i];	
+// }
+
+// console.log(word);
