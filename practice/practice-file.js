@@ -246,7 +246,7 @@ and 37.5, print "Normal". Otherwise print "Low Temperature". */
 
 // solution
 
-// let temperature = 38;
+// let temperature = Number(prompt("Enter your temp: "));
 
 // if (temperature > 37.5) {
 //     console.log("Fever");
@@ -3249,9 +3249,7 @@ more than 10 characters, otherwise print "Short string". */
 
 // Nan
 
-
-
-// Q8. Create let a = "10" and let b = 20. Print their sum — first without conversion, then with conversion. 
+// Q8. Create let a = "10" and let b = 20. Print their sum — first without conversion, then with conversion.
 // Notice the difference!
 
 // let a = "10";
@@ -3259,8 +3257,6 @@ more than 10 characters, otherwise print "Short string". */
 
 // console.log(a + b);
 // console.log(Number(a) + b);
-
-
 
 // Q9. Take any value from the user. Print "Truthy" if it is truthy, "Falsy" if it is falsy.
 // (Hint: falsy values are: 0, "", null, undefined, NaN, false)
@@ -3282,9 +3278,6 @@ more than 10 characters, otherwise print "Short string". */
 // }
 
 // console.log(result);
-
-
-
 
 // Q10. Create let a = 5. Print its value, type, and whether it is integer or float — all in one console.log.
 
@@ -3309,11 +3302,9 @@ more than 10 characters, otherwise print "Short string". */
 // 	console.log(val);
 // }
 
-
 // Q.3 while loop use karke 5 se countdown karo 1 tak (5,4,3,2,1).
 
 // solution
-
 
 // let i = 5;
 
@@ -3321,10 +3312,6 @@ more than 10 characters, otherwise print "Short string". */
 // 	console.log(i);
 // 	i--;
 // }
-
-
-
-
 
 // Q.4 1 se 50 tak sirf even numbers print karo.
 
@@ -3351,14 +3338,9 @@ more than 10 characters, otherwise print "Short string". */
 
 // solution
 
-
-// pending 
-
+// pending
 
 // note : tum ek list create karo jisma sara pending question add karta raho ookay!
-
-
-
 
 // Q.6 Ek string "hello" diya hai — for...of use karke har character ko naye line pe print karo.
 
@@ -3389,8 +3371,6 @@ more than 10 characters, otherwise print "Short string". */
 // }
 
 // console.log(`sum of 1 - 100 is: ${sum}`);
-
-
 
 // Q.8  Ek array [5, 12, 8, 3, 19, 7] diya hai — loop use karke sabse bada (maximum) number dhundo.
 
@@ -3437,7 +3417,7 @@ more than 10 characters, otherwise print "Short string". */
 // second method
 
 // for(let i = str.length - 1; i >= 0; i--){
-// 	word += str[i];	
+// 	word += str[i];
 // }
 
 // console.log(word);
@@ -3450,7 +3430,6 @@ more than 10 characters, otherwise print "Short string". */
 
 // console.log(str.slice(4));
 
-
 // Q. String "Hello World" mein indexOf() use karke batao "World" kis position (index) pe
 // start hota hai.
 
@@ -3461,8 +3440,6 @@ more than 10 characters, otherwise print "Short string". */
 
 // console.log(`the index of ${searchItem} is ${str.indexOf(searchItem)}`);
 
-
-
 // Q. Sentence "I love JavaScript programming" ko split() se words ke array mein todo.
 
 // solution
@@ -3470,9 +3447,6 @@ more than 10 characters, otherwise print "Short string". */
 // let str = "I love JavaScript programming";
 // let word = str.split("");
 // console.log(word);
-
-
-
 
 // Q. Array ["Node", "Express", "PostgreSQL"] ko join() use karke ek string bana do, jisme
 // har word ke beech " - " ho (result: "Node - Express - PostgreSQL").
@@ -3489,8 +3463,7 @@ more than 10 characters, otherwise print "Short string". */
 
 // console.log(`${arr.join("-")}`)
 
-
-// Q. String "I am learning JavaScript" mein includes() use karke check karo ke usme 
+// Q. String "I am learning JavaScript" mein includes() use karke check karo ke usme
 // "learning" word hai ya nahi.
 
 // solution
@@ -3512,9 +3485,7 @@ more than 10 characters, otherwise print "Short string". */
 // let str = "   Hello World   "
 // console.log(`${str.trim()}`);
 
-
-
-// Q. String "hello" ko toUpperCase() se poora capital mein convert karo, aur "WORLD" ko 
+// Q. String "hello" ko toUpperCase() se poora capital mein convert karo, aur "WORLD" ko
 // toLowerCase() se poora chota.
 
 // solution
@@ -3525,7 +3496,7 @@ more than 10 characters, otherwise print "Short string". */
 // console.log(str1.toUpperCase());
 // console.log(str2.toLowerCase());
 
-// Q. String "JavaScript is fun" mein startsWith() use karke check karo ke ye "Java" se 
+// Q. String "JavaScript is fun" mein startsWith() use karke check karo ke ye "Java" se
 // start hoti hai ya nahi.
 
 // solution
@@ -3533,9 +3504,7 @@ more than 10 characters, otherwise print "Short string". */
 // let str = "JavaScript is fun";
 // console.log(str.startsWith("Java"));
 
-
-
-// Q. String "I like cats. Cats are cute." mein replaceAll() use karke sab "Cats"/"cats" ko 
+// Q. String "I like cats. Cats are cute." mein replaceAll() use karke sab "Cats"/"cats" ko
 // "Dogs"/"dogs" se replace karo (case ka khayal rakhna).
 
 // solution
@@ -3543,11 +3512,8 @@ more than 10 characters, otherwise print "Short string". */
 // i dont know how to use regular expression
 // so add to this in pending list
 
-
-
-
-// Q. Ek email "  Ali@Example.com  " diya hai — trim(), toLowerCase() aur koi aur method 
-// combine karke check karo ke ye "ali@example.com" ban raha hai ya nahi (isko print karke 
+// Q. Ek email "  Ali@Example.com  " diya hai — trim(), toLowerCase() aur koi aur method
+// combine karke check karo ke ye "ali@example.com" ban raha hai ya nahi (isko print karke
 // verify karo).
 
 // solution
@@ -3555,9 +3521,6 @@ more than 10 characters, otherwise print "Short string". */
 // let email = "  Ali@Example.com  "
 // let finalEmail = email.toLowerCase().trim();
 // console.log(finalEmail);
-
-
-
 
 // Q.1 Empty array banao aur push() use karke usme 5 numbers add karo (1 se 5 tak).
 
@@ -3575,14 +3538,10 @@ more than 10 characters, otherwise print "Short string". */
 
 // solution
 
-
 // let arr = [10, 20, 30, 40, 50];
 // let popArr = arr.pop()
 
 // console.log(arr);
-						
-
-
 
 // Q.3 Array [5, 12, 8, 20, 3, 17] mein se filter() use karke sirf 10 se bade numbers nikalo.
 
@@ -3593,9 +3552,6 @@ more than 10 characters, otherwise print "Short string". */
 // let filterArr = arr.filter((element) => element > 10);
 // console.log(filterArr);
 
-
-
-
 // Q.4 Array [1, 2, 3, 4, 5] ka har element map() use karke square (khud se multiply) karo.
 
 // solution
@@ -3604,11 +3560,6 @@ more than 10 characters, otherwise print "Short string". */
 // let squareArr = arr.map((val) => val ** 2);
 // console.log(squareArr);
 
-
-
-
-
-
 // Q.5 Array [10, 20, 30, 40] ke sab elements ka sum reduce() se nikalo.
 
 // solution
@@ -3616,9 +3567,6 @@ more than 10 characters, otherwise print "Short string". */
 // let arr = [10, 20, 30, 40];
 // let sumOfArr = arr.reduce((pre, curr) => pre + curr, 0);
 // console.log(sumOfArr);
-
-
-
 
 // Q.6 Array ["apple", "banana", "cherry"] par forEach() use karke har element ko "Fruit: <naam>" format mein print karo.
 
@@ -3630,10 +3578,6 @@ more than 10 characters, otherwise print "Short string". */
 // 	console.log(`fruit: ${val}`);
 // })
 
-
-
-
-
 // Q.7 Array [3, 7, 11, 15, 19] mein indexOf() use karke 15 ka index dhundo.
 
 // solution
@@ -3641,12 +3585,6 @@ more than 10 characters, otherwise print "Short string". */
 // let arr = [3, 7, 11, 15, 19];
 // let searchItem = 15;
 // console.log(`the index of ${searchItem} is ${arr.indexOf(searchItem)}`);
-
-
-
-
-
-
 
 // Q.8 Array [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] se filter() aur map() combine karke — sirf even numbers nikalo aur unko double kar do.
 
@@ -3656,11 +3594,6 @@ more than 10 characters, otherwise print "Short string". */
 // let filterArr = arr.filter((val) => val % 2 === 0);
 // let squareArr = filterArr.map((val) => val * 2);
 // console.log(squareArr);
-
-
-
-
-
 
 // Q.9 reduce() use karke array [4, 2, 9, 1, 7] mein se maximum number nikalo (bina Math.max use kiye).
 
@@ -3676,8 +3609,6 @@ more than 10 characters, otherwise print "Short string". */
 
 // console.log(maximumVal);
 
-
-
 // Q.10 Ek array [5, 10, 15] diya hai — push() se ek naya element (20) add karo, phir pop() se ek element nikaal do, phir final array print karo.
 
 // solution
@@ -3687,7 +3618,163 @@ more than 10 characters, otherwise print "Short string". */
 // arr.pop()
 // console.log(arr);
 
+// Q1. (Variables + typeof)
+// Create an object {name: "FalconH", age: 22, isStudent: true}. Print each value with its type
+// using typeof.
+
+// solution
+
+// let obj = {
+//   name: "FalconH",
+//   age: 22,
+//   isStudent: true,
+// };
+
+// console.log(`${obj.name}: ${typeof obj.name}`);
+// console.log(`${obj.age}: ${typeof obj.age}`);
+// console.log(`${obj.isStudent}: ${typeof obj.isStudent}`);
+
+// Q2. (Loops + Arrays)
+// Create an array [1,2,3,4,5]. Use a loop to create a new array where each element is the original times
+// its index.
+// (Example: [0, 2, 6, 12, 20])
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let finalArr = arr.map((val, index) => val * index);
+// console.log(finalArr);
+
+// Q3. (Strings + slice + indexOf)
+// Take a string "Hello, my name is FalconH". Extract "FalconH" using indexOf() and slice().
+
+// solution
+
+// let str = "Hello, my name is FalconH";
+// let searchItem = "FalconH";
+// let searchItemIndex = str.indexOf(searchItem);
+// let subStr = str.slice(searchItemIndex);
+// console.log(subStr);
+
+// Q4. (Functions + Arrow Functions)
+// Write an arrow function discount(price, percent) that returns the final price after discount.
+
+// // solution
+
+// let price = Number(prompt("Enter price: "));
+// let discount = Number(prompt("Enter discount percent % : "));
+
+// const functDis = (price, discount) => {
+//     let formula = price - (price * discount / 100);
+//     return formula;
+// }
+
+// console.log(functDis(price, discount));
+
+// Q5. (map + filter + reduce)
+// Create an array [1,2,3,4,5,6,7,8,9,10]. Filter odd numbers, map each to its cube, then reduce to find sum.
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let filterOddNum = arr.filter((val) => val % 2 !== 0);
+// let cubeFilterVal = filterOddNum.map((val) => val ** 3);
+// let sumOfCubeVal = cubeFilterVal.reduce((pre, curr) => pre + curr, 0);
+// console.log(sumOfCubeVal);
+
+// Q6. (DOM + Events)
+// Write JS that counts how many times a button is clicked and displays the count on the page.
+
+// solution
+
+// let btn = document.createElement("button");
+// btn.innerText = "Clicked";
+// document.querySelector("body").append(btn);
+
+// let para = document.createElement("p");
+// para.innerText = "0";
+// document.querySelector("body").append(para);
+
+// let count = 0;
+// btn.addEventListener("click", () => {
+//   count++;
+//   para.innerText = count;
+// });
+
+// Q7. (Conditions)
+// Take score = 75. Print grade using ternary operator — all in one line!
+
+// solution
+
+// let score = Number(prompt("Enter your score: "));
+
+// let grade = score >= 90 ?  "A" : score >= 80 ? "B" : score >= 70 ? "C" : score >= 60 ? "D" : "FAIL";
+// console.log(grade);
 
 
 
 
+// Q8. (Strings + Loops)
+// Take a string from the user. Print it in zigzag case.
+// (Example: "hello" → "hElLo")
+
+// solution
+
+// let str = prompt("Enter your string: ");
+// str = str.toLowerCase();
+
+// let zigZagCase = "";
+
+// for(let i = 0; i <= str.length - 1; i++) {
+//     if(i % 2) {
+//         zigZagCase += str[i].toUpperCase();
+//     } else {
+//         zigZagCase += str[i].toLowerCase();
+//     }
+// }
+
+// console.log(zigZagCase);
+
+
+// Q9. (Arrays + Objects)
+// Create array of 3 students {name, marks}. Use filter() to get passed students (marks > 50), then map() to
+// return "[name] passed!".
+
+// solution
+// let students = [
+//     { name: "Ali", marks: 80 },
+//     { name: "Ahmed", marks: 40 },
+//     { name: "Haseeb", marks: 56 },
+//     { name: "Abdullah", marks: 78 },
+//     { name: "Usman", marks: 27 },
+//     { name: "Hamza", marks: 85 },
+//     { name: "Zain", marks: 33 },
+//     { name: "Bilal", marks: 92 },
+//     { name: "Ahsan", marks: 71 },
+//     { name: "Saad", marks: 18 }
+// ];
+
+// let filterStd = students.filter((val) => {
+//     return val.marks > 50;
+// });
+
+// let bestStdNames = filterStd.map((names) => names.name);
+
+// bestStdNames.forEach((finalNames) => console.log(finalNames));
+
+
+// Q10. (split + join + reverse)
+// Take a string from the user. Reverse each word individually but keep word order.
+// (Example: "hello world" → "olleh dlrow")
+
+
+let str = prompt("Enter your names: ");
+let strToArr = str.split(" ");
+
+let reverseStr = "";
+for(let i = str.length - 1; i >= 0; i--) {
+    reverseStr += str[i];
+}
+
+console.log(reverseStr);
