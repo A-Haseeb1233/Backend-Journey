@@ -3557,3 +3557,137 @@ more than 10 characters, otherwise print "Short string". */
 // console.log(finalEmail);
 
 
+
+
+// Q.1 Empty array banao aur push() use karke usme 5 numbers add karo (1 se 5 tak).
+
+// solution
+
+// let arr = [];
+
+// for(let i = 1; i <= 5; i++) {
+// 	arr.push(i);
+// }
+
+// console.log(arr);
+
+// Q.2 Array [10, 20, 30, 40, 50] se pop() use karke last element nikal do, aur updated array print karo.
+
+// solution
+
+
+// let arr = [10, 20, 30, 40, 50];
+// let popArr = arr.pop()
+
+// console.log(arr);
+						
+
+
+
+// Q.3 Array [5, 12, 8, 20, 3, 17] mein se filter() use karke sirf 10 se bade numbers nikalo.
+
+// solution
+
+// let arr = [5, 12, 8, 20, 3, 17];
+
+// let filterArr = arr.filter((element) => element > 10);
+// console.log(filterArr);
+
+
+
+
+// Q.4 Array [1, 2, 3, 4, 5] ka har element map() use karke square (khud se multiply) karo.
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5];
+// let squareArr = arr.map((val) => val ** 2);
+// console.log(squareArr);
+
+
+
+
+
+
+// Q.5 Array [10, 20, 30, 40] ke sab elements ka sum reduce() se nikalo.
+
+// solution
+
+// let arr = [10, 20, 30, 40];
+// let sumOfArr = arr.reduce((pre, curr) => pre + curr, 0);
+// console.log(sumOfArr);
+
+
+
+
+// Q.6 Array ["apple", "banana", "cherry"] par forEach() use karke har element ko "Fruit: <naam>" format mein print karo.
+
+// solution
+
+// let arr = ["apple", "banana", "cherry"];
+
+// arr.forEach((val) => {
+// 	console.log(`fruit: ${val}`);
+// })
+
+
+
+
+
+// Q.7 Array [3, 7, 11, 15, 19] mein indexOf() use karke 15 ka index dhundo.
+
+// solution
+
+// let arr = [3, 7, 11, 15, 19];
+// let searchItem = 15;
+// console.log(`the index of ${searchItem} is ${arr.indexOf(searchItem)}`);
+
+
+
+
+
+
+
+// Q.8 Array [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] se filter() aur map() combine karke — sirf even numbers nikalo aur unko double kar do.
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let filterArr = arr.filter((val) => val % 2 === 0);
+// let squareArr = filterArr.map((val) => val * 2);
+// console.log(squareArr);
+
+
+
+
+
+
+// Q.9 reduce() use karke array [4, 2, 9, 1, 7] mein se maximum number nikalo (bina Math.max use kiye).
+
+// let arr = [4, 2, 9, 1, 7];
+
+// let maximumVal = arr.reduce((pre, curr) => {
+// 	if(pre > curr) {
+// 	return pre
+// 	} else {
+// 	return curr;
+// 	}
+// }, 0);
+
+// console.log(maximumVal);
+
+
+
+// Q.10 Ek array [5, 10, 15] diya hai — push() se ek naya element (20) add karo, phir pop() se ek element nikaal do, phir final array print karo.
+
+// solution
+
+// let arr = [5, 10, 15];
+// arr.push(20);
+// arr.pop()
+// console.log(arr);
+
+
+
+
+
