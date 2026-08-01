@@ -3856,3 +3856,6 @@ more than 10 characters, otherwise print "Short string". */
 // Q10. (Objects)
 // Create an object car with properties brand, model, year, speed. Write a method accelerate(amount) that increases speed.
 
+
+
+
