@@ -3618,3 +3618,219 @@ more than 10 characters, otherwise print "Short string". */
 // arr.pop()
 // console.log(arr);
 
+// Q1. (Variables + typeof)
+// Create an object {name: "FalconH", age: 22, isStudent: true}. Print each value with its type
+// using typeof.
+
+// solution
+
+// let obj = {
+//   name: "FalconH",
+//   age: 22,
+//   isStudent: true,
+// };
+
+// console.log(`${obj.name}: ${typeof obj.name}`);
+// console.log(`${obj.age}: ${typeof obj.age}`);
+// console.log(`${obj.isStudent}: ${typeof obj.isStudent}`);
+
+// Q2. (Loops + Arrays)
+// Create an array [1,2,3,4,5]. Use a loop to create a new array where each element is the original times
+// its index.
+// (Example: [0, 2, 6, 12, 20])
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let finalArr = arr.map((val, index) => val * index);
+// console.log(finalArr);
+
+// Q3. (Strings + slice + indexOf)
+// Take a string "Hello, my name is FalconH". Extract "FalconH" using indexOf() and slice().
+
+// solution
+
+// let str = "Hello, my name is FalconH";
+// let searchItem = "FalconH";
+// let searchItemIndex = str.indexOf(searchItem);
+// let subStr = str.slice(searchItemIndex);
+// console.log(subStr);
+
+// Q4. (Functions + Arrow Functions)
+// Write an arrow function discount(price, percent) that returns the final price after discount.
+
+// // solution
+
+// let price = Number(prompt("Enter price: "));
+// let discount = Number(prompt("Enter discount percent % : "));
+
+// const functDis = (price, discount) => {
+//     let formula = price - (price * discount / 100);
+//     return formula;
+// }
+
+// console.log(functDis(price, discount));
+
+// Q5. (map + filter + reduce)
+// Create an array [1,2,3,4,5,6,7,8,9,10]. Filter odd numbers, map each to its cube, then reduce to find sum.
+
+// solution
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let filterOddNum = arr.filter((val) => val % 2 !== 0);
+// let cubeFilterVal = filterOddNum.map((val) => val ** 3);
+// let sumOfCubeVal = cubeFilterVal.reduce((pre, curr) => pre + curr, 0);
+// console.log(sumOfCubeVal);
+
+// Q6. (DOM + Events)
+// Write JS that counts how many times a button is clicked and displays the count on the page.
+
+// solution
+
+// let btn = document.createElement("button");
+// btn.innerText = "Clicked";
+// document.querySelector("body").append(btn);
+
+// let para = document.createElement("p");
+// para.innerText = "0";
+// document.querySelector("body").append(para);
+
+// let count = 0;
+// btn.addEventListener("click", () => {
+//   count++;
+//   para.innerText = count;
+// });
+
+// Q7. (Conditions)
+// Take score = 75. Print grade using ternary operator — all in one line!
+
+// solution
+
+// let score = Number(prompt("Enter your score: "));
+
+// let grade = score >= 90 ?  "A" : score >= 80 ? "B" : score >= 70 ? "C" : score >= 60 ? "D" : "FAIL";
+// console.log(grade);
+
+// Q8. (Strings + Loops)
+// Take a string from the user. Print it in zigzag case.
+// (Example: "hello" → "hElLo")
+
+// solution
+
+// let str = prompt("Enter your string: ");
+// str = str.toLowerCase();
+
+// let zigZagCase = "";
+
+// for(let i = 0; i <= str.length - 1; i++) {
+//     if(i % 2) {
+//         zigZagCase += str[i].toUpperCase();
+//     } else {
+//         zigZagCase += str[i].toLowerCase();
+//     }
+// }
+
+// console.log(zigZagCase);
+
+// Q9. (Arrays + Objects)
+// Create array of 3 students {name, marks}. Use filter() to get passed students (marks > 50), then map() to
+// return "[name] passed!".
+
+// solution
+// let students = [
+//     { name: "Ali", marks: 80 },
+//     { name: "Ahmed", marks: 40 },
+//     { name: "Haseeb", marks: 56 },
+//     { name: "Abdullah", marks: 78 },
+//     { name: "Usman", marks: 27 },
+//     { name: "Hamza", marks: 85 },
+//     { name: "Zain", marks: 33 },
+//     { name: "Bilal", marks: 92 },
+//     { name: "Ahsan", marks: 71 },
+//     { name: "Saad", marks: 18 }
+// ];
+
+// let filterStd = students.filter((val) => {
+//     return val.marks > 50;
+// });
+
+// let bestStdNames = filterStd.map((names) => names.name);
+
+// bestStdNames.forEach((finalNames) => console.log(finalNames));
+
+// Q10. (split + join + reverse)
+// Take a string from the user. Reverse each word individually but keep word order.
+// (Example: "hello world" → "olleh dlrow")
+
+// let str = prompt("Enter your names: ");
+// let word= str.split(" ");
+
+// let mapping = word.map((val) => {
+//     return val.split("").reverse().join("");
+// });
+
+// let finalStr = mapping.join(" ");
+// // console.log(finalStr);
+
+// Q1.  Take a string from the user. Print all substrings of length 3.
+// (Example: "hello" → "hel", "ell", "llo")
+
+// solution
+
+// let str = prompt("Enter your string: ");
+
+// Q2. (Arrays + Objects + filter)
+// Create an array of 5 products {name, price, inStock}. Use filter() to get only products that are in stock
+// and price is below 1000.
+
+// solution
+// let products = [
+//   { name: "Keyboard", price: 800, inStock: true },
+//   { name: "Mouse", price: 500, inStock: false },
+//   { name: "Monitor", price: 12000, inStock: true },
+//   { name: "USB Cable", price: 300, inStock: true },
+//   { name: "Headphones", price: 1500, inStock: false },
+// ];
+
+// let stockedProduct = products
+//   .filter((stock) => stock.inStock === true)
+//   .filter((prices) => prices.price < 1000);
+
+// Q3. (Functions + Recursion)
+// Write a function countdown(n) that prints numbers from n to 1 using recursion.
+
+
+// pending
+
+// Q4. (Strings + Methods)
+// Take a string from the user. Print the most common word in it.
+
+// solution
+
+// pending
+
+// Q5. (map + filter + reduce)
+// Create an array of 5 objects {name, salary}. Use map() to add 10% bonus to each salary, then filter() to 
+// get employees with salary above 50000, then reduce() to find total salary.
+
+
+
+
+
+
+// Q6. (DOM + Events)
+// Create a button that toggles between "Light Mode" and "Dark Mode" — change background color accordingly.
+
+// Q7. (Arrow Functions + Closures)
+// Write a function makeCounter() that returns an arrow function — each time called, it increments and returns a count.
+
+// Q8. (Arrays + sort)
+// Create an array [5, 3, 8, 1, 9, 2]. Sort it in ascending and descending order.
+
+// Q9. (Strings + regex)
+// Take a string from the user. Use regex to check if it is a valid phone number.
+// (Format: 03XX-XXXXXXX)
+
+// Q10. (Objects)
+// Create an object car with properties brand, model, year, speed. Write a method accelerate(amount) that increases speed.
