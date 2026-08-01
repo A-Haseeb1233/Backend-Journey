@@ -3814,7 +3814,20 @@ more than 10 characters, otherwise print "Short string". */
 // Create an array of 5 objects {name, salary}. Use map() to add 10% bonus to each salary, then filter() to 
 // get employees with salary above 50000, then reduce() to find total salary.
 
+// let employees = [
+//   { name: "Ali", salary: 45000 },
+//   { name: "Ahmed", salary: 60000 },
+//   { name: "Sara", salary: 55000 },
+//   { name: "Ayesha", salary: 70000 },
+//   { name: "Hassan", salary: 50000 },
+// ];
 
+// let result = employees
+// .map((emp) => {
+// 	return {name: emp.name, salary: emp.salary = emp.salary + (emp.salary * 10 / 100)}
+// })
+// .filter((higherSal) => higherSal.salary > 50000)
+// .reduce((pre, curr) => pre + curr.salary , 0);
 
 
 
@@ -3822,15 +3835,49 @@ more than 10 characters, otherwise print "Short string". */
 // Q6. (DOM + Events)
 // Create a button that toggles between "Light Mode" and "Dark Mode" — change background color accordingly.
 
+
+
+
+
+
+
+
+
 // Q7. (Arrow Functions + Closures)
-// Write a function makeCounter() that returns an arrow function — each time called, it increments and returns a count.
+// Write a function makeCounter() that returns an arrow function — each time called, it increments and 
+// returns a count.
+
+
+
+
+
+
+
 
 // Q8. (Arrays + sort)
 // Create an array [5, 3, 8, 1, 9, 2]. Sort it in ascending and descending order.
 
+// let arr = [5, 3, 8, 1, 9, 2]
+// let sortArrAse = arr.sort((a, b) => a -b);
+// console.log(sortArrAse);
+
+// let sortArrDse = arr.sort((a, b) => b - a);
+// console.log(sortArrDse);
+
+// let copy = [... arr].sort((a, b) => a - b);
+// console.log(copy);
+// console.log(arr);
+
+
+
 // Q9. (Strings + regex)
 // Take a string from the user. Use regex to check if it is a valid phone number.
 // (Format: 03XX-XXXXXXX)
+
+
+
+
+
 
 // Q10. (Objects)
 // Create an object car with properties brand, model, year, speed. Write a method accelerate(amount) that increases speed.
