@@ -3800,7 +3800,6 @@ more than 10 characters, otherwise print "Short string". */
 // Q3. (Functions + Recursion)
 // Write a function countdown(n) that prints numbers from n to 1 using recursion.
 
-
 // pending
 
 // Q4. (Strings + Methods)
@@ -3811,7 +3810,7 @@ more than 10 characters, otherwise print "Short string". */
 // pending
 
 // Q5. (map + filter + reduce)
-// Create an array of 5 objects {name, salary}. Use map() to add 10% bonus to each salary, then filter() to 
+// Create an array of 5 objects {name, salary}. Use map() to add 10% bonus to each salary, then filter() to
 // get employees with salary above 50000, then reduce() to find total salary.
 
 // let employees = [
@@ -3829,30 +3828,12 @@ more than 10 characters, otherwise print "Short string". */
 // .filter((higherSal) => higherSal.salary > 50000)
 // .reduce((pre, curr) => pre + curr.salary , 0);
 
-
-
-
 // Q6. (DOM + Events)
 // Create a button that toggles between "Light Mode" and "Dark Mode" — change background color accordingly.
 
-
-
-
-
-
-
-
-
 // Q7. (Arrow Functions + Closures)
-// Write a function makeCounter() that returns an arrow function — each time called, it increments and 
+// Write a function makeCounter() that returns an arrow function — each time called, it increments and
 // returns a count.
-
-
-
-
-
-
-
 
 // Q8. (Arrays + sort)
 // Create an array [5, 3, 8, 1, 9, 2]. Sort it in ascending and descending order.
@@ -3868,16 +3849,10 @@ more than 10 characters, otherwise print "Short string". */
 // console.log(copy);
 // console.log(arr);
 
-
-
 // Q9. (Strings + regex)
 // Take a string from the user. Use regex to check if it is a valid phone number.
 // (Format: 03XX-XXXXXXX)
 
-
-
-
-
-
 // Q10. (Objects)
 // Create an object car with properties brand, model, year, speed. Write a method accelerate(amount) that increases speed.
+
