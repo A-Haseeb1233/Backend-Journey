@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>dom manipulaton practice</title>
+    <style>
+
+    </style>
 </head>
 <body>
+    <!-- <p>Hello FalconH this is backend Engineer Studio</p> -->
+
+    <!-- <button>Click</button> -->
+
+    <!-- <p>JavaScripte is awesome</p>
+    <button>hide text</button> -->
+
+    <input type="text" placeholder="Enter Your name">
+    <button>Show Name</button>
+    <p></p>
+
+    <script>
+        let input = document.querySelector("input");
+        let button = document.querySelector("button");
+        let para = document.querySelector("p");
+        let storeValue = "";
+        button.addEventListener("click" , () => {
+            para.innerText = input.value;
+        })
+
+        input.addEventListener("keyup", () => {
+            para.innerText = input.value;
+        })
+
+        
+        
+        
+        
+        
+        
+        
+        // let para = document.querySelector("p")
+        // let btn = document.querySelector("button");
+        // btn.addEventListener("click", () => {
+        //     para.style.visibility = "hidden"
+        // })
+
+
+
+        // let para = document.querySelector("p");
+        // para.innerText = "Hi this is FalconH Backend Engineer";
     
+        // let btn = document.querySelector("button");
+        // btn.addEventListener("click", () => {
+        //     document.body.style.backgroundColor = "lightblue";
+        // })
+    
+    
+    </script>
 </body>
 </html>
+
+<!-- 
+Level 1 – Basic DOM (5–7 exercises)
+
+Main sirf problem dunga. Tum code likhoge.
+
+Get element by id aur uska text change karo.
+Button click par background color change karo.
+Input se value lekar paragraph mein show karo.
+Image ka src change karo.
+Ek button disable/enable karo. -->
