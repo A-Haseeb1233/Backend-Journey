@@ -3849,13 +3849,95 @@ more than 10 characters, otherwise print "Short string". */
 // console.log(copy);
 // console.log(arr);
 
-// Q9. (Strings + regex)
-// Take a string from the user. Use regex to check if it is a valid phone number.
-// (Format: 03XX-XXXXXXX)
+// Write a function titleCase(str) that capitalizes first letter of every word. ("hello world" → "Hello World")
 
-// Q10. (Objects)
-// Create an object car with properties brand, model, year, speed. Write a method accelerate(amount) that increases speed.
+// solution
 
+// let str = prompt("Enter your string: ");
+// str = str.toLowerCase();
+// function titleCase (str) {
+//     let word = str.split(" ");
 
+// }
+// let result = titleCase(str);
+// console.log(result);
 
+// let input = Number(prompt("Enter a number:"));
 
+// let i = 1;
+
+// while (i <= 10) {
+//     console.log(`${input} * ${i} = ${input * i}`);
+//     i++;
+// }
+
+// let m1 = Number(prompt("Enter your first subject marks: "))
+
+// let m2 = Number(prompt("Enter your second subject marks: "))
+
+// let m3 = Number(prompt("Enter your third subject marks: "))
+
+// let m4 = Number(prompt("Enter your fouth subject marks: "))
+
+// let total = m1 + m2 + m3 + m4;
+
+// let percent = (total / 400) * 100;
+
+// if(percent > 60) {
+//     console.log("pass");
+// } else {
+//     console.log("fail");
+// }
+
+// let input = Number(prompt("Enter your number: "));
+// let sum = 0;
+
+// for(let i = 1; i <= input; i++) {
+//     sum += i;
+// }
+
+// console.log(sum);
+
+// let inputStr = prompt("Enter your string: ");
+// let originalStr = inputStr.toLowerCase();
+// let reverseStr = originalStr
+// .split("")
+// .reverse()
+// .join("");
+// // for(let i = originalStr.length - 1; i >= 0; i--) {
+// //     reverseStr += originalStr[i];
+// // }
+
+// // let checkPalidrome = originalStr === reverseStr ? "Palidrome" : "Not Palidrome";
+// console.log(originalStr === reverseStr ? "Palidrome" : "Not Palidrome");
+
+// pending list question
+
+// question no 1
+
+// follow up question
+
+// solution
+
+let input = prompt("Enter your string: ");
+input = input.toLowerCase();
+
+let withoutSpaceStr = "";
+
+// Step 1: Remove spaces
+for (const char of input) {
+    if (char !== " ") {
+        withoutSpaceStr += char;
+    }
+}
+
+let uniqueStr = "";
+
+// Step 2: Remove duplicate characters
+for (const char of withoutSpaceStr) {
+    if (!uniqueStr.includes(char)) {
+        uniqueStr += char;
+    }
+}
+
+console.log(uniqueStr);
