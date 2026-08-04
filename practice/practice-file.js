@@ -3919,25 +3919,28 @@ more than 10 characters, otherwise print "Short string". */
 
 // solution
 
-let input = prompt("Enter your string: ");
-input = input.toLowerCase();
+// let input = prompt("Enter your string: ");
+// input = input.toLowerCase();
 
-let withoutSpaceStr = "";
+// let withoutSpaceStr = "";
 
-// Step 1: Remove spaces
-for (const char of input) {
-    if (char !== " ") {
-        withoutSpaceStr += char;
-    }
-}
+// // Step 1: Remove spaces
+// for (const char of input) {
+//     if (char !== " ") {
+//         withoutSpaceStr += char;
+//     }
+// }
 
-let uniqueStr = "";
+// let uniqueStr = "";
 
-// Step 2: Remove duplicate characters
-for (const char of withoutSpaceStr) {
-    if (!uniqueStr.includes(char)) {
-        uniqueStr += char;
-    }
-}
+// // Step 2: Remove duplicate characters
+// for (const char of withoutSpaceStr) {
+//     if (!uniqueStr.includes(char)) {
+//         uniqueStr += char;
+//     }
+// }
 
-console.log(uniqueStr);
+// console.log(uniqueStr);
+
+
+// let input = prompt("Enter your string: ");
