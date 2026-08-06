@@ -3944,3 +3944,4 @@ more than 10 characters, otherwise print "Short string". */
 
 
 // let input = prompt("Enter your string: ");
+

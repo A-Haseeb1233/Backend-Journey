@@ -74,16 +74,17 @@
 
 // solution
 
-// let car = {
-//     brand : "Toyota",
-//     model : "Corolla",
-//     price : 4500000,
-//     showDetails : function () {
-//         console.log(`brand: ${this.brand}`);
-//         console.log(`model: ${this.model}`);
-//         console.log(`price: ${this.price}`);
-//     }
-// }
+let car = {
+    brand : "Toyota",
+    model : "Corolla",
+    price : 4500000,
+    showDetails : function () {
+        console.log(`brand: ${this.brand}`);
+        console.log(`model: ${this.model}`);
+        console.log(`price: ${this.price}`);
+    }
+}
+
 
 // Question 3 (Challenge 🔥)
 // Ek object banao mobile naam se.
