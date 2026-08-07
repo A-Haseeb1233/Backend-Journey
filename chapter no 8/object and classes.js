@@ -72,18 +72,18 @@
 // Method:
 // showDetails()
 
-// solution
+// // solution
 
-let car = {
-    brand : "Toyota",
-    model : "Corolla",
-    price : 4500000,
-    showDetails : function () {
-        console.log(`brand: ${this.brand}`);
-        console.log(`model: ${this.model}`);
-        console.log(`price: ${this.price}`);
-    }
-}
+// let car = {
+//     brand : "Toyota",
+//     model : "Corolla",
+//     price : 4500000,
+//     showDetails : function () {
+//         console.log(`brand: ${this.brand}`);
+//         console.log(`model: ${this.model}`);
+//         console.log(`price: ${this.price}`);
+//     }
+// }
 
 
 // Question 3 (Challenge 🔥)
@@ -105,3 +105,50 @@ let car = {
 //     console.log(`battery: ${this.battery + "%"}`)
 //   }
 // };
+
+
+// let calculateTax = {
+//     cal() {
+//         console.log("The tax rate is 10%");
+//     }
+// }
+
+// let employee1 = {
+//     name : "Ali",
+//     showName () {
+//         console.log(`${this.name}`);
+//     }
+// }
+
+// employee1.__proto__ = calculateTax;
+
+// 
+
+// let personMethod = {
+//     introduce() {
+//         console.log(`Hello, I am a person`);
+//     }
+// };
+
+// let person1 = {
+//     name : "Abdul Haseeb"
+// }
+
+// person1.__proto__ = personMethod; 
+
+// let animalMethod = {
+//     sound() {
+//         console.log("Animals make sounds.");
+//     }
+// };
+
+// let dog = {
+//     name: "Tommy",
+
+//     bark() {
+//         console.log("Woof Woof");
+//     }
+// };
+
+// dog.__proto__ = animalMethod
+
