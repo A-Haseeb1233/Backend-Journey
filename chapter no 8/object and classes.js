@@ -152,3 +152,21 @@
 
 // dog.__proto__ = animalMethod
 
+// today session
+
+class Toyota {
+    start () {
+        console.log(`start`);
+    }
+
+    stop () {
+        console.log(`stop`);
+    }
+
+    setBrand (brand) {
+        this.brandName = this.brand;
+    }
+}
+
+let fortuner = new Toyota;
+let vigo = new Toyota;
