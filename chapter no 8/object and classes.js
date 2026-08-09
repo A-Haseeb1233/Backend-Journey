@@ -85,7 +85,6 @@
 //     }
 // }
 
-
 // Question 3 (Challenge 🔥)
 // Ek object banao mobile naam se.
 // Properties:
@@ -106,7 +105,6 @@
 //   }
 // };
 
-
 // let calculateTax = {
 //     cal() {
 //         console.log("The tax rate is 10%");
@@ -122,7 +120,7 @@
 
 // employee1.__proto__ = calculateTax;
 
-// 
+//
 
 // let personMethod = {
 //     introduce() {
@@ -134,7 +132,7 @@
 //     name : "Abdul Haseeb"
 // }
 
-// person1.__proto__ = personMethod; 
+// person1.__proto__ = personMethod;
 
 // let animalMethod = {
 //     sound() {
@@ -154,28 +152,89 @@
 
 // today session
 
-class Toyota {
-    constructor (brand, mileage) {
-        console.log("Creating new object");
-        this.brand = brand;
-        this.mileage = mileage;
-    }
-
-    start () {
-        console.log(`start`);
-    }
-
-    stop () {
-        console.log(`stop`);
-    }
-
-//     setBrand (brand) {
-//         this.brandName = this.brand;
+// class Toyota {
+//     constructor (brand, mileage) {
+//         console.log("Creating new object");
+//         this.brand = brand;
+//         this.mileage = mileage;
 //     }
-}
 
-let fortuner = new Toyota("fortuner", 10);
-console.log(fortuner);
-let vigo = new Toyota("vigo" , 30);
-console.log(vigo);
+//     start () {
+//         console.log(`start`);
+//     }
 
+//     stop () {
+//         console.log(`stop`);
+//     }
+
+// //     setBrand (brand) {
+// //         this.brandName = this.brand;
+// //     }
+// }
+
+// let fortuner = new Toyota("fortuner", 10);
+// console.log(fortuner);
+// let vigo = new Toyota("vigo" , 30);
+// console.log(vigo);
+
+// class parents {
+//    dynamicHello (name) {
+//         console.log(`Hello, ${this.name}`);
+//     }
+
+// }
+
+// let hello = new parents("Haseeb");
+
+// class person {
+//   constructor() {
+//     this.spices = "Homo Sapiens"
+//   }
+
+//   sleep() {
+//     console.log("sleep");
+//   }
+
+//   eat() {
+//     console.log("eat");
+//   }
+
+//   work() {
+//     console.log("work nothing");
+//   }
+// }
+
+// class engineer extends person {
+//     work () {
+//         console.log("solve problem and build something");
+//     }
+// }
+
+// class doctor extends person {
+//     work () {
+//         console.log("to treat people");
+//     }
+// }
+
+// Q you are creating a website for your college create a class user with 2 properties name and email it also
+// has method called viewData() that allows user to view website data
+
+// solution
+
+// class user {
+//   name(name) {
+//     this.name = name;
+//   }
+
+//   email(email) {
+//     this.email = email;
+//   }
+
+//   viewData() {
+//     console.log(`name = ${name}`);
+//     console.log(`email = ${email}`);
+//   }
+
+// }
+
+// let obj = new user ("Haseeb", "email");
