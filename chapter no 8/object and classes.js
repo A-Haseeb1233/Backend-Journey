@@ -155,6 +155,12 @@
 // today session
 
 class Toyota {
+    constructor (brand, mileage) {
+        console.log("Creating new object");
+        this.brand = brand;
+        this.mileage = mileage;
+    }
+
     start () {
         console.log(`start`);
     }
@@ -163,10 +169,13 @@ class Toyota {
         console.log(`stop`);
     }
 
-    setBrand (brand) {
-        this.brandName = this.brand;
-    }
+//     setBrand (brand) {
+//         this.brandName = this.brand;
+//     }
 }
 
-let fortuner = new Toyota;
-let vigo = new Toyota;
+let fortuner = new Toyota("fortuner", 10);
+console.log(fortuner);
+let vigo = new Toyota("vigo" , 30);
+console.log(vigo);
+
