@@ -238,3 +238,99 @@
 // }
 
 // let obj = new user ("Haseeb", "email");
+
+// Q1 — Basic Class + Object + new
+
+// Ek Car class banao jisme constructor mein brand aur year properties set hon. Fir
+// uska ek object myCar banao new keyword use karke, aur uski properties console mein print karo.
+
+// Q2 — Methods aur this
+
+// Same Car class mein ek method add karo describe() naam ka jo return kare ek string jaise:
+// "This car is a 2025 Toyota" (using this.brand and this.year).
+
+// Fir do objects banao (car1, car2) different brands/years ke sath, aur dono pe describe() call karo.
+
+// Sochne wali baat: jab tum car1.describe() call karte ho, this kis object ko refer karega us waqt? Aur
+// jab car2.describe() call hota hai?
+
+// solution
+
+// class car {
+//     constructor (brand, year) {
+//         this.brand = brand;
+//         this.year = year;
+//     }
+
+//     describe () {
+//         return `this car is a ${this.year} ${this.brand}`;
+//     }
+// }
+
+// // let newObj = new car("toyota", 2025);
+// // console.log(newObj);
+
+// // let brand = prompt("Enter your car brand: ");
+// // let year = Number(prompt("Enter your car year: "));
+
+// let car1 = new car("toyota", 2025);
+// let car2 = new car("corolla", 2000);
+
+// console.log(car1.describe());
+// console.log(car2.describe());
+
+class device {
+  constructor(brand, price) {
+    this.brand = brand;
+    this.price = price;
+  }
+
+  describe() {
+    return `This Device is a ${this.brand} Costing ${this.price}`;
+  }
+}
+
+// class smartPhone extends device {
+//     constructor(brand, price, storage) {
+//         super(brand, price)
+//         this.storage = storage
+//     // }
+//     // describe() {
+//     //     return `This Device is a ${this.brand} Costing ${this.price} with ${this.storage}`
+//     // }
+
+//     super.describe(storage) 
+//         this.storage = storage;
+// }
+// }
+
+// let myPhone = new smartPhone("samsung", 12000, 128);
+// console.log(myPhone.describe());
+
+// class Student {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+//     sayHello() {
+//         console.log(`Hello my name is ${this.name}`);
+//     }
+// }
+
+// let p1 = new Student("Ali", 25);
+// console.log(p1.age);
+// p1.sayHello();
+// let p2 = new Student("Sara", 23);
+// console.log(p2.age);
+
+// class Book {
+//     constructor(title, pages = 0) {
+//         this.title = title;
+//         this.pages = pages;
+//     }
+// }
+
+// let b1 = new Book("node.js", 500);
+// console.log(b1);
+// let b2 = new Book("Backend Dev");
+// console.log(b2);
