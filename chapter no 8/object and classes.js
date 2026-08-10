@@ -279,16 +279,16 @@
 // console.log(car1.describe());
 // console.log(car2.describe());
 
-class device {
-  constructor(brand, price) {
-    this.brand = brand;
-    this.price = price;
-  }
+// class device {
+//   constructor(brand, price) {
+//     this.brand = brand;
+//     this.price = price;
+//   }
 
-  describe() {
-    return `This Device is a ${this.brand} Costing ${this.price}`;
-  }
-}
+//   describe() {
+//     return `This Device is a ${this.brand} Costing ${this.price}`;
+//   }
+// }
 
 // class smartPhone extends device {
 //     constructor(brand, price, storage) {
@@ -307,16 +307,34 @@ class device {
 // let myPhone = new smartPhone("samsung", 12000, 128);
 // console.log(myPhone.describe());
 
-// class Student {
-//     constructor(name, age) {
-//         this.name = name;
-//         this.age = age;
+class Student {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    sayHello() {
+        console.log(`Hello my name is ${this.name}`);
+    }
+}
+
+// class GradeStudent extends Student{
+//     constructor(name, age, thisIsTitle) {
+//         super(name, age);
+//         this.thisIsTitle = thisIsTitle;
 //     }
+
 //     sayHello() {
-//         console.log(`Hello my name is ${this.name}`);
+//         console.log(`Hello i am grad student my name is ${this.name}`);
+//     }
+
+//     viewDetails() {
+//         console.log(`my name is ${this.name} age is ${this.age} and the title is ${this.thisIsTitle}`);
 //     }
 // }
 
+// let newObj = new GradeStudent("Ali Raza", 45, "node.js");
+// newObj.viewDetails();
+// newObj.sayHello();
 // let p1 = new Student("Ali", 25);
 // console.log(p1.age);
 // p1.sayHello();
