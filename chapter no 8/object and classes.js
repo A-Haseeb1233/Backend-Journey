@@ -299,7 +299,7 @@
 //     //     return `This Device is a ${this.brand} Costing ${this.price} with ${this.storage}`
 //     // }
 
-//     super.describe(storage) 
+//     super.describe(storage)
 //         this.storage = storage;
 // }
 // }
@@ -308,13 +308,13 @@
 // console.log(myPhone.describe());
 
 class Student {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-    sayHello() {
-        console.log(`Hello my name is ${this.name}`);
-    }
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  sayHello() {
+    console.log(`Hello my name is ${this.name}`);
+  }
 }
 
 // class GradeStudent extends Student{
@@ -352,3 +352,60 @@ class Student {
 // console.log(b1);
 // let b2 = new Book("Backend Dev");
 // console.log(b2);
+
+// practice
+
+// Create a class called BankAccount with two properties: accountHolder (name) and balance (starting amount).
+
+// Steps:
+
+// Set both properties in the constructor
+// Create an object acc1 with any name and a starting balance
+// console.log(acc1.balance) to check the output
+
+// solution
+
+// class BankAccount {
+//   constructor(accountHolder, balance = 0) {
+//     this.accountHolder = accountHolder;
+//     this.balance = balance;
+//   }
+
+//   deposit(amount) {
+//     this.balance += amount;
+//     return this.balance;
+//   }
+
+//   withDrawal(amount) {
+//     if (amount <= this.balance) {
+//       return (this.balance -= amount);
+//     } else {
+//       return `Insufficient balance`;
+//     }
+//   }
+// }
+
+// class SavingAccount extends BankAccount {
+//   constructor(accountHolder, balance, interestRate) {
+//     super(accountHolder, balance);
+//     this.interestRate = interestRate;
+//   }
+
+//   addInterest() {
+//     this.balance += (this.balance * this.interestRate) / 100;
+//     return this.balance;
+//   }
+// }
+
+// let sA1 = new SavingAccount("Falcon", 50000, 5)
+// console.log(sA1.addInterest());
+
+
+
+
+
+
+
+// let acc1 = new BankAccount("Falcon", 5000000);
+// console.log(acc1.withDrawal(40));
+// console.log(acc1.deposit(300));
