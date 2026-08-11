@@ -409,3 +409,6 @@ class Student {
 // let acc1 = new BankAccount("Falcon", 5000000);
 // console.log(acc1.withDrawal(40));
 // console.log(acc1.deposit(300));
+
+
+
