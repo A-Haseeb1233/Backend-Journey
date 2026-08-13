@@ -37,15 +37,29 @@
 //     console.log(`${a + b}`)
 // })
 
-const sayHello = (name) => {
-    console.log(`Hello! ${name}`);
-}
+// const sayHello = (name) => {
+//     console.log(`Hello! ${name}`);
+// }
 
-const processUser = (name, callBack) => {
-    sayHello(name);
-    callBack();
-}
+// const processUser = (name, callBack) => {
+//     sayHello(name);
+//     callBack();
+// }
 
-processUser("FalconH", () => {
-    console.log(`Welcome! FalconH`);
-})
+// processUser("FalconH", () => {
+//     console.log(`Welcome! FalconH`);
+// })
+
+// function getData (dataId, getNextData) {
+//     setTimeout(() => {
+//         console.log(`data is ${dataId}`);
+//     }, 2000);
+
+//     getNextData();
+// }
+
+// getData(100, () => {
+//     getData(200, () => {
+//         getData(300);
+//     })
+// });
