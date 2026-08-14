@@ -64,21 +64,23 @@
 //     })
 // });
 
-function getStudentData(stdID, callBack) {
-    setTimeout(() => {
-        console.log(`data is ${stdID}`);
+// function getStudentData(stdID, callBack) {
+//     setTimeout(() => {
+//         console.log(`data is ${stdID}`);
 
-        if(callBack) {
-            callBack();
-        }
-    }, 2000);
-}
+//         if(callBack) {
+//             callBack();
+//         }
+//     }, 2000);
+// }
 
-getStudentData(100, () => {
-    getStudentData(200, () => {
-        getStudentData(300)
-    })
-});
+// getStudentData(100, () => {
+//     getStudentData(200, () => {
+//         getStudentData(300)
+//     })
+// });
+
+// promises
 
 
 
