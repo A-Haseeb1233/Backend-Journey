@@ -83,11 +83,37 @@
 
 // simplest promise by myself;
 
-try {
-  let promise = new Promise((resolve, reject) => {
-    console.log("Hello! I am promise");
-    resolve("Finally Success");
+// try {
+//   let promise = new Promise((resolve, reject) => {
+//     console.log("Hello! I am promise");
+//     resolve("Finally Success");
+//   });
+// } catch (err) {
+//   console.log(err.message);
+// }
+
+// let promise = new Promise((resolve, reject) => {
+//   console.log("Data fetched and returned");
+//   // resolve("promise successful");
+//   // reject("data fetch request failed");
+// });
+
+function getData(dataID, getNextData) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log(`you data is ${dataID}`);
+      resolve("success");
+      if (getNextData) {
+        getNextData();
+      }
+    }, 5000);
   });
-} catch (err) {
-  console.log(err.message);
 }
+
+let result = getData(123);
+
+
+
+// getData(123, () => {
+//   getData(234);
+// })
