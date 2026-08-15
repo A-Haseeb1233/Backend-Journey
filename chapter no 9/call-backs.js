@@ -16,7 +16,6 @@
 // console.log("d");
 // console.log("e");
 
-
 // function sum (a, b) {
 //     console.log(a + b);
 // }
@@ -82,14 +81,13 @@
 
 // promises
 
+// simplest promise by myself;
 
-
-
-
-
-
-
-
-
-
-
+try {
+  let promise = new Promise((resolve, reject) => {
+    console.log("Hello! I am promise");
+    resolve("Finally Success");
+  });
+} catch (err) {
+  console.log(err.message);
+}
