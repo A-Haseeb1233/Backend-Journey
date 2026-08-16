@@ -111,9 +111,3 @@ function getData(dataID, getNextData) {
 }
 
 let result = getData(123);
-
-
-
-// getData(123, () => {
-//   getData(234);
-// })
