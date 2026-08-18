@@ -109,4 +109,3 @@ function getData(dataID, getNextData) {
     }, 5000);
   });
 }
-
