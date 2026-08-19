@@ -109,3 +109,5 @@ function getData(dataID, getNextData) {
     }, 5000);
   });
 }
+
+// then and watch
