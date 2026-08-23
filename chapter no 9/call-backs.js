@@ -107,5 +107,4 @@ function getData(dataID, getNextData) {
         getNextData();
       }
     }, 5000);
-  });
-}
+  }
