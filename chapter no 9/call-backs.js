@@ -109,3 +109,53 @@ function getData(dataID, getNextData) {
     }, 5000);
   });
 }
+
+// let myPromise = new Promise((resolve, reject) => {
+//   let success = true;
+
+//   if (success) {
+//     resolve("work has been sucessfully");
+//   } else {
+//     reject("request failed");
+//   }
+// });
+
+// myPromise
+//   .then((result) => {
+//     console.log(result);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+const student = {
+  fullName : "FalconH",
+  cgpa : 3.4,
+  marks : 43,
+  printName : function () {
+    console.log(this.fullName)
+  },
+  
+  printcgpa : () => {
+    console.log(this.cpga)
+  },
+
+  printmarks() {
+    console.log(this.marks);
+  }
+}
+
+const employeeSalCalTax = {
+  calTax() {
+    console.log("10% tax on every employee sal");
+  }
+}
+
+const emmp1 = {
+  name : "Farhan",
+  printName() {
+    console.log(this.name);
+  }
+}
+
+emmp1.__proto__ = employeeSalCalTax;
