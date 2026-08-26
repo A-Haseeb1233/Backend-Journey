@@ -4069,7 +4069,7 @@ more than 10 characters, otherwise print "Short string". */
 
 // if(b === 0) {
 //     try{
-        
+
 // const divideNumb = (a, b) => {
 //     return a / b;
 // }
@@ -4098,7 +4098,6 @@ more than 10 characters, otherwise print "Short string". */
 
 // calculation(2, 3, sum);
 
-
 // function calculation(a, b, sumcallback) {
 //     sumcallback(a, b);
 // }
@@ -4107,8 +4106,26 @@ more than 10 characters, otherwise print "Short string". */
 //     console.log(a + b);
 // });
 
-function getdata(dataId) {
-    setTimeout(() => {
-        console.log(`you data is ${dataId}`);
-    }, 2000);
-}
+// function getdata(dataId, getNextData) {
+//   setTimeout(() => {
+//     console.log(`you data is ${dataId}`);
+//     if (getNextData) {
+//       getNextData();
+//     }
+//   }, 2000);
+// }
+
+// // callback hell  or paramid of doom
+
+// getdata(1, () => {
+//   console.log("getting next data...");
+//   getdata(2, () => {
+//     console.log("getting next data...");
+//     getdata(3);
+//   });
+// });
+
+
+
+
+

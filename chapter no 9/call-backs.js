@@ -98,17 +98,17 @@
 //   // reject("data fetch request failed");
 // });
 
-function getData(dataID, getNextData) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log(`you data is ${dataID}`);
-      resolve("success");
-      if (getNextData) {
-        getNextData();
-      }
-    }, 5000);
-  });
-}
+// function getData(dataID, getNextData) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log(`you data is ${dataID}`);
+//       resolve("success");
+//       if (getNextData) {
+//         getNextData();
+//       }
+//     }, 5000);
+//   });
+// }
 
 // let myPromise = new Promise((resolve, reject) => {
 //   let success = true;
@@ -128,34 +128,81 @@ function getData(dataID, getNextData) {
 //     console.log(error);
 //   });
 
-const student = {
-  fullName : "FalconH",
-  cgpa : 3.4,
-  marks : 43,
-  printName : function () {
-    console.log(this.fullName)
-  },
-  
-  printcgpa : () => {
-    console.log(this.cpga)
-  },
+// const student = {
+//   fullName : "FalconH",
+//   cgpa : 3.4,
+//   marks : 43,
+//   printName : function () {
+//     console.log(this.fullName)
+//   },
 
-  printmarks() {
-    console.log(this.marks);
-  }
-}
+//   printcgpa : () => {
+//     console.log(this.cpga)
+//   },
 
-const employeeSalCalTax = {
-  calTax() {
-    console.log("10% tax on every employee sal");
-  }
-}
+//   printmarks() {
+//     console.log(this.marks);
+//   }
+// }
 
-const emmp1 = {
-  name : "Farhan",
-  printName() {
-    console.log(this.name);
-  }
-}
+// const employeeSalCalTax = {
+//   calTax() {
+//     console.log("10% tax on every employee sal");
+//   }
+// }
 
-emmp1.__proto__ = employeeSalCalTax;
+// const emmp1 = {
+//   name : "Farhan",
+//   printName() {
+//     console.log(this.name);
+//   }
+// }
+
+// emmp1.__proto__ = employeeSalCalTax;
+
+// let promises = new Promise((resolve, reject) => {
+//   console.log("this is promise");
+//   resolve("fetch data successfully");
+// });
+
+// function getData(dataId, getNextData) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log(dataId);
+//       if (getNextData) {
+//         getNextData();
+//       }
+//     }, 2000);
+//   });
+// }
+
+// let result = getData(1, () => {
+//   getData(2);
+// })
+
+// console.log(result);
+
+// getData(1, () => {
+//   getData(2, () => {
+//     getData(3, () => {
+//       getData(4);
+//     })
+//   })
+// });
+
+const getPromise = () => {
+return new Promise((resolve, reject) => {
+    console.log("i am a promised");
+    resolve("success")
+    // reject("network error");
+  });
+};
+
+let promise = getPromise()
+promise.then((res) => {
+  console.log("promise fullfilled", res);
+});
+
+promise.catch((err) => {
+  console.log("reject", err)
+})
