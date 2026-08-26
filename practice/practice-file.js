@@ -3941,3 +3941,174 @@ more than 10 characters, otherwise print "Short string". */
 // }
 
 // console.log(uniqueStr);
+
+// another practice
+
+// class toyotaCar {
+
+//     constructor() {
+//         console.log("set initial values by using constructor")
+//     }
+
+//     start() {
+//         console.log("start");
+//     }
+
+//     stop() {
+//         console.log("stop");
+//     }
+
+//     setbrand(brand) {
+//         this.brandName = brand
+//     }
+// }
+
+// let vigo = new toyotaCar();
+
+// class parents {
+//     hello () {
+//         console.log("Hello");
+//     }
+// }
+
+// class child extends parents {
+
+// }
+
+// let obj = new child;
+
+// class person {
+//   constructor() {
+//     this.species = "homo sapence";
+//   }
+
+//   eat() {
+//     console.log("eat");
+//   }
+
+//   sleep() {
+//     console.log("sleep");
+//   }
+// }
+
+// class engineer extends person {
+//   work() {
+//     console.log("solve  problems, build something");
+//   }
+// }
+
+// class doctor extends person {
+//   work() {
+//     console.log("treat patience");
+//   }
+// }
+
+// let doc1 = new doctor();
+// let falconBack = new engineer();
+
+// class person {
+//   constructor(name) {
+//     this.species = "homo sapence";
+//     this.name = name;
+//   }
+
+//   eat() {
+//     console.log("eat");
+//   }
+
+//   sleep() {
+//     console.log("sleep");
+//   }
+// }
+
+// class engineer extends person {
+//   constructor(branch, name) {
+//     super(name);
+//     this.branch = branch;
+//   }
+//   work() {
+//     super.eat();
+//     console.log("solve  problems, build something");
+//   }
+// }
+
+// let falconBack = new engineer("Software Engineer", "falconH");
+
+// let data = "Secret Information";
+
+// class user {
+//   constructor(fullName, email) {
+//     this.fullName = fullName;
+//     this.email = email;
+//   }
+
+//   veiwData() {
+//     console.log("show data: ", data);
+//   }
+// }
+
+// class admin extends user {
+//   constructor(fullName, email) {
+//     super(fullName, email);
+//     // this.editData = editdata;
+//   }
+//   editdata(editdata) {
+//     this.editdata = data;
+//   }
+// }
+
+// // let std1 = new user("Abdul Haseeb", "haseeb@gmail.com");
+// let admin1 = new admin("falconh", "abc@gmail.com", "changed data");
+
+// const divideNumb = (a, b) => {
+//     return a / b;
+// }
+
+// let result = divideNumb(5, 10);
+// console.log(result);
+
+// if(b === 0) {
+//     try{
+        
+// const divideNumb = (a, b) => {
+//     return a / b;
+// }
+
+// let result = divideNumb(5, 10);
+// console.log(result);
+
+//     } catch(err) {
+//         console.log(err.msg)
+//     }
+// }
+
+// const hello = () => console.log("hello")
+
+// setTimeout(() => {
+//     console.log("hello")
+// }, 2000)
+
+// function sum(a, b) {
+//     console.log(a + b);
+// }
+
+// function calculation(a, b, sumcallback) {
+//     sumcallback(a, b);
+// }
+
+// calculation(2, 3, sum);
+
+
+// function calculation(a, b, sumcallback) {
+//     sumcallback(a, b);
+// }
+
+// calculation(2, 3, (a, b) => {
+//     console.log(a + b);
+// });
+
+function getdata(dataId) {
+    setTimeout(() => {
+        console.log(`you data is ${dataId}`);
+    }, 2000);
+}
