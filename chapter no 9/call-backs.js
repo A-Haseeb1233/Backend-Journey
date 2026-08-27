@@ -205,4 +205,4 @@ promise.then((res) => {
 
 promise.catch((err) => {
   console.log("reject", err)
-})
+});
