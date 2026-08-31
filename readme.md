@@ -31,7 +31,6 @@ This is my personal learning log as I go from JavaScript basics all the way to b
 | chapter no 10 | JavaScript ( Fetch Api ) |
 | Practice | JavaScript ( All Previous Topics (solved Daily ten Question ) |
 | Project | JavaScript ( Now I am building Project Using Previous learned topics ) |
-| Project | JavaScript ( Toturail Project directory ) |
 | *(more coming...)* | Node.js, Express, PostgreSQL |
 
 ## 🎯 Goal
