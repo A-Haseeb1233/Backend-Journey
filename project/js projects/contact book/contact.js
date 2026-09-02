@@ -18,23 +18,7 @@ addContact("ayesha", "03123456789", "uni");
 
 // search function by name
 
-// function findContactByName(searchName){
+function findContactByName(searchName){
+        
+}
 
-// }
-
-const names = [
-  "Haseeb",
-  "Ali",
-  "Ahmed",
-  "Bilal",
-  "Usman",
-  "Hamza"
-];
-
-// let arr = names.filter((name) => {
-//     return name.length > 5;
-// });
-
-// console.log(arr);   
-
-const numbers = [10, 20, 30, 40, 50];

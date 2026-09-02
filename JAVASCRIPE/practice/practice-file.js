@@ -4125,7 +4125,54 @@ more than 10 characters, otherwise print "Short string". */
 //   });
 // });
 
+// solution
 
+// const numbers = [1, 2, 3, 4, 5];
 
+// let arr = numbers.map((number) => number ** 2);
 
+// const users = [
+//   { name: "ali", age: 21 },
+//   { name: "sara", age: 25 },
+//   { name: "zain", age: 19 }
+// ];
 
+// let names = users.map((user) => user.name.toUpperCase());
+
+// let fruits = ["apple", "banana", "mango"];
+// //removing first element
+// let firstShift = fruits.shift();
+// // adding new element
+// let addNewEle = fruits.push("grapes");
+// console.log(fruits);
+
+// let colors = ["red", "green", "blue", "yellow"];
+
+// let removeYellow = colors.pop();
+// let addNewColors = colors.unshift("white", "black");
+
+// console.log(colors);
+
+// let nums = [10, 20, 30, 40, 50];
+// // remove 10 (first) and 50 (last)
+// // add their sum (60) at the end
+// // expected final array: [20, 30, 40, 60]
+
+// let removeLast = nums.pop();
+// let removeFirst = nums.shift();
+
+// let sum = removeFirst + removeLast;
+
+// nums.push(sum);
+// console.log(nums);
+
+// let arr = [1, 2, 3, 4, 5];
+// // use slice() to get [2, 3] without modifying original array
+
+// let newArr = arr.slice(1,3);
+// console.log(newArr);
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+
+let newArr = arr.slice(2, -2);
+console.log(newArr);
