@@ -4172,7 +4172,186 @@ more than 10 characters, otherwise print "Short string". */
 // let newArr = arr.slice(1,3);
 // console.log(newArr);
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
 
-let newArr = arr.slice(2, -2);
-console.log(newArr);
+// let newArr = arr.slice(2, -2);
+// console.log(newArr);
+
+// let arr = [1, 2, 3, 4, 5];
+// // use splice() to remove the element at index 2 (value 3)
+// // expected: arr becomes [1, 2, 4, 5]
+
+// arr.splice(2, 1);
+// console.log(arr);
+
+// let arr = [1, 2, 5, 6];
+// // use splice() to insert 3 and 4 at index 2 (without removing anything)
+// // expected: arr becomes [1, 2, 3, 4, 5, 6]
+
+// arr.splice(2,0,3,4)
+// console.log(arr);
+
+// let arr = [1, 2, "old", "old2", 5, 6];
+// // use splice() to remove "old" and "old2" (2 elements starting at index 2)
+// // AND insert 3, 4 in their place — all in one splice() call
+// // expected: arr becomes [1, 2, 3, 4, 5, 6]
+
+// arr.splice(2,2, 3,4);
+
+// let arr = [10, 20, 30, 40, 50];
+// // use a for loop to print each element
+
+// arr.forEach((val) => console.log(val));
+
+// for(let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+// for(let val of arr) {
+//     console.log(val);
+// }
+
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// use a for loop to print only EVEN numbers
+
+// let result = [];
+
+// for(let i = 0; i < arr.length; i++) {
+//     if(arr[i] % 2 === 0){
+//         // arr.push(arr[i]);
+//         console.log(arr[i]);
+
+//     }
+// }
+
+// // console.log(result);
+
+// 5, 6, 7, 8, 9, 10];
+// // use a for loop to print only EVEN numbers
+
+// // let result = [];
+
+// for(let i = 0; i < arr.lenght; i++) {
+//     if(arr[i] % 2 === 0){
+//         // arr.push(arr[i]);
+//         console.log(i);
+
+//     }
+// }
+
+// console.log(result);
+
+
+// let arr = [5, 12, 8, 3, 20, 15];
+// // use a for loop to find the MAXIMUM value in the array
+// // (without using Math.max)
+
+// for(let i = 0; i < arr.length; i++){
+//     let val = 0;
+//     if(arr[i] > val){
+//         val += arr[i];
+//     } else {
+//         val;
+//     }
+//     return val;
+// }
+
+// console.log(val);
+
+// let arr = [5, 12, 8, 3, 20, 15];
+// use a for loop to find the MAXIMUM value in the array
+// (without using Math.max)
+
+// let max = [0];
+// // 
+// for(let i = 0; i < arr.length; i++) {
+//     if(arr[i] > max){
+//         max = arr[i];
+//     }
+// }
+
+// console.log(max);
+
+// let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// // use filter() to get only even numbers
+
+// let finalArr = nums.filter((num) => num % 2 === 0);
+// console.log(finalArr);
+
+// let users = [
+//   { name: "ali", age: 17 },
+//   { name: "sara", age: 25 },
+//   { name: "zain", age: 15 },
+//   { name: "hina", age: 30 }
+// ];
+// // use filter() to get only users who are adults (age >= 18)
+
+// let adultUser = users.filter((adult) => adult.age >= 18);
+// console.log(adultUser);
+
+// let products = [
+//   { name: "Laptop", price: 1200, inStock: true },
+//   { name: "Mouse", price: 25, inStock: false },
+//   { name: "Keyboard", price: 45, inStock: true },
+//   { name: "Monitor", price: 300, inStock: true },
+//   { name: "Webcam", price: 50, inStock: false }
+// ];
+// // use filter() to get products that are inStock AND price < 100
+// // then use map() to get just their names
+// // expected output: ["Keyboard"]
+
+// let filterProducts = products.filter((filt) => filt.inStock === true && filt.price < 100).map((finalPro) => finalPro.name);
+// console.log(filterProducts);
+
+// let nums = [5, 12, 8, 20, 3];
+// // use find() to get the first number greater than 10
+
+// let find = nums.find((num) => num > 10);
+// console.log(find)
+
+// let users = [
+//   { id: 1, name: "ali" },
+//   { id: 2, name: "sara" },
+//   { id: 3, name: "zain" }
+// ];
+// // use findIndex() to get the index of the user with id === 3
+
+// let fiIndex = users.findIndex((index) => index.id === 3)
+
+// console.log(fiIndex);
+
+// let cart = [
+//   { id: 1, item: "Pen", qty: 3 },
+//   { id: 2, item: "Book", qty: 5 },
+//   { id: 3, item: "Pencil", qty: 2 }
+// ];
+// // use find() to get the item with id === 2
+// // then update its qty to 10 directly (mutate it)
+// // expected: cart[1].qty becomes 10
+
+// let found = cart.find((user) => user.id === 2)
+// found.qty = 10
+// console.log(found);
+
+// let nums = [1, 2, 3, 4, 5];
+// // use reduce() to find the sum of all numbers
+
+// let sumOfNum = nums.reduce((pre, curr) => pre + curr);
+// console.log(sumOfNum)
+
+// let cart = [
+//   { item: "Pen", price: 10, qty: 3 },
+//   { item: "Book", price: 50, qty: 2 },
+//   { item: "Pencil", price: 5, qty: 4 }
+// ];
+// // use reduce() to calculate total cost (price * qty for each item, summed)
+// // expected: (10*3) + (50*2) + (5*4) = 150
+
+// let finalCost = cart.reduce((pre, curr) => {
+//     let result = 0;
+//     result = (pre.price * pre.qty) + (curr.price * curr.qty);
+//     return result;
+// },0);
+
+// console.log(finalCost);
