@@ -4352,6 +4352,6 @@ more than 10 characters, otherwise print "Short string". */
 //     let result = 0;
 //     result = (pre.price * pre.qty) + (curr.price * curr.qty);
 //     return result;
-// },0);
+// },0)
 
 // console.log(finalCost);
