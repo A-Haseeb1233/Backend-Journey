@@ -4354,4 +4354,3 @@ more than 10 characters, otherwise print "Short string". */
 //     return result;
 // },0)
 
-// console.log(finalCost);
