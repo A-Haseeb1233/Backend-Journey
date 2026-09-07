@@ -4354,3 +4354,61 @@ more than 10 characters, otherwise print "Short string". */
 //     return result;
 // },0)
 
+// Q1: Write a for loop that prints numbers from 1 to 10, but skip 5 (don't print it).
+
+    // for(let i = 1; i <= 10; i++){
+    //     if(i === 5){
+    //         continue;
+    //     }
+    //     console.log(i);
+    // }
+
+// Q2 (medium): Use a while loop to find the sum of all even numbers between 1 and 50 (inclusive).
+
+
+// let sum = 0;
+// let i = 1;
+
+// while(i <= 50){
+//     if(i % 2 === 0){
+//         sum += i;
+//     }
+//     i++;
+// }
+
+// console.log(sum);
+
+// Q3 (medium-hard): Use a do while loop to print all numbers from 100 down to 1, 
+// but only the ones divisible by 7.
+
+// solution
+
+// let i = 100;
+
+// do{
+//     if(i % 7 === 0){
+//         console.log(i);
+//     }
+//     i--
+// }while(i >= 1);
+
+// Q5 (hard): Using a while loop, reverse a number without converting it to a 
+// string (e.g. input 1234, output 4321).
+
+// solution
+
+// let input = prompt(Number("Enter your number: "));
+
+// let i = input.length;
+// while(i >= 1){
+//     console.log(i);
+// }
+
+// wrong solution
+
+// some practice of this question
+
+// find last two digits of 12345
+
+let input = Number(prompt("Enter your Number: "));
+
