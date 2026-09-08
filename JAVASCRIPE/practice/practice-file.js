@@ -4409,6 +4409,3 @@ more than 10 characters, otherwise print "Short string". */
 // some practice of this question
 
 // find last two digits of 12345
-
-let input = Number(prompt("Enter your Number: "));
-
