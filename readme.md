@@ -11,7 +11,7 @@ This is my personal learning log as I go from JavaScript basics all the way to b
 - Node.js
 - Express.js
 - PostgreSQL
-- REST APIs
+- REST API
 - JWT Authentication
 
 ## 📂 Structure
