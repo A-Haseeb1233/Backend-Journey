@@ -1,4 +1,4 @@
-# 🚀 Backend Journey
+uni# 🚀 Backend Journey
 
 Learning JavaScript and backend development from scratch — documenting every step.
 
@@ -11,7 +11,7 @@ This is my personal learning log as I go from JavaScript basics all the way to b
 - Node.js
 - Express.js
 - PostgreSQL
-- REST API
+- REST APIs
 - JWT Authentication
 
 ## 📂 Structure
