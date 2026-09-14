@@ -4407,5 +4407,3 @@ more than 10 characters, otherwise print "Short string". */
 // wrong solution
 
 // some practice of this question
-
-// find last two digits of 12345
